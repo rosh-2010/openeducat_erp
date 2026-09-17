@@ -33,23 +33,33 @@ msgstr "'Tarjeta de identificación del estudiante - % s' % (object.name)"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<strong>Certificate No: </strong>"
-msgstr "<strong>Número de certificado: </strong>"
+msgid "<b>Certificate No. : </b>"
+msgstr "<b>Nº de certificado: </b>"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<strong>Date: </strong>"
-msgstr "<strong>Fecha: </strong>"
+msgid "<b>Date : </b>"
+msgstr "<b>Fecha: </b>"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<strong>Principal / Head of Institution</strong>"
-msgstr "<strong>Director / Jefe de Institución</strong>"
+msgid ""
+"<b>Principal / Head of Institution</b><br/>\n"
+"                                   (Signature with seal)<br/>\n"
+"                                   Name :"
+msgstr ""
+"<b>Director / Jefe de Institución</b><br/>\n"
+"                                   (Firma con sello)<br/>\n"
+"                                   Nombre:"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<strong>Designation:</strong>"
-msgstr "<strong>Designación:</strong>"
+msgid ""
+"<br/>\n"
+"                                   Designation :"
+msgstr ""
+"<br/>\n"
+"                                   Designación :"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
@@ -5705,6 +5715,11 @@ msgid "at"
 msgstr "en"
 
 #. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "bearing the Enrollment Student ID :"
+msgstr "con el ID de Estudiante de Inscripción:"
+
+#. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_form
 msgid "e.g. \"Computer Science for kids\""
 msgstr "p.ej. \"Informática para niños\""
@@ -5785,13 +5800,3 @@ msgstr "a"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
 msgid "was"
 msgstr "era"
-
-#. module: openeducat_core
-#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "(Signature with seal)"
-msgstr "(Firma con sello)"
-
-#. module: openeducat_core
-#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "bearing the Enrollment Student ID:"
-msgstr "con el ID de Estudiante de Inscripción:"

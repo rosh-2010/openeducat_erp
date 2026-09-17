@@ -29,11 +29,11 @@
                                 <div class="d-flex flex-column justify-content-center flex-grow-1" style="min-width: 0;">
                                     <field name="name" class="fw-bold text-dark d-block text-truncate mb-1" style="font-size:1.15rem;"/>
                                     <div class="d-flex align-items-center text-truncate mb-1" t-if="record.email.value" style="font-size:0.85rem; min-width: 0;">
-                                        <i class="fa fa-envelope text-primary me-2 flex-shrink-0" title="Email"/>
+                                        <i class="oi text-primary me-2 flex-shrink-0 oi-filled" data-icon="mail" title="Email"/>
                                         <span class="text-truncate d-block text-dark" style="min-width: 0; color: #374151 !important;"><field name="email"/></span>
                                     </div>
                                     <div class="d-flex align-items-center text-truncate" t-if="record.phone.value" style="font-size:0.85rem; min-width: 0;">
-                                        <i class="fa fa-phone text-success me-2 flex-shrink-0" title="Phone"/>
+                                        <i class="oi text-success me-2 flex-shrink-0 oi-filled" data-icon="phone" title="Phone"/>
                                         <span class="text-truncate d-block text-dark" style="min-width: 0; color: #374151 !important;"><field name="phone"/></span>
                                     </div>
                                     <div class="text-primary fw-semibold text-truncate mt-1" t-if="record.gr_no.value" style="font-size:0.75rem; background: rgba(13, 110, 253, 0.08); padding: 1px 6px; border-radius: 4px; display: inline-block; width: fit-content;">
@@ -78,22 +78,7 @@
             <field name="model">op.student</field>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <!-- No js_class here. `hr_employee_form` registers hr's
-                     EmployeeFormController, which overrides the Archive action
-                     to open the "Employee Termination" wizard
-                     (hr/static/src/views/archive_employee_hook.js) and passes
-                     `this.model.root.resId` as active_ids. On this form that
-                     is an op.student id, handed to hr.departure.wizard, which
-                     expects an hr.employee id — so archiving a student either
-                     errored or wrote departure fields onto whichever employee
-                     happened to share that id.
-
-                     It was added in d6485eb0 ([19.0][MOD] updated UI for
-                     student and faculty, 2025-10-08) as part of a pure restyle;
-                     the styling in that commit is a global .oe_stat_button rule
-                     and does not depend on the js_class, so removing it changes
-                     appearance not at all and restores the standard Archive. -->
-                <form string="Student">
+                <form string="Student" js_class="hr_employee_form">
                     <header>
                     </header>
                     <sheet>
@@ -122,11 +107,11 @@
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-baseline w-md-50">
-                                        <i class="fa fa-fw me-1 fa-envelope text-primary" title="Email"/>
+                                        <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="mail" title="Email"/>
                                         <field name="email" class="w-100" widget="email" placeholder="Email"/>
                                     </div>
                                     <div class="d-flex align-items-baseline w-md-50">
-                                        <i class="fa fa-fw me-1 fa-phone text-primary" title="Phone"/>
+                                        <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="phone" title="Phone"/>
                                         <field name="phone" class="w-100" widget="phone" placeholder="Phone"/>
                                     </div>
 
@@ -183,19 +168,19 @@
                                                         <field name="name" invisible="not name" class="fw-bold"/>
                                                         <field name="type" invisible="name" class="fw-bold"/>
                                                         <div t-if="record.email.raw_value" class="text-truncate">
-                                                            <i class="fa fa-fw me-1 fa-envelope text-primary" title="Email"/>
+                                                            <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="mail" title="Email"/>
                                                             <field name="email"/>
                                                         </div>
                                                         <div t-if="record.phone.raw_value">
-                                                            <i class="fa fa-fw me-1 fa-phone text-primary" title="Phone"/>
+                                                            <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="phone" title="Phone"/>
                                                             <field name="phone"/>
                                                         </div>
                                                         <div invisible="not function or is_company">
-                                                            <i class="fa fa-fw me-1 fa-suitcase text-primary" title="Position"/>
+                                                            <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="work" title="Position"/>
                                                             <field name="function"/>
                                                         </div>
                                                         <div t-if="record.type.raw_value != 'contact' and (record.city.raw_value or record.country_id.raw_value)">
-                                                            <i class="fa fa-fw me-1 fa-map-marker text-primary" title="Location"/>
+                                                            <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="location_on" title="Location"/>
                                                             <field name="city"/>
                                                             <span t-if="record.city.raw_value and record.country_id.raw_value">, </span>
                                                             <field name="country_id"/>
@@ -215,15 +200,15 @@
                                                         </h3>
                                                         <div class="row flex-row">
                                                             <div class="d-flex align-items-baseline">
-                                                                <i class="fa fa-fw me-1 fa-envelope text-primary" title="Email"/>
+                                                                <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="mail" title="Email"/>
                                                                 <field name="email" widget="email" class="w-100" context="{'gravatar_image': True}" required="user_ids" placeholder="Email"/>
                                                             </div>
                                                             <div class="d-flex align-items-baseline">
-                                                                <i class="fa fa-fw me-1 fa-phone text-primary" title="Phone"/>
+                                                                <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="phone" title="Phone"/>
                                                                 <field name="phone" widget="phone" class="w-100" placeholder="Phone"/>
                                                             </div>
                                                             <div invisible="is_company or type != 'contact'" class="d-flex align-items-baseline">
-                                                                <i class="fa fa-fw me-1 fa-suitcase text-primary" title="Position"/>
+                                                                <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="work" title="Position"/>
                                                                 <field name="function" placeholder="Job title"/>
                                                             </div>
                                                         </div>

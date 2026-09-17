@@ -5,12 +5,8 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='company_type']" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//field[@name='company_type']" position="after">
-                <div class="d-flex align-items-md-center gap-md-3 flex-column flex-md-row">
-                    <field name="company_type" widget="radio" options="{'horizontal': true}" />
+            <xpath expr="//field[@name='phone']/.." position="after">
+                <div class="d-flex align-items-baseline gap-3">
                     <div class="d-flex flex-row">
                         <field name="is_parent" nolabel="1" />
                         <label for="is_parent" class="me-3">Parent</label>

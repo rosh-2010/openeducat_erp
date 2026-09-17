@@ -28,11 +28,11 @@
                                 <div class="d-flex flex-column justify-content-center flex-grow-1" style="min-width: 0;">
                                     <field name="name" class="fw-bold text-dark d-block text-truncate mb-1" style="font-size:1.15rem;"/>
                                     <div class="d-flex align-items-center text-truncate mb-1" t-if="record.email.value" style="font-size:0.85rem; min-width: 0;">
-                                        <i class="fa fa-envelope text-primary me-2 flex-shrink-0" title="Email"/>
+                                        <i class="oi text-primary me-2 flex-shrink-0 oi-filled" data-icon="mail" title="Email"/>
                                         <span class="text-truncate d-block text-dark" style="min-width: 0; color: #374151 !important;"><field name="email"/></span>
                                     </div>
                                     <div class="d-flex align-items-center text-truncate" t-if="record.phone.value" style="font-size:0.85rem; min-width: 0;">
-                                        <i class="fa fa-phone text-success me-2 flex-shrink-0" title="Phone"/>
+                                        <i class="oi text-success me-2 flex-shrink-0 oi-filled" data-icon="phone" title="Phone"/>
                                         <span class="text-truncate d-block text-dark" style="min-width: 0; color: #374151 !important;"><field name="phone"/></span>
                                     </div>
                                 </div>
@@ -75,14 +75,7 @@
             <field name="model">op.faculty</field>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <!-- Removed for the same reason as student_view.xml.
-                     Faculty look like the better fit for an employee wizard,
-                     but they are not: the hook passes the op.faculty id, while
-                     the link to HR is `emp_id` — a DIFFERENT id on
-                     hr.employee. So the wizard received the wrong record here
-                     too. If Register Departure is wanted for staff, drive it
-                     from emp_id on the employee itself. -->
-                <form string="Faculty">
+                <form string="Faculty" js_class="hr_employee_form">
                     <header groups="openeducat_core.group_op_back_office_admin">
                     </header>
                     <sheet>
@@ -112,11 +105,11 @@
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-baseline w-md-50">
-                                        <i class="fa fa-fw me-1 fa-envelope text-primary" title="Email"/>
+                                        <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="mail" title="Email"/>
                                         <field name="email" class="w-100" widget="email" placeholder="Email"/>
                                     </div>
                                     <div class="d-flex align-items-baseline w-md-50">
-                                        <i class="fa fa-fw me-1 fa-phone text-primary" title="Phone"/>
+                                        <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="phone" title="Phone"/>
                                         <field name="phone" class="w-100" widget="phone" placeholder="Phone"/>
                                     </div>
 
@@ -175,19 +168,19 @@
                                                         <field name="name" invisible="not name" class="fw-bold"/>
                                                         <field name="type" invisible="name" class="fw-bold"/>
                                                         <div t-if="record.email.raw_value" class="text-truncate">
-                                                            <i class="fa fa-fw me-1 fa-envelope text-primary" title="Email"/>
+                                                            <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="mail" title="Email"/>
                                                             <field name="email"/>
                                                         </div>
                                                         <div t-if="record.phone.raw_value">
-                                                            <i class="fa fa-fw me-1 fa-phone text-primary" title="Phone"/>
+                                                            <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="phone" title="Phone"/>
                                                             <field name="phone"/>
                                                         </div>
                                                         <div invisible="not function or is_company">
-                                                            <i class="fa fa-fw me-1 fa-suitcase text-primary" title="Position"/>
+                                                            <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="work" title="Position"/>
                                                             <field name="function"/>
                                                         </div>
                                                         <div t-if="record.type.raw_value != 'contact' and (record.city.raw_value or record.country_id.raw_value)">
-                                                            <i class="fa fa-fw me-1 fa-map-marker text-primary" title="Location"/>
+                                                            <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="location_on" title="Location"/>
                                                             <field name="city"/>
                                                             <span t-if="record.city.raw_value and record.country_id.raw_value">, </span>
                                                             <field name="country_id"/>
@@ -207,15 +200,15 @@
                                                         </h3>
                                                         <div class="row flex-row">
                                                             <div class="d-flex align-items-baseline">
-                                                                <i class="fa fa-fw me-1 fa-envelope text-primary" title="Email"/>
+                                                                <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="mail" title="Email"/>
                                                                 <field name="email" widget="email" class="w-100" context="{'gravatar_image': True}" required="user_ids" placeholder="Email"/>
                                                             </div>
                                                             <div class="d-flex align-items-baseline">
-                                                                <i class="fa fa-fw me-1 fa-phone text-primary" title="Phone"/>
+                                                                <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="phone" title="Phone"/>
                                                                 <field name="phone" widget="phone" class="w-100" placeholder="Phone"/>
                                                             </div>
                                                             <div invisible="is_company or type != 'contact'" class="d-flex align-items-baseline">
-                                                                <i class="fa fa-fw me-1 fa-suitcase text-primary" title="Position"/>
+                                                                <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="work" title="Position"/>
                                                                 <field name="function" placeholder="Job title"/>
                                                             </div>
                                                         </div>

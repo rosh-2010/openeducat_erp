@@ -21,7 +21,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_1"/>
             <field name="user_id" ref="op_user_student"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_1.jpg"/>
             <field name="category_id" ref="category_amerindians"/>
         </record>
@@ -46,7 +46,7 @@
             <field name="type">contact</field>
             <field name="active">True</field>
                 <field name="partner_id" ref="op_res_partner_2"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_2.jpg"/>
             <field name="category_id" ref="category_hawaiian"/>
         </record>
@@ -71,7 +71,7 @@
             <field name="type">contact</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_3"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_3.jpg"/>
             <field name="category_id" ref="category_hawaiian"/>
         </record>
@@ -96,7 +96,7 @@
             <field name="type">contact</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_4"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_4.jpg"/>
             <field name="category_id" ref="category_caucasian"/>
         </record>
@@ -121,7 +121,7 @@
             <field name="type">contact</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_5"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_5.jpg"/>
             <field name="category_id" ref="category_europoid"/>
         </record>
@@ -146,7 +146,7 @@
             <field name="type">contact</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_6"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_6.jpg"/>
             <field name="category_id" ref="category_african_american"/>
         </record>
@@ -171,7 +171,7 @@
             <field name="type">contact</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_7"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_7.jpg"/>
             <field name="category_id" ref="category_hawaiian"/>
         </record>
@@ -196,7 +196,7 @@
             <field name="type">contact</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_8"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_8.jpg"/>
             <field name="category_id" ref="category_hawaiian"/>
         </record>
@@ -221,7 +221,7 @@
             <field name="type">contact</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_9"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_9.jpg"/>
             <field name="category_id" ref="category_roma"/>
         </record>
@@ -246,7 +246,7 @@
             <field name="type">contact</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_10"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_10.jpg"/>
             <field name="category_id" ref="category_roma"/>
         </record>
@@ -271,7 +271,7 @@
             <field name="type">contact</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_11"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_11.jpg"/>
             <field name="category_id" ref="category_amerindians"/>
         </record>
@@ -296,7 +296,7 @@
             <field name="type">contact</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_12"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_12.jpg"/>
             <field name="category_id" ref="category_pacific_islanders"/>
         </record>
@@ -321,7 +321,7 @@
             <field name="type">contact</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_13"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_13.jpg"/>
             <field name="category_id" ref="category_pacific_islanders"/>
         </record>
@@ -347,7 +347,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_14"/>
             <field name="category_id" ref="category_mongoloid"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_14.jpg"/>
         </record>
 
@@ -372,7 +372,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_15"/>
             <field name="category_id" ref="category_mongoloid"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_15.jpg"/>
         </record>
 
@@ -397,7 +397,7 @@
             <field name="type">contact</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_16"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_16.jpg"/>
         </record>
 
@@ -422,7 +422,7 @@
             <field name="category_id" ref="category_roma"/>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_17"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_17.jpg"/>
         </record>
 
@@ -447,7 +447,7 @@
             <field name="active">True</field>
             <field name="category_id" ref="category_roma"/>
             <field name="partner_id" ref="op_res_partner_18"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_18.jpg"/>
         </record>
 
@@ -472,7 +472,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_19"/>
             <field name="category_id" ref="category_roma"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_19.jpg"/>
         </record>
 
@@ -497,7 +497,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_20"/>
             <field name="category_id" ref="category_hawaiian"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_20.jpg"/>
         </record>
         <record id="op_student_21" model="op.student">
@@ -521,7 +521,7 @@
             <field name="active">True</field>
             <field name="category_id" ref="category_hawaiian"/>
             <field name="partner_id" ref="op_res_partner_33"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_21.jpg"/>
         </record>
 
@@ -546,7 +546,7 @@
             <field name="active">True</field>
             <field name="category_id" ref="category_roma"/>
             <field name="partner_id" ref="op_res_partner_34"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_22.jpg"/>
         </record>
 
@@ -570,7 +570,7 @@
             <field name="type">contact</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_35"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_23.jpg"/>
         </record>
 
@@ -595,7 +595,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_36"/>
             <field name="category_id" ref="category_pacific_islanders"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_24.jpg"/>
         </record>
 
@@ -613,14 +613,14 @@
             <field name="street">250 King Fahd Road</field>
             <field name="street2">Apartment 10B</field>
             <field name="zip">11564</field>
-            <field name="state_id" ref="base.state_sa_70"/>
+            <field name="state_id" ref="base.state_sa_001"/>
             <field name="country_id" ref="base.sa"/>
             <field name="nationality" ref="base.sa"/>
             <field name="type">contact</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_37"/>
             <field name="category_id" ref="category_asian"/>
-            <field name="image_1920" type="base64"
+            <field name="image_1920" type="bytes"
                    file="openeducat_core/static/img/student_25.jpg"/>
         </record>
 </odoo>
