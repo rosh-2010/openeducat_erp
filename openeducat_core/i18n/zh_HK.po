@@ -18,12 +18,12 @@ msgstr ""
 #. module: openeducat_core
 #: model:ir.actions.report,print_report_name:openeducat_core.action_report_student_bonafide
 msgid "'Bonafide Certificate - %s' % (object.name)"
-msgstr "'真正的證書 -％s'％（object.name）"
+msgstr "\"真正的證書 - %s\" % (object.name)"
 
 #. module: openeducat_core
 #: model:ir.actions.report,print_report_name:openeducat_core.action_report_student_idcard
 msgid "'Student ID Card - %s' % (object.name)"
-msgstr "'學生身份證 - ％s'％（object.name）"
+msgstr "\"學生身份證 - %s\" % (object.name)"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide

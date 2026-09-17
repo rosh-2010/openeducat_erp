@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-29 05:56+0000\n"
-"PO-Revision-Date: 2025-04-29 05:56+0000\n"
+"POT-Creation-Date: 2025-12-19 12:03+0000\n"
+"PO-Revision-Date: 2025-12-19 12:03+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,72 +16,99 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__meeting_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__meeting_count
+msgid "# Meetings"
+msgstr "# Sanāksmes"
+
+#. module: openeducat_core
 #: model:ir.actions.report,print_report_name:openeducat_core.action_report_student_bonafide
 msgid "'Bonafide Certificate - %s' % (object.name)"
-msgstr "'Bonafide sertifikāts - % s' % (object.name)"
+msgstr "'Bonafide sertifikāts — %s' % (object.name)"
 
 #. module: openeducat_core
 #: model:ir.actions.report,print_report_name:openeducat_core.action_report_student_idcard
 msgid "'Student ID Card - %s' % (object.name)"
-msgstr "'Studenta ID karte - % s' % (object.name)"
+msgstr "\"Studenta apliecība — %s\" % (object.name)"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<b>DATE:</b>"
-msgstr "<b> Datums: </b>"
+msgid "<b>Certificate No. : </b>"
+msgstr "<b>Sertifikāta Nr. : </b>"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<b>PRINCIPAL</b>"
-msgstr "<b> galvenā </b>"
+msgid "<b>Date : </b>"
+msgstr "<b>Datums: </b>"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
 msgid ""
-"<font color=\"white\"/>\n"
-"                                            is / was a bonafide student of this school / college studying in"
+"<b>Principal / Head of Institution</b><br/>\n"
+"                                   (Signature with seal)<br/>\n"
+"                                   Name :"
 msgstr ""
-"<font color = \"balts\"/>\n"
-"                                            ir / bija šīs skolas / koledžas bonafīda students"
+"<b>Direktors/Iestādes vadītājs</b><br/>\n"
+"                                   (Paraksts ar zīmogu)<br/>\n"
+"                                   Vārds:"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid ""
+"<br/>\n"
+"                                   Designation :"
+msgstr ""
+"<br/>\n"
+"                                   Apzīmējums:"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "<span class=\"fa fa-info-circle \" title=\"Openeducat Enterprise Module\"/>"
+msgstr "<span class=\"fa fa-info-circle \" title=\"Openeducat Enterprise Module\"/>"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
+msgid ""
+"<span class=\"fa fa-info-circle\" title=\"OpenEduCat Student Feedback "
+"Module\"/>"
 msgstr ""
-"<span class = \"fa fa-info-aplis\" title = \"atvereducat Enterprise "
+"<span class=\"fa fa-info-circle\" title=\"OpenEduCat studentu atsauksmju "
 "modulis\"/>"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "<span class=\"fa fa-info-circle\" title=\"Openeducat Enterprise Module\"/>"
-msgstr ""
-"<span class = \"fa fa-info-aplis\" title = \"atvereducat Enterprise "
-"modulis\"/>"
+msgstr "<span class=\"fa fa-info-circle\" title=\"Openeducat Enterprise Module\"/>"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "<span> &amp;nbsp; </span>"
+msgstr "<span> &amp;nbsp; </span>"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "<strong>BONAFIDE CERTIFICATE</strong>"
+msgstr "<strong>BONAFIDE SERTIFIKĀTS</strong>"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_idcard
 msgid "<strong>Birthdate:</strong>"
-msgstr "<strong> Dzimšanas datums: </strong>"
+msgstr "<strong>Dzimšanas datums:</strong>"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_idcard
 msgid "<strong>Blood Group:</strong>"
-msgstr "<strong> Asins grupa: </strong>"
-
-#. module: openeducat_core
-#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<strong>Bonafide Certificate</strong>"
-msgstr "<strong> bonafide sertifikāts </strong>"
+msgstr "<strong>Asins grupa:</strong>"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_idcard
 msgid "<strong>Course:</strong>"
-msgstr "<strong> kurss: </strong>"
+msgstr "<strong>Kurss:</strong>"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_idcard
 msgid "<strong>Name:</strong>"
-msgstr "<strong> Vārds: </strong>"
+msgstr "<strong>Vārds:</strong>"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -89,37 +116,37 @@ msgid ""
 "A versatile solution to manage student\n"
 "                                        grades and homework across all devices and platforms."
 msgstr ""
-"Daudzpusīgs risinājums studenta pārvaldīšanai\n"
-"                                        Klases un mājasdarbi visās ierīcēs un platformās."
+"Daudzpusīgs risinājums studentu vadīšanai\n"
+"                                        atzīmes un mājasdarbi visās ierīcēs un platformās."
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_faculty__blood_group__a+
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__a+
 msgid "A+ve"
-msgstr "A+un"
+msgstr "A+ve"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_faculty__blood_group__a-
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__a-
 msgid "A-ve"
-msgstr "A un"
+msgstr "A-un"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_faculty__blood_group__ab+
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__ab+
 msgid "AB+ve"
-msgstr "AB+un"
+msgstr "ES+ve"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_faculty__blood_group__ab-
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__ab-
 msgid "AB-ve"
-msgstr "Ab un"
+msgstr "ES-ve"
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_11
 msgid "Aarav"
-msgstr "Āravs"
+msgstr "Ārāvs"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_op_academic_term_view
@@ -130,13 +157,13 @@ msgstr "Āravs"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_academic_term_tree
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_course_search
 msgid "Academic Term"
-msgstr "Akadēmiskais termins"
+msgstr "Akadēmiskais termiņš"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_year__academic_term_ids
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_academic_year_form
 msgid "Academic Terms"
-msgstr "Akadēmiskie nosacījumi"
+msgstr "Akadēmiskie noteikumi"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_op_academic_year_view
@@ -160,7 +187,7 @@ msgstr "Akreditācija"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_achievement_enterprise
 msgid "Achievement Enterprise"
-msgstr "Sasniegumu uzņēmums"
+msgstr "Achievement Enterprise"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_needaction
@@ -189,29 +216,29 @@ msgstr "Aktīvs"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__active_lang_count
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__active_lang_count
 msgid "Active Lang Count"
-msgstr "Aktīvs Langas skaits"
+msgstr "Active Lang Count"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_ids
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_ids
 msgid "Activities"
-msgstr "Darbība"
+msgstr "Darbības"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_activity
 msgid "Activity"
-msgstr "Darbība"
+msgstr "Aktivitāte"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_activity_enterprise
 msgid "Activity Enterprise"
-msgstr "Aktivitātes uzņēmums"
+msgstr "Darbība Uzņēmums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_exception_decoration
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Darbības izņēmuma rotājums"
+msgstr "Darbības izņēmuma dekorēšana"
 
 #. module: openeducat_core
 #: model:ir.ui.menu,name:openeducat_core.menu_op_school_config_activity
@@ -222,13 +249,13 @@ msgstr "Aktivitāšu vadība"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_state
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_state
 msgid "Activity State"
-msgstr "Aktivitātes stāvoklis"
+msgstr "Darbības stāvoklis"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_type_icon
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_type_icon
 msgid "Activity Type Icon"
-msgstr "Darbības tipa ikona"
+msgstr "Darbības veida ikona"
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_12
@@ -239,19 +266,24 @@ msgstr "Adams"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__additional_info
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__additional_info
 msgid "Additional info"
-msgstr "Papildu informācija"
+msgstr "Papildus informācija"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Address"
-msgstr "Uzruna"
+msgstr "Adrese"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__bonafide_certificate_wizard__certificate_purpose__address_proof
+msgid "Address Proof"
+msgstr "Adreses pierādījums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__type
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__type
 msgid "Address Type"
-msgstr "Adreses tips"
+msgstr "Adreses veids"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -260,7 +292,7 @@ msgid ""
 "                                                        feature to read books in OpenEduCat."
 msgstr ""
 "Pievieno digitālo bibliotēku\n"
-"                                                        Funkcija, lai lasītu grāmatas atvērtāeducatā."
+"                                                        funkcija grāmatu lasīšanai programmā OpenEduCat."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -270,8 +302,8 @@ msgid ""
 "                                                            system."
 msgstr ""
 "Pievieno foruma funkciju\n"
-"                                                            uz atvērtoeducat mācīšanās vadību\n"
-"                                                            Sistēma"
+"                                                            uz OpenEduCat mācību pārvaldību\n"
+"                                                            sistēma."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -281,8 +313,8 @@ msgid ""
 "                                                            management system."
 msgstr ""
 "Pievieno aptauju\n"
-"                                                            funkcija atvērtā līmeņa mācībām\n"
-"                                                            Pārvaldības sistēma."
+"                                                            funkcija OpenEduCat mācībām\n"
+"                                                            vadības sistēma."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -290,8 +322,8 @@ msgid ""
 "Adds facility management\n"
 "                                                    features to OpenEduCat."
 msgstr ""
-"Pievieno objekta pārvaldību\n"
-"                                                    Funkcijas atvereeducat."
+"Pievieno telpu pārvaldību\n"
+"                                                    funkcijas OpenEduCat."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -300,9 +332,9 @@ msgid ""
 "                                                            features to the OpenEduCat learning\n"
 "                                                            management system."
 msgstr ""
-"Pievieno azartspēles\n"
-"                                                            funkcijas atvērtā līmeņa mācībām\n"
-"                                                            Pārvaldības sistēma."
+"Pievieno gamification\n"
+"                                                            OpenEduCat mācīšanās funkcijas\n"
+"                                                            vadības sistēma."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -311,7 +343,7 @@ msgid ""
 "                                                            sell courses online."
 msgstr ""
 "Pievieno spēju\n"
-"                                                            Pārdot kursus tiešsaistē."
+"                                                            pārdot kursus tiešsaistē."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_admission
@@ -323,6 +355,11 @@ msgstr "Uzņemšana"
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_admission_enterprise
 msgid "Admission Enterprise"
 msgstr "Uzņemšanas uzņēmums"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_admission_grading_bridge
+msgid "Admission Grading Bridge"
+msgstr "Uzņemšanas šķirošanas tilts"
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_4
@@ -341,14 +378,14 @@ msgid ""
 "All the emails and documents sent to this contact will be translated in this"
 " language."
 msgstr ""
-"Visi e -pasti un dokumenti, kas nosūtīti uz šo kontaktu, tiks tulkoti šajā "
-"valodā."
+"Visi šai kontaktpersonai nosūtītie e-pasta ziņojumi un dokumenti tiks "
+"tulkoti šajā valodā."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__allowed_department_ids
 #: model:ir.model.fields,field_description:openeducat_core.field_res_users__department_ids
 msgid "Allowed Department"
-msgstr "Atļauts nodaļa"
+msgstr "Atļautā nodaļa"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -356,8 +393,8 @@ msgid ""
 "Allows alumni to create job\n"
 "                                                        post."
 msgstr ""
-"Ļauj absolventiem radīt darbu\n"
-"                                                        post."
+"Ļauj absolventiem radīt darba vietas\n"
+"                                                        pastu."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -365,18 +402,27 @@ msgid ""
 "Allows parents to view\n"
 "                                                        their children's fee details."
 msgstr ""
-"Ļauj vecākiem apskatīt\n"
-"                                                        viņu bērnu maksa par bērnu maksu."
+"Ļauj vecākiem skatīt\n"
+"                                                        informāciju par viņu bērnu maksām."
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
+msgid ""
+"Allows to create Gradebook upon\n"
+"                                                        student admission enrollment."
+msgstr ""
+"Ļauj izveidot atzīmju grāmatiņu pēc\n"
+"                                                        studentu uzņemšana."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Alumni"
-msgstr "Absolvents"
+msgstr "Absolventi"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_alumni_blog_enterprise
 msgid "Alumni Blog Enterprise"
-msgstr "Absolventu emuāra uzņēmums"
+msgstr "Absolventu emuārs Enterprise"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_alumni_enterprise
@@ -396,7 +442,7 @@ msgstr "Absolventu darba uzņēmums"
 #. module: openeducat_core
 #: model:op.faculty,first_name:openeducat_core.op_faculty_14
 msgid "Amina"
-msgstr "Amīna"
+msgstr "Amina"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -405,8 +451,8 @@ msgid ""
 "                                                        that enhances employee time tracking,\n"
 "                                                        scheduling, and reporting."
 msgstr ""
-"Apmierinātības sistēma\n"
-"                                                        kas uzlabo darbinieku laika izsekošanu,\n"
+"Apmeklēšanas sistēma\n"
+"                                                        kas uzlabo darbinieku laika uzskaiti,\n"
 "                                                        plānošana un ziņošana."
 
 #. module: openeducat_core
@@ -415,14 +461,14 @@ msgid ""
 "An integrated solution for managing\n"
 "                                        scheduling details."
 msgstr ""
-"Integrēts risinājums pārvaldībai\n"
-"                                        Sīkāka informācija par plānošanu."
+"Integrēts pārvaldības risinājums\n"
+"                                        plānošanas detaļas."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_company__approval_authority
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_company_form_openeducat_core
 msgid "Approval Authority"
-msgstr "Apstiprināšanas iestāde"
+msgstr "Apstiprinātāja iestāde"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
@@ -455,12 +501,12 @@ msgstr "Arhivēts"
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Asset"
-msgstr "Vērtība"
+msgstr "Aktīvs"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_asset_request_enterprise
 msgid "Asset Request Enterprise"
-msgstr "Aktīvu pieprasījuma uzņēmums"
+msgstr "Līdzekļu pieprasījuma uzņēmums"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -471,33 +517,33 @@ msgid ""
 msgstr ""
 "Piešķirt un pārvaldīt\n"
 "                                                        uzdevumi indivīdiem, grupām vai\n"
-"                                                        visas partijas."
+"                                                        veselas partijas."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_assignment
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Assignment"
-msgstr "Norīkojums"
+msgstr "Piešķiršana"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_assignment_enterprise
 msgid "Assignment Enterprise"
-msgstr "Norīkošanas uzņēmums"
+msgstr "Uzdevuma uzņēmums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_assignment_grading_bridge
-msgid "Assignment Grading Bridge"
-msgstr "Norīkošanas šķirošanas tilts"
+msgid "Assignment Gradebook Bridge"
+msgstr "Uzdevumu atzīmju grāmatiņas tilts"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_assignment_grading_enterprise
 msgid "Assignment Grading Enterprise"
-msgstr "Uzdevuma šķirošanas uzņēmums"
+msgstr "Uzdevumu vērtēšanas uzņēmums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_assignment_rubrics
 msgid "Assignment Rubrics"
-msgstr "Uzdevuma rubrika"
+msgstr "Uzdevumu rubrikas"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_attachment_count
@@ -521,22 +567,22 @@ msgstr "Apmeklējums"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_attendance_enterprise
 msgid "Attendance Enterprise"
-msgstr "Apmierinātības uzņēmums"
+msgstr "Apmeklētāju uzņēmums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_attendance_face_recognition
 msgid "Attendance Face Recognition"
-msgstr "Apmeklēšanas sejas atpazīšana"
+msgstr "Apmeklētāju sejas atpazīšana"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__attendance_subject_generic
 msgid "Attendance Subject Generic"
-msgstr "Apmeklēšanas priekšmets vispārējs"
+msgstr "Apmeklēšanas priekšmets vispārīgs"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_attendance_report_xlsx
 msgid "Attendance Xlsx Report"
-msgstr "Apmeklējums XLSX ziņojums"
+msgstr "Apmeklējuma Xlsx atskaite"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -544,8 +590,8 @@ msgid ""
 "Automate lead and opportunity tracking\n"
 "                                        with a cutting-edge CRM for unmatched advantage."
 msgstr ""
-"Automatizēt svina un iespēju izsekošanu\n"
-"                                        ar vismodernāko CRM par nepārspējamu priekšrocību."
+"Automatizējiet potenciālo pirkumu un iespēju izsekošanu\n"
+"                                        ar progresīvu CRM, lai iegūtu nepārspējamas priekšrocības."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__avatar_1920
@@ -563,7 +609,7 @@ msgstr "Iemiesojums 1024"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__avatar_128
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__avatar_128
 msgid "Avatar 128"
-msgstr "Avatārs 128"
+msgstr "Iemiesojums 128"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__avatar_256
@@ -581,73 +627,73 @@ msgstr "Iemiesojums 512"
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_faculty__blood_group__b+
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__b+
 msgid "B+ve"
-msgstr "B+un"
+msgstr "B+ve"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_faculty__blood_group__b-
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__b-
 msgid "B-ve"
-msgstr "B un"
+msgstr "B-un"
 
 #. module: openeducat_core
 #: model:op.program,name:openeducat_core.program_3
 msgid "B.Com - Accounting and Finance"
-msgstr "B.com - grāmatvedība un finanses"
+msgstr "B.Com — grāmatvedība un finanses"
 
 #. module: openeducat_core
 #: model:op.program,name:openeducat_core.program_6
 msgid "B.Tech - Chemical Engineering"
-msgstr "B.Tech - ķīmiskā inženierija"
+msgstr "B.Tech - ķīmijas inženierija"
 
 #. module: openeducat_core
 #: model:op.program,name:openeducat_core.program_5
 msgid "B.Tech - Civil Engineering"
-msgstr "B.Tech - inženierbūvniecība"
+msgstr "B.Tech - civilā inženierija"
 
 #. module: openeducat_core
 #: model:op.program,name:openeducat_core.program_4
 msgid "BA - Psychology"
-msgstr "BA - psiholoģija"
+msgstr "BA - Psiholoģija"
 
 #. module: openeducat_core
 #: model:op.program,code:openeducat_core.program_4
 msgid "BA-PSC"
-msgstr "Ba-PSC"
+msgstr "BA-PSC"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_8
 msgid "BA-PY-Semester-1"
-msgstr "Ba-py-semester-1"
+msgstr "BA-PY-Semestris-1"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_10
 msgid "BA-PY-Semester-2"
-msgstr "Ba-py-semester-2"
+msgstr "BA-PY-Semestris-2"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_32
 msgid "BA-PY-Semester-3"
-msgstr "Ba-py-semester-3"
+msgstr "BA-PY-Semestris-3"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_33
 msgid "BA-PY-Semester-4"
-msgstr "Ba-py-semester-4"
+msgstr "BA-PY-Semestris-4"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_34
 msgid "BA-PY-Semester-5"
-msgstr "Ba-py-semester-5"
+msgstr "BA-PY-Semestris-5"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_35
 msgid "BA-PY-Semester-6"
-msgstr "Ba-py-semester-6"
+msgstr "BA-PY-Semestris-6"
 
 #. module: openeducat_core
 #: model:op.program,name:openeducat_core.program_1
 msgid "BCA - Cloud Computing"
-msgstr "BCA - mākoņdatošana"
+msgstr "BCA — mākoņdatošana"
 
 #. module: openeducat_core
 #: model:op.program,code:openeducat_core.program_1
@@ -657,157 +703,157 @@ msgstr "BCA-CC"
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_1
 msgid "BCA-CC-Semester-1"
-msgstr "BCA-CC-SEMESTER-1"
+msgstr "BCA-CC-Semester-1"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_4
 msgid "BCA-CC-Semester-2"
-msgstr "BCA-CC-SEMESTER-2"
+msgstr "BCA-CC-Semestris-2"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_15
 msgid "BCA-CC-Semester-3"
-msgstr "BCA-CC-SEMESTER-3"
+msgstr "BCA-CC-Semestris-3"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_16
 msgid "BCA-CC-Semester-4"
-msgstr "BCA-CC-SEMESTER-4"
+msgstr "BCA-CC-Semestris-4"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_17
 msgid "BCA-CC-Semester-5"
-msgstr "BCA-CC-SEMESTER-5"
+msgstr "BCA-CC-Semestris-5"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_18
 msgid "BCA-CC-Semester-6"
-msgstr "BCA-CC-SEMESTER-6"
+msgstr "BCA-CC-Semester-6"
 
 #. module: openeducat_core
 #: model:op.program,code:openeducat_core.program_3
 msgid "BCOM-AF"
-msgstr "BCOM-AF"
+msgstr "BCOM AF"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_5
 msgid "BCOM-AF-Semester-1"
-msgstr "BCOM-AF-SEMESTER-1"
+msgstr "BCOM-AF-Semestris-1"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_6
 msgid "BCOM-AF-Semester-2"
-msgstr "BCOM-AF-SEMESTER-2"
+msgstr "BCOM-AF-Semestris-2"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_21
 msgid "BCOM-AF-Semester-3"
-msgstr "BCOM-of-Semester-3"
+msgstr "BCOM-AF-Semestris-3"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_22
 msgid "BCOM-AF-Semester-4"
-msgstr "Semestera BCOME"
+msgstr "BCOM-AF-Semestris-4"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_23
 msgid "BCOM-AF-Semester-5"
-msgstr "BCOM-AF-SEMESTER-5"
+msgstr "BCOM-AF-Semestris-5"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_24
 msgid "BCOM-AF-Semester-6"
-msgstr "BCOM-of-Semester-6"
+msgstr "BCOM-AF-Semestris-6"
 
 #. module: openeducat_core
 #: model:op.program,code:openeducat_core.program_6
 msgid "BT-CHE"
-msgstr "BT-C"
+msgstr "BT-CHE"
 
 #. module: openeducat_core
 #: model:op.program,code:openeducat_core.program_5
 msgid "BT-CIE"
-msgstr "Bt"
+msgstr "BT-CIE"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_7
 msgid "BTECH-CE-Semester-1"
-msgstr "Btech-ce-semester-1"
+msgstr "BTECH-CE-Semestris-1"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_25
 msgid "BTECH-CE-Semester-2"
-msgstr "BTECH-CE-SEMESTER-2"
+msgstr "BTECH-CE-Semestris-2"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_26
 msgid "BTECH-CE-Semester-3"
-msgstr "Btech-ce-semester-3"
+msgstr "BTECH-CE-Semestris-3"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_27
 msgid "BTECH-CE-Semester-4"
-msgstr "BTECH-CE-SEMESTER-4"
+msgstr "BTECH-CE-Semestris-4"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_28
 msgid "BTECH-CE-Semester-5"
-msgstr "BTECH-CE-SEMESTER-5"
+msgstr "BTECH-CE-Semestris-5"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_29
 msgid "BTECH-CE-Semester-6"
-msgstr "Btech-ce-semester-6"
+msgstr "BTECH-CE-Semestris-6"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_30
 msgid "BTECH-CE-Semester-7"
-msgstr "Btech-ce-semester-7"
+msgstr "BTECH-CE-Semestris-7"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_31
 msgid "BTECH-CE-Semester-8"
-msgstr "BTECH-CE-SEMESTER-8"
+msgstr "BTECH-CE-Semestris-8"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_9
 msgid "BTECH-CH-Semester-1"
-msgstr "BTECH-CH-SEMESTER-1"
+msgstr "BTECH-CH-Semester-1"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_36
 msgid "BTECH-CH-Semester-2"
-msgstr "BTECH-CH-SEMESTER-2"
+msgstr "BTECH-CH-Semester-2"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_37
 msgid "BTECH-CH-Semester-3"
-msgstr "BTECH-CH-SEMESTER-3"
+msgstr "BTECH-CH-Semester-3"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_38
 msgid "BTECH-CH-Semester-4"
-msgstr "BTECH-CH-SEMESTER-4"
+msgstr "BTECH-CH-Semester-4"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_39
 msgid "BTECH-CH-Semester-5"
-msgstr "BTECH-CH-SEMESTER-5"
+msgstr "BTECH-CH-Semester-5"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_40
 msgid "BTECH-CH-Semester-6"
-msgstr "BTECH-CH-SEMESTER-6"
+msgstr "BTECH-CH-Semester-6"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_41
 msgid "BTECH-CH-Semester-7"
-msgstr "BTECH-CH-SEMESTER-7"
+msgstr "BTECH-CH-Semester-7"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_42
 msgid "BTECH-CH-Semester-8"
-msgstr "BTECH-CH-SEMESTER-8"
+msgstr "BTECH-CH-Semester-8"
 
 #. module: openeducat_core
 #: model:op.program.level,name:openeducat_core.program_level_2
@@ -823,7 +869,12 @@ msgstr "Aizmugures tēma"
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Backup"
-msgstr "Dublēšana"
+msgstr "Dublējums"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__bonafide_certificate_wizard__certificate_purpose__bank_account
+msgid "Bank Account Opening"
+msgstr "Bankas konta atvēršana"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__bank_ids
@@ -835,12 +886,12 @@ msgstr "Bankas"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__barcode
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__barcode
 msgid "Barcode"
-msgstr "Svītrkode"
+msgstr "Svītrkods"
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_25
 msgid "Bassam"
-msgstr "Bassams"
+msgstr "Bassam"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__batch_id
@@ -873,7 +924,7 @@ msgstr "Bens"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_bigbluebutton
 msgid "Bigbluebutton Enterprise"
-msgstr "BigBluebutton Enterprise"
+msgstr "Bigbluebutton Enterprise"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__birth_date
@@ -898,13 +949,13 @@ msgstr "Melnais saraksts"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__mobile_blacklisted
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__mobile_blacklisted
 msgid "Blacklisted Phone Is Mobile"
-msgstr "Tālrunis melnajā sarakstā ir mobilais"
+msgstr "Melnajā sarakstā iekļautais tālrunis ir mobilais"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__phone_blacklisted
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__phone_blacklisted
 msgid "Blacklisted Phone is Phone"
-msgstr "Tālrunis melnajā sarakstā ir tālrunis"
+msgstr "Melnajā sarakstā iekļautais tālrunis ir tālrunis"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__blood_group
@@ -915,9 +966,21 @@ msgid "Blood Group"
 msgstr "Asins grupa"
 
 #. module: openeducat_core
+#: model:ir.actions.act_window,name:openeducat_core.action_bonafide_certificate_wizard
 #: model:ir.actions.report,name:openeducat_core.action_report_student_bonafide
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_bonafide_certificate_wizard_form
 msgid "Bonafide Certificate"
-msgstr "Bonafīda sertifikāts"
+msgstr "Bonafides sertifikāts"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_report_openeducat_core_report_student_bonafide
+msgid "Bonafide Certificate Report"
+msgstr "Bonafide sertifikāta ziņojums"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_bonafide_certificate_wizard
+msgid "Bonafide Certificate Wizard"
+msgstr "Bonafide sertifikātu vednis"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject__type__both
@@ -928,27 +991,27 @@ msgstr "Abi"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__message_bounce
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__message_bounce
 msgid "Bounce"
-msgstr "Piepeši"
+msgstr "Atlēciens"
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_16
 msgid "Brooks"
-msgstr "Strauts"
+msgstr "Brūks"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_course__evaluation_type__cce
 msgid "CCE"
-msgstr "Īgnums"
+msgstr "CCE"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "CRM"
-msgstr "Crm"
+msgstr "CRM"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_crm_enterprise
 msgid "CRM Enterprise"
-msgstr "CRM Enterprise"
+msgstr "CRM uzņēmums"
 
 #. module: openeducat_core
 #: model:op.program,code:openeducat_core.program_9
@@ -963,22 +1026,22 @@ msgstr "CWA"
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_13
 msgid "CYBER-SECURITY"
-msgstr "Kiberdrošība"
+msgstr "KIBERDROŠĪBA"
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_16
 msgid "Camila"
-msgstr "Camila"
+msgstr "Kamila"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Campus"
-msgstr "Pilsētiņa"
+msgstr "Campus"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_campus_enterprise
 msgid "Campus Enterprise"
-msgstr "Pilsētiņas uzņēmums"
+msgstr "Campus Enterprise"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -986,8 +1049,8 @@ msgid ""
 "Campus helps you to provide the start up data of campus facility in an "
 "institute for students."
 msgstr ""
-"Campus palīdz jums sniegt sākuma datus par universitātes pilsētiņu studentu "
-"institūtā."
+"Campus palīdz nodrošināt studentiem universitātes pilsētiņas objekta sākuma "
+"datus institūtā."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -995,8 +1058,8 @@ msgid ""
 "Campus provides startup data for\n"
 "                                        institute facilities for students."
 msgstr ""
-"Campus nodrošina starta datus par\n"
-"                                        Institūta iespējas studentiem."
+"Campus nodrošina sākuma datus par\n"
+"                                        institūta telpas studentiem."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__can_publish
@@ -1008,13 +1071,14 @@ msgstr "Var publicēt"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.op_faculty_create_employee_view
 #: model_terms:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
 #: model_terms:ir.ui.view,arch_db:openeducat_core.op_student_user_create_view
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_bonafide_certificate_wizard_form
 msgid "Cancel"
 msgstr "Atcelt"
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_18
 msgid "Carter"
-msgstr "Knaibles"
+msgstr "Kārters"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_open_op_category_view
@@ -1037,19 +1101,29 @@ msgid ""
 "                                                        barcode enabled integrated\n"
 "                                                        library management."
 msgstr ""
-"Centralizēts\n"
-"                                                        Svītrkods tika integrēts\n"
-"                                                        bibliotēkas pārvaldība."
+"Centralizēta\n"
+"                                                        integrēts svītrkods\n"
+"                                                        bibliotēkas vadība."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__certificate_number
+msgid "Certificate No."
+msgstr "Sertifikāts Nr."
 
 #. module: openeducat_core
 #: model:op.program,name:openeducat_core.program_9
 msgid "Certificate Program - Cyber Security"
-msgstr "Sertifikātu programma - kiberdrošība"
+msgstr "Sertifikātu programma – kiberdrošība"
 
 #. module: openeducat_core
 #: model:op.program.level,name:openeducat_core.program_level_3
 msgid "Certificate Programs"
 msgstr "Sertifikātu programmas"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_bonafide_certificate_wizard__certificate_purpose
+msgid "Certificate Purpose"
+msgstr "Sertifikāta mērķis"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__channel_ids
@@ -1061,18 +1135,19 @@ msgstr "Kanāli"
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__is_company
 #: model:ir.model.fields,help:openeducat_core.field_op_student__is_company
 msgid "Check if the contact is a company, otherwise it is a person"
-msgstr "Pārbaudiet, vai kontakts ir uzņēmums, pretējā gadījumā tā ir persona"
+msgstr ""
+"Pārbaudiet, vai kontaktpersona ir uzņēmums, pretējā gadījumā tā ir persona"
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__employee
 #: model:ir.model.fields,help:openeducat_core.field_op_student__employee
 msgid "Check this box if this contact is an Employee."
-msgstr "Atzīmējiet šo rūtiņu, ja šis kontakts ir darbinieks."
+msgstr "Atzīmējiet šo izvēles rūtiņu, ja šī kontaktpersona ir darbinieks."
 
 #. module: openeducat_core
 #: model:op.faculty,first_name:openeducat_core.op_faculty_7
 msgid "Cheng"
-msgstr "Čenķis"
+msgstr "Cheng"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_users__child_ids
@@ -1096,13 +1171,13 @@ msgstr "Klase"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_classroom_enterprise
 msgid "Classroom Enterprise"
-msgstr "Klases uzņēmums"
+msgstr "Classroom Enterprise"
 
 #. module: openeducat_core
 #. odoo-javascript
 #: code:addons/openeducat_core/static/src/xml/review.xml:0
 msgid "Close"
-msgstr "Tuvs"
+msgstr "Aizvērt"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__code
@@ -1113,27 +1188,33 @@ msgstr "Tuvs"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject__code
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_category_search
 msgid "Code"
-msgstr "Kodekss"
+msgstr "Kods"
 
 #. module: openeducat_core
 #: model:ir.model.constraint,message:openeducat_core.constraint_op_batch_unique_batch_code
 msgid "Code should be unique per batch!"
-msgstr "Kodam jābūt unikālam katrā partijā!"
+msgstr "Kodam ir jābūt unikālam katrai partijai!"
 
 #. module: openeducat_core
 #: model:ir.model.constraint,message:openeducat_core.constraint_op_category_unique_category_code
 msgid "Code should be unique per category!"
-msgstr "Kodam jābūt unikālam katrā kategorijā!"
+msgstr "Katrai kategorijai kodam ir jābūt unikālam!"
 
 #. module: openeducat_core
 #: model:ir.model.constraint,message:openeducat_core.constraint_op_course_unique_course_code
 msgid "Code should be unique per course!"
-msgstr "Kodam jābūt unikālam katrā kursā!"
+msgstr "Katram kursam kodam ir jābūt unikālam!"
 
 #. module: openeducat_core
 #: model:ir.model.constraint,message:openeducat_core.constraint_op_subject_unique_subject_code
 msgid "Code should be unique per subject!"
-msgstr "Kodam jābūt unikālam katram priekšmetam!"
+msgstr "Katram priekšmetam ir jābūt unikālam kodam!"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
+msgid "Collect and manage student feedback across courses and subjects."
+msgstr ""
+"Apkopojiet un pārvaldiet studentu atsauksmes par kursiem un priekšmetiem."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__color
@@ -1145,7 +1226,7 @@ msgstr "Krāsu indekss"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__commercial_partner_id
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__commercial_partner_id
 msgid "Commercial Entity"
-msgstr "Komerciāla vienība"
+msgstr "Komercsabiedrība"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_res_company
@@ -1160,19 +1241,19 @@ msgstr "Uzņēmumi"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__company_id
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__company_id
 msgid "Company"
-msgstr "Kompānija"
+msgstr "Uzņēmums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__company_registry
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__company_registry
 msgid "Company ID"
-msgstr "Uzņēmuma ID"
+msgstr "Uzņēmuma ID"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__company_registry_label
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__company_registry_label
 msgid "Company ID Label"
-msgstr "ID etiķete"
+msgstr "Uzņēmuma ID etiķete"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__company_name
@@ -1184,13 +1265,13 @@ msgstr "Uzņēmuma nosaukums"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__commercial_company_name
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__commercial_company_name
 msgid "Company Name Entity"
-msgstr "Uzņēmuma nosaukuma entītija"
+msgstr "Uzņēmuma nosaukums Vienība"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__company_type
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__company_type
 msgid "Company Type"
-msgstr "Uzņēmuma tips"
+msgstr "Uzņēmuma veids"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__partner_gid
@@ -1208,12 +1289,12 @@ msgstr "Pilnīga adrese"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__complete_name
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__complete_name
 msgid "Complete Name"
-msgstr "Pilnīgs nosaukums"
+msgstr "Pilns nosaukums"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject__subject_type__compulsory
 msgid "Compulsory"
-msgstr "Obligāts"
+msgstr "Obligāti"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__compulsory_subject_ids
@@ -1237,7 +1318,7 @@ msgid ""
 "Configuration of fees helps you to provide the start up data of fees "
 "according to the courses of an institute."
 msgstr ""
-"Maksu konfigurācija palīdz jums sniegt nodevu sākšanas datus saskaņā ar "
+"Maksas konfigurēšana palīdz nodrošināt maksu sākuma datus atbilstoši "
 "institūta kursiem."
 
 #. module: openeducat_core
@@ -1246,8 +1327,13 @@ msgid ""
 "Configuration of routes in transportation helps you to provide the start up "
 "data of each route."
 msgstr ""
-"Maršrutu konfigurācija transportēšanā palīdz jums sniegt katra maršruta "
-"sākuma datus."
+"Maršrutu konfigurēšana transportā palīdz nodrošināt katra maršruta sākuma "
+"datus."
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
+msgid "Configure For Selecting A Mantor And Mantees."
+msgstr "Konfigurējiet Mantora un Mantiju izvēlei."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -1255,13 +1341,18 @@ msgid ""
 "Configure different\n"
 "                                        scholarship types."
 msgstr ""
-"Konfigurēt atšķirīgu\n"
-"                                        Stipendiju veidi."
+"Konfigurēt savādāk\n"
+"                                        stipendiju veidi."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Configure different scholarship types."
 msgstr "Konfigurējiet dažādus stipendiju veidus."
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
+msgid "Configures Mentor categories."
+msgstr "Konfigurē Mentoru kategorijas."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -1271,26 +1362,26 @@ msgstr "Konfigurē prasmju kategorijas."
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Configures the classroom setup."
-msgstr "Konfigurē klases iestatīšanu."
+msgstr "Konfigurē klases iestatījumus."
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_res_partner
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__child_ids
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__child_ids
 msgid "Contact"
-msgstr "Saskare"
+msgstr "Sazināties"
 
 #. module: openeducat_core
 #. odoo-javascript
 #: code:addons/openeducat_core/static/src/xml/dashboard_ext_openeducat.xml:0
 msgid "Contact Support"
-msgstr "Sazinieties ar atbalstu"
+msgstr "Sazinieties ar atbalsta dienestu"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.kanban_view_faculty
 #: model_terms:ir.ui.view,arch_db:openeducat_core.kanban_view_student
 msgid "Contact image"
-msgstr "Kontakta attēls"
+msgstr "Kontaktpersonas attēls"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.faculty_view_activity
@@ -1299,10 +1390,15 @@ msgid "Contacts"
 msgstr "Kontakti"
 
 #. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_convocation
+msgid "Convocation"
+msgstr "Sasaukšana"
+
+#. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__message_bounce
 #: model:ir.model.fields,help:openeducat_core.field_op_student__message_bounce
 msgid "Counter of the number of bounced emails for this contact"
-msgstr "Pretstate par atlecošo e -pasta ziņojumu skaitu šim kontaktam"
+msgstr "Šīs kontaktpersonas atlēcošo e-pasta ziņojumu skaita skaitītājs"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__country_id
@@ -1310,13 +1406,13 @@ msgstr "Pretstate par atlecošo e -pasta ziņojumu skaitu šim kontaktam"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Country"
-msgstr "Apvidus"
+msgstr "Valsts"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__country_code
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__country_code
 msgid "Country Code"
-msgstr "Lauku kods"
+msgstr "Valsts kods"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__course_id
@@ -1335,25 +1431,25 @@ msgstr "Kurss"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__course_detail_ids
 msgid "Course Details"
-msgstr "Sīkāka informācija par kursu"
+msgstr "Kursa detaļas"
 
 #. module: openeducat_core
 #: model:ir.ui.menu,name:openeducat_core.menu_op_school_config_course
 msgid "Course Management"
-msgstr "Kursa vadība"
+msgstr "Kursu vadība"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_search
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_tree
 msgid "Course Registration"
-msgstr "Kursa reģistrācija"
+msgstr "Kursu reģistrācija"
 
 #. module: openeducat_core
 #. odoo-python
 #: code:addons/openeducat_core/models/subject_registration.py:0
 msgid "Course not found on student's admission!"
-msgstr "Kurss nav atrasts studenta uzņemšanā!"
+msgstr "Studentu uzņemšanā kurss nav atrasts!"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_open_op_course_view
@@ -1364,7 +1460,7 @@ msgstr "Kursi"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_year__create_boolean
 msgid "Create Boolean"
-msgstr "Izveidot Būla"
+msgstr "Izveidot Būla vērtību"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.faculty_create_employee_act
@@ -1380,27 +1476,27 @@ msgstr "Izveidojiet fakultātes darbinieku un lietotāju"
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_academic_year_form
 msgid "Create Terms"
-msgstr "Izveidot terminus"
+msgstr "Izveidot noteikumus"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
 msgid "Create User For Selected Faculty"
-msgstr "Izveidojiet lietotāju atlasītajai fakultātei"
+msgstr "Izveidot lietotāju atlasītajai fakultātei"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.op_student_user_create_view
 msgid "Create User For Selected Students"
-msgstr "Izveidojiet lietotāju atlasītajiem studentiem"
+msgstr "Izveidot lietotāju atlasītajiem studentiem"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_wizard_op_faculty
 msgid "Create User for selected Faculty(s)"
-msgstr "Izveidojiet lietotāju atlasītajai fakultātei (-ām)"
+msgstr "Izveidot lietotāju atlasītajai(-ām) fakultātei(-ēm)"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_wizard_op_student
 msgid "Create User for selected Student(s)"
-msgstr "Izveidojiet lietotāju atlasītajam studentam (-iem)"
+msgstr "Izveidot lietotāju atlasītajam(-iem) studentam(-iem)"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.faculty_user_create_view_act
@@ -1408,9 +1504,10 @@ msgstr "Izveidojiet lietotāju atlasītajam studentam (-iem)"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
 #: model_terms:ir.ui.view,arch_db:openeducat_core.op_student_user_create_view
 msgid "Create Users"
-msgstr "Izveidojiet lietotājus"
+msgstr "Izveidot lietotājus"
 
 #. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_bonafide_certificate_wizard__create_uid
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_term__create_uid
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_year__create_uid
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__create_uid
@@ -1428,9 +1525,10 @@ msgstr "Izveidojiet lietotājus"
 #: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty_employee__create_uid
 #: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_student__create_uid
 msgid "Created by"
-msgstr "Izveidots ar"
+msgstr "Izveidoja"
 
 #. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_bonafide_certificate_wizard__create_date
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_term__create_date
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_year__create_date
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__create_date
@@ -1453,67 +1551,67 @@ msgstr "Izveidots"
 #. module: openeducat_core
 #: model:op.program,code:openeducat_core.program_8
 msgid "DIP-EE"
-msgstr "Iemērkt"
+msgstr "DIP-EE"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_11
 msgid "DIPLOMA-AE-Semester-1"
-msgstr "Diploma -e-semester-1"
+msgstr "DIPLOMS-AE-Semestris-1"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_43
 msgid "DIPLOMA-AE-Semester-2"
-msgstr "Diploma-AE-SEMESTER-2"
+msgstr "DIPLOMS-AE-Semestris-2"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_44
 msgid "DIPLOMA-AE-Semester-3"
-msgstr "Diploma -e-Semester-3"
+msgstr "DIPLOMS-AE-Semestris-3"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_45
 msgid "DIPLOMA-AE-Semester-4"
-msgstr "Diploma -e-Semester-4"
+msgstr "DIPLOMS-AE-Semestris-4"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_46
 msgid "DIPLOMA-AE-Semester-5"
-msgstr "Diploma -e-Semester-5"
+msgstr "DIPLOMS-AE-Semestris-5"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_47
 msgid "DIPLOMA-AE-Semester-6"
-msgstr "Diploma -e-semester-6"
+msgstr "DIPLOMS-AE-Semestris-6"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_12
 msgid "DIPLOMA-EE-Semester-1"
-msgstr "Diploma-EE-SEMESTER-1"
+msgstr "DIPLOMS-EE-Semestris-1"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_48
 msgid "DIPLOMA-EE-Semester-2"
-msgstr "Diploma-EE-SEMESTER-2"
+msgstr "DIPLOMS-EE-Semestris-2"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_49
 msgid "DIPLOMA-EE-Semester-3"
-msgstr "Diploma-EE-SEMESTER-3"
+msgstr "DIPLOMS-EE-Semestris-3"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_50
 msgid "DIPLOMA-EE-Semester-4"
-msgstr "Diploma-EE-SEMESTER-4"
+msgstr "DIPLOMS-EE-Semestris-4"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_51
 msgid "DIPLOMA-EE-Semester-5"
-msgstr "Diploma-EE-SEMESTER-5"
+msgstr "DIPLOMS-EE-Semestris-5"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_52
 msgid "DIPLOMA-EE-Semester-6"
-msgstr "Diploma-EE-SEMESTER-6"
+msgstr "DIPLOMS-EE-Semestris-6"
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_14
@@ -1534,7 +1632,7 @@ msgstr "Informācijas paneļa KPI"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_auto_database_backup_dropbox
 msgid "Database Backup to Dropbox"
-msgstr "Datu bāzes dublēšana Dropbox"
+msgstr "Datu bāzes dublēšana uz Dropbox"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_auto_database_backup_google_drive
@@ -1549,22 +1647,22 @@ msgstr "Datu bāzes dublēšana vietējā serverī"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_auto_database_backup_onedrive
 msgid "Database Backup to Onedrive"
-msgstr "Datu bāzes dublēšana OneDrive"
+msgstr "Datu bāzes dublēšana Onedrive"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_auto_database_backup_ftp
 msgid "Database Backup to Remote FTP Server"
-msgstr "Datu bāzes dublēšana attālinātam FTP serverim"
+msgstr "Datu bāzes dublēšana uz attālo FTP serveri"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_auto_database_backup_sftp
 msgid "Database Backup to Remote SFTP Server"
-msgstr "Datu bāzes dublēšana attālinātam SFTP serverim"
+msgstr "Datu bāzes dublēšana uz attālo SFTP serveri"
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_12
 msgid "David"
-msgstr "Dāvids"
+msgstr "Deivids"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -1573,9 +1671,9 @@ msgid ""
 "                                                            knowledge through well-designed blogs\n"
 "                                                            created by students or faculty."
 msgstr ""
-"Nodrošināt un dalīties\n"
+"Piegādāt un dalīties\n"
 "                                                            zināšanas, izmantojot labi izstrādātus emuārus\n"
-"                                                            Izveidojuši studenti vai mācībspēki."
+"                                                            ko radījuši studenti vai mācībspēki."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_course__department_id
@@ -1587,7 +1685,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_department_tree
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_program_search
 msgid "Department"
-msgstr "Nodaļa"
+msgstr "nodaļa"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_users__dept_id
@@ -1597,12 +1695,12 @@ msgstr "Nodaļas nosaukums"
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_open_op_department_view
 msgid "Departments"
-msgstr "Departamenti"
+msgstr "Nodaļas"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_inherit_user_form_openeducat_core
 msgid "Departments count"
-msgstr "Departamentu skaits"
+msgstr "Nodaļas skaitās"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_digital_library
@@ -1617,24 +1715,25 @@ msgstr "Diploms"
 #. module: openeducat_core
 #: model:op.program,name:openeducat_core.program_7
 msgid "Diploma - Agricultural Engineering"
-msgstr "Diploms - lauksaimniecības inženierija"
+msgstr "Diploms - lauksaimniecības inženieris"
 
 #. module: openeducat_core
 #: model:op.program,name:openeducat_core.program_8
 msgid "Diploma - Electrical Engineering"
-msgstr "Diploms - elektrotehnika"
+msgstr "Diploms - elektroinženieris"
 
 #. module: openeducat_core
 #: model:op.program,code:openeducat_core.program_7
 msgid "Diploma-AE"
-msgstr "Diploms"
+msgstr "Diploms-AE"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_discipline
 msgid "Discipline Enterprise"
-msgstr "Disciplīnas uzņēmums"
+msgstr "Uzņēmuma disciplīna"
 
 #. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_bonafide_certificate_wizard__display_name
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_term__display_name
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_year__display_name
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__display_name
@@ -1652,12 +1751,12 @@ msgstr "Disciplīnas uzņēmums"
 #: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty_employee__display_name
 #: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_student__display_name
 msgid "Display Name"
-msgstr "Displeja nosaukums"
+msgstr "Parādāmais nosaukums"
 
 #. module: openeducat_core
 #: model:op.program.level,name:openeducat_core.program_level_5
 msgid "Doctoral Programs"
-msgstr "Doktora programmas"
+msgstr "Doktorantūras programmas"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -1671,17 +1770,17 @@ msgid ""
 "                                                        students attendace xlsx report"
 msgstr ""
 "Lejupielādēt\n"
-"                                                        Studenti apmeklē XLSX ziņojumu"
+"                                                        studentu apmeklējuma xlsx atskaite"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject_registration__state__draft
 msgid "Draft"
-msgstr "Uzmetums"
+msgstr "Melnraksts"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_dynamic_admission
 msgid "Dynamic Admission"
-msgstr "Dinamiska uzņemšana"
+msgstr "Dinamiskā uzņemšana"
 
 #. module: openeducat_core
 #: model:ir.module.category,name:openeducat_core.module_category_all_openeducat
@@ -1691,7 +1790,7 @@ msgstr "Izglītība"
 #. module: openeducat_core
 #: model:ir.module.category,name:openeducat_core.module_category_all_other_education
 msgid "Education Other"
-msgstr "Izglītība cita"
+msgstr "Izglītība Cits"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -1699,19 +1798,21 @@ msgid ""
 "Efficiently allocate subject materials\n"
 "                                        with our streamlined system."
 msgstr ""
-"Efektīvi sadalīt priekšmetu materiālus\n"
+"Efektīvi sadalīt mācību priekšmetu materiālus\n"
 "                                        ar mūsu racionalizēto sistēmu."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid ""
-"Efficiently manage and\n"
-"                                                        expedite the assignment grading process with\n"
-"                                                        our platform."
+"Efficiently manage and extends the\n"
+"                                                        assignment evaluation process by allowing faculty to assign\n"
+"                                                        letter grades to student submissions, in addition to or\n"
+"                                                        instead of numeric marks."
 msgstr ""
-"Efektīvi pārvaldīt un\n"
-"                                                        paātrināt uzdevuma vērtēšanas procesu ar\n"
-"                                                        mūsu platforma."
+"Efektīvi pārvaldīt un paplašināt\n"
+"                                                        uzdevumu novērtēšanas process, ļaujot mācībspēkiem piešķirt uzdevumu\n"
+"                                                        vēstules atzīmes skolēnu iesniegtajiem, papildus vai\n"
+"                                                        ciparu zīmju vietā."
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__partner_share
@@ -1723,12 +1824,12 @@ msgid ""
 msgstr ""
 "Vai nu klients (nevis lietotājs), vai nu koplietots lietotājs. Norādīts, ka "
 "pašreizējais partneris ir klients bez piekļuves vai ar ierobežotu piekļuvi, "
-"kas izveidota datu apmaiņai."
+"kas izveidots datu koplietošanai."
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject__subject_type__elective
 msgid "Elective"
-msgstr "Vēlēšanu"
+msgstr "Izvēles"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__elective_subject_ids
@@ -1740,7 +1841,7 @@ msgstr "Izvēles priekšmeti"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__email
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__email
 msgid "Email"
-msgstr "E -pasts"
+msgstr "E-pasts"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__emergency_contact
@@ -1770,7 +1871,12 @@ msgstr "Darbinieki"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__employees_count
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__employees_count
 msgid "Employees Count"
-msgstr "Darbinieki skaitās"
+msgstr "Darbinieku skaits"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
+msgid "Enable and configure student feedback functionality."
+msgstr "Iespējot un konfigurēt skolēnu atsauksmju funkcionalitāti."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -1778,8 +1884,8 @@ msgid ""
 "Enables OMR exam sheet scanning and\n"
 "                                        evaluation via mobile."
 msgstr ""
-"Iespējo OMR eksāmenu lapu skenēšanu un\n"
-"                                        Novērtējums, izmantojot mobilo."
+"Iespējo OMR izmeklējuma lapu skenēšanu un\n"
+"                                        novērtējums, izmantojot mobilo tālruni."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -1787,8 +1893,8 @@ msgid ""
 "Enables configuration of assignment\n"
 "                                        types for streamlined academic administration."
 msgstr ""
-"Iespējo piešķiršanas konfigurāciju\n"
-"                                        Racionalizētas akadēmiskās administrācijas veidi."
+"Iespējo uzdevuma konfigurēšanu\n"
+"                                        veidi racionalizētai akadēmiskajai administrācijai."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -1796,13 +1902,31 @@ msgid ""
 "Enables configuration of exam details,\n"
 "                                        including types, rooms and other details."
 msgstr ""
-"Iespējo eksāmena detaļas konfigurēšana,\n"
+"Ļauj konfigurēt eksāmenu informāciju,\n"
 "                                        ieskaitot veidus, telpas un citas detaļas."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Enables online appointment booking."
 msgstr "Iespējo tiešsaistes tikšanās rezervāciju."
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
+msgid ""
+"Enables the Student Migration and\n"
+"                                                            Exam bridge to migrate only the eligible students."
+msgstr ""
+"Iespējo studentu migrāciju un\n"
+"                                                            Eksāmenu tilts, lai migrētu tikai piemērotos studentus."
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
+msgid ""
+"Enables the Student Migration and\n"
+"                                                        Gradebook bridge to migrate only the eligible students."
+msgstr ""
+"Iespējo studentu migrāciju un\n"
+"                                                        Gradebook Bridge, lai migrētu tikai piemērotos skolēnus."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -1834,9 +1958,9 @@ msgid ""
 "                                                    by sharing views, asking questions, and\n"
 "                                                    contributing to projects."
 msgstr ""
-"Iesaistīties klases diskusijās\n"
-"                                                    daloties ar viedokļiem, uzdodot jautājumus un\n"
-"                                                    ieguldījums projektos."
+"Iesaistieties klases diskusijās\n"
+"                                                    daloties viedokļos, uzdodot jautājumus un\n"
+"                                                    dot ieguldījumu projektos."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -1845,8 +1969,8 @@ msgid ""
 "                                                    parents regarding their child's academic\n"
 "                                                    activities and achievements."
 msgstr ""
-"Uzlabot caurspīdīgumu\n"
-"                                                    Vecāki par sava bērna akadēmisko\n"
+"Uzlabojiet caurspīdīgumu\n"
+"                                                    vecākiem par sava bērna akadēmisko izglītību\n"
 "                                                    aktivitātes un sasniegumi."
 
 #. module: openeducat_core
@@ -1864,7 +1988,7 @@ msgstr "Novērtēšanas veids"
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Event"
-msgstr "Notikums"
+msgstr "Pasākums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_event_enterprise
@@ -1880,17 +2004,17 @@ msgstr "Eksāmens"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_exam_enterprise
 msgid "Exam Enterprise"
-msgstr "Eksāmenu uzņēmums"
+msgstr "Eksāmens uzņēmums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_exam_gpa_enterprise
 msgid "Exam GPA Enterprise"
-msgstr "Eksāmena GPA uzņēmums"
+msgstr "Eksāmens GPA Enterprise"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_exam_grading_bridge
 msgid "Exam Grading Bridge"
-msgstr "Eksāmenu šķirošanas tilts"
+msgstr "Eksāmenu vērtēšanas tilts"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -1898,18 +2022,18 @@ msgid ""
 "Facilitates parent-teacher meetings\n"
 "                                        regarding student performance."
 msgstr ""
-"Veicina vecāku un skolotāju sanāksmes\n"
-"                                        attiecībā uz studentu sniegumu."
+"Atvieglo vecāku un skolotāju tikšanās\n"
+"                                        par studentu sniegumu."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_facility
 msgid "Facility"
-msgstr "Labība"
+msgstr "Iekārta"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_facility_enterprise
 msgid "Facility Enterprise"
-msgstr "Objekta uzņēmums"
+msgstr "Iekārtas uzņēmums"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_open_op_faculty_view
@@ -1927,8 +2051,8 @@ msgid ""
 "                                                    live sessions."
 msgstr ""
 "Fakultātes var izveidot, rediģēt,\n"
-"                                                    un piešķirt komandu vai individuālus uzdevumus laikā\n"
-"                                                    dzīvas sesijas."
+"                                                    un piešķirt komandas vai individuālus uzdevumus laikā\n"
+"                                                    tiešraides sesijas."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
@@ -1944,14 +2068,14 @@ msgid ""
 "Fee configuration sets up data based on\n"
 "                                        the institute's courses."
 msgstr ""
-"Makses konfigurācija izveido datus, pamatojoties uz\n"
+"Maksas konfigurācija iestata datus, pamatojoties uz\n"
 "                                        institūta kursi."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_fees
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Fees"
-msgstr "Nodevas"
+msgstr "Maksas"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -1961,23 +2085,23 @@ msgstr "Maksa par piekļuvi vecākiem"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_fees_parent_bridge
 msgid "Fees Parent Bridge"
-msgstr "Maksa vecāku tilts"
+msgstr "Maksas Vecāku tilts"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_fees_plan
 msgid "Fees Plan"
-msgstr "Nodevu plāns"
+msgstr "Maksas plāns"
 
 #. module: openeducat_core
 #: model:op.program.level,name:openeducat_core.program_level_6
 msgid "Fellowship Programs"
-msgstr "Sadraudzības programmas"
+msgstr "Stipendiju programmas"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_faculty__gender__female
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__gender__f
 msgid "Female"
-msgstr "Mātīte"
+msgstr "Sieviete"
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__phone_sanitized
@@ -1986,13 +2110,13 @@ msgid ""
 "Field used to store sanitized phone number. Helps speeding up searches and "
 "comparisons."
 msgstr ""
-"Lauks, ko izmanto, lai saglabātu sanitāro tālruņa numuru. Palīdz paātrināt "
-"meklēšanu un salīdzinājumus."
+"Lauks, ko izmanto, lai saglabātu dezinficētu tālruņa numuru. Palīdz "
+"paātrināt meklēšanu un salīdzināšanu."
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_academic_year__term_structure__final_year
 msgid "Final Year Grades subdivided by Quarters"
-msgstr "Pēdējā gada pakāpes, ko sadala ceturtdaļas"
+msgstr "Pēdējā gada atzīmes, kas sadalītas pa ceturkšņiem"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_student_course__state__finished
@@ -2037,24 +2161,24 @@ msgstr "Sekotāji (partneri)"
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__activity_type_icon
 #: model:ir.model.fields,help:openeducat_core.field_op_student__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr "Fonta satriecoša ikona, piem. FA uzdevumi"
+msgstr "Fonts awesome ikona piem. fa-uzdevumi"
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__email_formatted
 #: model:ir.model.fields,help:openeducat_core.field_op_student__email_formatted
 msgid "Format email address \"Name <email@domain>\""
-msgstr "Formate e -pasta adrese \"Vārds <e -pasts@domain>\""
+msgstr "Formatējiet e-pasta adresi \"Vārds <e-pasts@domēns>\""
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__email_formatted
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__email_formatted
 msgid "Formatted Email"
-msgstr "Formatēts e -pasts"
+msgstr "Formatēts e-pasts"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_academic_year__term_structure__four_quarter
 msgid "Four Quarters"
-msgstr "Četras ceturtdaļas"
+msgstr "Četri ceturtdaļas"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_course__evaluation_type__gpa
@@ -2076,29 +2200,29 @@ msgstr "Dzimums"
 #: model:ir.ui.menu,name:openeducat_core.menu_op_general_main
 #: model:ir.ui.menu,name:openeducat_core.menu_op_general_student
 msgid "General"
-msgstr "Ģenerāldirektors"
+msgstr "Ģenerālis"
 
 #. module: openeducat_core
 #: model:ir.ui.menu,name:openeducat_core.menu_op_school_config_general
 msgid "General Management"
-msgstr "Vispārēja vadība"
+msgstr "Vispārējā vadība"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__res_config_settings__attendance_subject_generic__generic
 msgid "Generic"
-msgstr "Sugas"
+msgstr "Vispārējs"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__partner_latitude
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__partner_latitude
 msgid "Geo Latitude"
-msgstr "Ģeogrāfiskā platums"
+msgstr "Geo Latitude"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__partner_longitude
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__partner_longitude
 msgid "Geo Longitude"
-msgstr "Ģeo garums"
+msgstr "Ģeogrāfiskais garums"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
@@ -2113,7 +2237,7 @@ msgstr "Globālās programmas"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_googlemeet
 msgid "Google Meet"
-msgstr "Google Meet"
+msgstr "Google Meet"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2121,14 +2245,14 @@ msgid ""
 "Google Meet enables you to organize\n"
 "                                        online classrooms and live meetings."
 msgstr ""
-"Google Meet ļauj jums organizēt\n"
-"                                        Tiešsaistes klases un tiešraides."
+"Google Meet ļauj jums organizēt\n"
+"                                        tiešsaistes klases un tiešraides sapulces."
 
 #. module: openeducat_core
 #: model:op.faculty,first_name:openeducat_core.op_faculty_11
 #: model:op.faculty,first_name:openeducat_core.op_faculty_15
 msgid "Grace"
-msgstr "Žēlastība"
+msgstr "Grace"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject__grade_weightage
@@ -2139,7 +2263,12 @@ msgstr "Pakāpes svars"
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_grading
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Grading"
-msgstr "Šķirošana"
+msgstr "Novērtēšana"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
+msgid "Grading Admission Bridge"
+msgstr "Novērtēšanas uzņemšanas tilts"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_grievance_enterprise
@@ -2157,7 +2286,7 @@ msgstr "Sūdzība"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_subject_search
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_search
 msgid "Group By..."
-msgstr "Grupa ..."
+msgstr "Grupēt pēc..."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__emp_id
@@ -2175,7 +2304,7 @@ msgstr "HR darbinieks"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject__has_message
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__has_message
 msgid "Has Message"
-msgstr "Ir ziņojums"
+msgstr "Ir ziņa"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_health_enterprise
@@ -2188,8 +2317,8 @@ msgid ""
 "Helps you create online courses,\n"
 "                                            sections, and course materials."
 msgstr ""
-"Palīdz jums izveidot tiešsaistes kursus,\n"
-"                                            sekcijas un kursa materiāli."
+"Palīdz izveidot tiešsaistes kursus,\n"
+"                                            sadaļas un kursa materiāli."
 
 #. module: openeducat_core
 #: model:ir.module.category,description:openeducat_core.module_category_all_openeducat
@@ -2197,7 +2326,7 @@ msgstr ""
 #: model:ir.module.category,description:openeducat_core.module_category_openeducat
 #: model:ir.module.category,description:openeducat_core.module_category_openeducat_others
 msgid "Helps you manage your institutes different-different users."
-msgstr "Palīdz pārvaldīt savus institūtus dažādus diferencētus lietotājus."
+msgstr "Palīdz pārvaldīt savus institūtus dažādus lietotājus."
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_15
@@ -2207,18 +2336,10 @@ msgstr "Henrijs"
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_23
 msgid "Hill"
-msgstr "Kalna"
+msgstr "Kalns"
 
 #. module: openeducat_core
-#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid ""
-"His / Her birthday as recorded in the General Register of the school /\n"
-"                                            college is"
-msgstr ""
-"Viņa / viņas dzimšanas diena, kā ierakstīts skolas vispārējā reģistrā /\n"
-"                                            koledža ir"
-
-#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_bonafide_certificate_wizard__id
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_term__id
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_year__id
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__id
@@ -2236,7 +2357,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty_employee__id
 #: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_student__id
 msgid "ID"
-msgstr "Personas apliecība"
+msgstr "ID"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__id_number
@@ -2247,47 +2368,47 @@ msgstr "ID kartes numurs"
 #. module: openeducat_core
 #: model:op.program,code:openeducat_core.program_10
 msgid "IE-CSE-M"
-msgstr "Ti-cse-m"
+msgstr "IE-CSE-M"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_14
 msgid "IE-CSE-MICROSOFT-Semester-1"
-msgstr "IE-cse-Microsoft-Semester-1"
+msgstr "IE-CSE-MICROSOFT-Semester-1"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_53
 msgid "IE-CSE-MICROSOFT-Semester-2"
-msgstr "IE-cse-Microsoft-Semester-2"
+msgstr "IE-CSE-MICROSOFT-Semester-2"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_54
 msgid "IE-CSE-MICROSOFT-Semester-3"
-msgstr "Ti-cse-Microsoft-Semester-3"
+msgstr "IE-CSE-MICROSOFT-Semester-3"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_55
 msgid "IE-CSE-MICROSOFT-Semester-4"
-msgstr "IE-cse-Microsoft-Semester-4"
+msgstr "IE-CSE-MICROSOFT-Semester-4"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_56
 msgid "IE-CSE-MICROSOFT-Semester-5"
-msgstr "IE-cse-Microsoft-Semester-5"
+msgstr "IE-CSE-MICROSOFT-Semester-5"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_57
 msgid "IE-CSE-MICROSOFT-Semester-6"
-msgstr "IE-CSE-MICROSOFT-SEMESTER-6"
+msgstr "IE-CSE-MICROSOFT-Semester-6"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_58
 msgid "IE-CSE-MICROSOFT-Semester-7"
-msgstr "Ti-cse-microsoft-semester-7"
+msgstr "IE-CSE-MICROSOFT-Semester-7"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_59
 msgid "IE-CSE-MICROSOFT-Semester-8"
-msgstr "IE-CSE-MICROSOFT-SEMESTER-8"
+msgstr "IE-CSE-MICROSOFT-Semester-8"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__im_status
@@ -2305,7 +2426,7 @@ msgstr "Ikona"
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__activity_exception_icon
 #: model:ir.model.fields,help:openeducat_core.field_op_student__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr "Ikona, lai norādītu uz izņēmuma aktivitāti."
+msgstr "Ikona, kas norāda izņēmuma darbību."
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_batch__message_needaction
@@ -2318,7 +2439,7 @@ msgstr "Ikona, lai norādītu uz izņēmuma aktivitāti."
 #: model:ir.model.fields,help:openeducat_core.field_op_subject__message_needaction
 #: model:ir.model.fields,help:openeducat_core.field_op_subject_registration__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr "Pārbaudot, jauniem ziņojumiem ir nepieciešama jūsu uzmanība."
+msgstr "Ja atzīmēta, jums jāpievērš uzmanība jauniem ziņojumiem."
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_batch__message_has_error
@@ -2340,7 +2461,7 @@ msgstr "Pārbaudot, jauniem ziņojumiem ir nepieciešama jūsu uzmanība."
 #: model:ir.model.fields,help:openeducat_core.field_op_subject_registration__message_has_error
 #: model:ir.model.fields,help:openeducat_core.field_op_subject_registration__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr "Pārbaudot, dažiem ziņojumiem ir piegādes kļūda."
+msgstr "Ja atzīmēta, dažos ziņojumos ir piegādes kļūda."
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__is_blacklisted
@@ -2349,8 +2470,8 @@ msgid ""
 "If the email address is on the blacklist, the contact won't receive mass "
 "mailing anymore, from any list"
 msgstr ""
-"Ja e -pasta adrese atrodas melnajā sarakstā, kontaktpersona vairs nesaņems "
-"masu sūtījumus, no jebkura saraksta"
+"Ja e-pasta adrese ir melnajā sarakstā, kontaktpersona vairs nesaņems "
+"masveida sūtījumus no neviena saraksta"
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__phone_sanitized_blacklisted
@@ -2359,8 +2480,8 @@ msgid ""
 "If the sanitized phone number is on the blacklist, the contact won't receive"
 " mass mailing sms anymore, from any list"
 msgstr ""
-"Ja sanitizētais tālruņa numurs atrodas melnajā sarakstā, kontaktpersona "
-"vairs nesaņems masveida sūtīšanas SMS, no jebkura saraksta"
+"Ja notīrītais tālruņa numurs ir melnajā sarakstā, kontaktpersona vairs "
+"nesaņems masveida pasta sms no neviena saraksta."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__image_1920
@@ -2373,25 +2494,25 @@ msgstr "Attēls"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__image_1024
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__image_1024
 msgid "Image 1024"
-msgstr "Attēls 1024"
+msgstr "1024. attēls"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__image_128
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__image_128
 msgid "Image 128"
-msgstr "Attēls 128"
+msgstr "128. attēls"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__image_256
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__image_256
 msgid "Image 256"
-msgstr "Attēls 256"
+msgstr "256. attēls"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__image_512
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__image_512
 msgid "Image 512"
-msgstr "Attēls 512"
+msgstr "512. attēls"
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_13
@@ -2402,7 +2523,7 @@ msgstr "Imani"
 #. odoo-python
 #: code:addons/openeducat_core/models/batch.py:0
 msgid "Import Template for Batch"
-msgstr "Importēt partiju veidni"
+msgstr "Importēt partijas veidni"
 
 #. module: openeducat_core
 #. odoo-python
@@ -2414,13 +2535,13 @@ msgstr "Importēt veidni kursiem"
 #. odoo-python
 #: code:addons/openeducat_core/models/faculty.py:0
 msgid "Import Template for Faculties"
-msgstr "Importēt veidni fakultātēm"
+msgstr "Importēt fakultāšu veidni"
 
 #. module: openeducat_core
 #. odoo-python
 #: code:addons/openeducat_core/models/student.py:0
 msgid "Import Template for Student Course Details"
-msgstr "Importēt veidni studentu kursa datiem"
+msgstr "Importējiet veidni studentu kursa informācijai"
 
 #. module: openeducat_core
 #. odoo-python
@@ -2432,7 +2553,7 @@ msgstr "Importēt veidni studentiem"
 #. odoo-python
 #: code:addons/openeducat_core/models/subject.py:0
 msgid "Import Template for Subjects"
-msgstr "Importēt subjektiem"
+msgstr "Importēt priekšmetu veidni"
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__mobile_blacklisted
@@ -2443,8 +2564,8 @@ msgid ""
 "mobile and phone field in a model."
 msgstr ""
 "Norāda, vai melnajā sarakstā iekļautais sanitārais tālruņa numurs ir mobilā "
-"tālruņa numurs. Palīdz atšķirt, kurš skaitlis tiek iekļauts melnajā "
-"sarakstā, ja modelī ir gan mobilais, gan tālruņa lauks."
+"tālruņa numurs. Palīdz atšķirt, kurš numurs ir iekļauts melnajā sarakstā, ja"
+" modelī ir gan mobilā tālruņa, gan tālruņa lauks."
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__phone_blacklisted
@@ -2455,8 +2576,8 @@ msgid ""
 "mobile and phone field in a model."
 msgstr ""
 "Norāda, vai melnajā sarakstā iekļautais sanitārais tālruņa numurs ir tālruņa"
-" numurs. Palīdz atšķirt, kurš skaitlis tiek iekļauts melnajā sarakstā, ja "
-"modelī ir gan mobilais, gan tālruņa lauks."
+" numurs. Palīdz atšķirt, kurš numurs ir iekļauts melnajā sarakstā, ja modelī"
+" ir gan mobilā tālruņa, gan tālruņa lauks."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__industry_id
@@ -2467,7 +2588,7 @@ msgstr "Rūpniecība"
 #. module: openeducat_core
 #: model:op.program,name:openeducat_core.program_10
 msgid "Industry Embedded - B.Tech CSE with Microsoft"
-msgstr "Iegultas nozare - B.Tech CSE ar Microsoft"
+msgstr "Nozares iegultais — B.Tech CSE ar Microsoft"
 
 #. module: openeducat_core
 #: model:op.program.level,name:openeducat_core.program_level_8
@@ -2478,12 +2599,17 @@ msgstr "Nozares iegultās programmas"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__contact_address_inline
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__contact_address_inline
 msgid "Inlined Complete Address"
-msgstr "Ievietota pilnīga adrese"
+msgstr "Iekļautā pilnīga adrese"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_company_form_openeducat_core
 msgid "Institute Detail"
-msgstr "Institūta detaļa"
+msgstr "Institūta informācija"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__bonafide_certificate_wizard__certificate_purpose__internship
+msgid "Internship"
+msgstr "Prakse"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_is_follower
@@ -2502,19 +2628,19 @@ msgstr "Ir sekotājs"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__is_public
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__is_public
 msgid "Is Public"
-msgstr "Ir publisks"
+msgstr "Ir Publisks"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__is_published
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__is_published
 msgid "Is Published"
-msgstr "Tiek publicēts"
+msgstr "Ir publicēts"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__is_company
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__is_company
 msgid "Is a Company"
-msgstr "Ir uzņēmums"
+msgstr "Ir Uzņēmums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__is_parent
@@ -2522,7 +2648,7 @@ msgstr "Ir uzņēmums"
 #: model:ir.model.fields,field_description:openeducat_core.field_res_partner__is_parent
 #: model:ir.model.fields,field_description:openeducat_core.field_res_users__is_parent
 msgid "Is a Parent"
-msgstr "Ir vecāks"
+msgstr "Ir Vecāks"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__is_student
@@ -2530,7 +2656,7 @@ msgstr "Ir vecāks"
 #: model:ir.model.fields,field_description:openeducat_core.field_res_partner__is_student
 #: model:ir.model.fields,field_description:openeducat_core.field_res_users__is_student
 msgid "Is a Student"
-msgstr "Ir students"
+msgstr "Ir Students"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2538,18 +2664,18 @@ msgid ""
 "It allows you to store the\n"
 "                                        details of the Parents."
 msgstr ""
-"Tas ļauj jums uzglabāt\n"
-"                                        Sīkāka informācija par vecākiem."
+"Tas ļauj uzglabāt\n"
+"                                        informācija par vecākiem."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "It allows you to store the details of alumni students."
-msgstr "Tas ļauj jums saglabāt absolventu studentu informāciju."
+msgstr "Tas ļauj saglabāt informāciju par absolventu studentiem."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "It allows you to store the details of the Parents."
-msgstr "Tas ļauj jums saglabāt vecāku detaļas."
+msgstr "Tas ļauj saglabāt informāciju par vecākiem."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2557,8 +2683,8 @@ msgid ""
 "It allows you to store the details of the Placement Team, their team leader "
 "and their team members."
 msgstr ""
-"Tas ļauj jums uzglabāt sīkāku informāciju par prakses komandu, viņu komandas"
-" vadītāju un komandas locekļiem."
+"Tas ļauj saglabāt informāciju par izvietojuma komandu, tās vadītāju un "
+"komandas locekļiem."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2566,8 +2692,8 @@ msgid ""
 "It enables students to\n"
 "                                                        sign in via kiosk mode and barcode scanner."
 msgstr ""
-"Tas ļauj studentiem to\n"
-"                                                        Pierakstieties, izmantojot kioska režīmu un svītrkodu skeneri."
+"Tas ļauj studentiem\n"
+"                                                        pierakstieties, izmantojot kioska režīmu un svītrkoda skeneri."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2584,8 +2710,8 @@ msgid ""
 "It facilitates the applicant admission\n"
 "                                        process."
 msgstr ""
-"Tas atvieglo pieteikuma iesniedzēja uzņemšanu\n"
-"                                        process"
+"Tas atvieglo pretendenta uzņemšanu\n"
+"                                        process."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2600,8 +2726,7 @@ msgstr "Runa ir par OMR eksāmenu lapu pārbaudi, izmantojot mobilo tālruni."
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "It is about parent teacher meeting related to student performance."
-msgstr ""
-"Tas ir par vecāku skolotāju sapulci, kas saistīta ar studentu sniegumu."
+msgstr "Runa ir par vecāku skolotāju sapulci saistībā ar skolēnu sniegumu."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2610,12 +2735,12 @@ msgid ""
 "timing details."
 msgstr ""
 "Tā ir pilnībā integrēta lietojumprogramma, kas nodrošina iespēju pārvaldīt "
-"laika grafiku."
+"laika datus."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "It is used To configure the job type"
-msgstr "To izmanto darba veida konfigurēšanai"
+msgstr "To izmanto, lai konfigurētu darba veidu"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2625,12 +2750,12 @@ msgstr "To izmanto, lai konfigurētu prasmju kategoriju."
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "It is used for admission procedure for the applicant."
-msgstr "To izmanto pieteikuma iesniedzēja uzņemšanas procedūrai."
+msgstr "To izmanto pretendenta uzņemšanas procedūrā."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "It is used to configure the class room."
-msgstr "To izmanto klases telpas konfigurēšanai."
+msgstr "To izmanto, lai konfigurētu klases telpu."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2639,9 +2764,9 @@ msgid ""
 "                                        feature, creating registers for specific batches and courses\n"
 "                                        to track attendance."
 msgstr ""
-"Tas piedāvā apmeklējumu vadību\n"
-"                                        funkcija, izveidojot reģistrus īpašām partijām un kursiem\n"
-"                                        izsekot apmeklējumam."
+"Tā piedāvā apmeklētības vadību\n"
+"                                        funkcija, izveidojot reģistrus konkrētām partijām un kursiem\n"
+"                                        lai izsekotu apmeklētībai."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2650,7 +2775,7 @@ msgid ""
 "                                                    placement facility for student."
 msgstr ""
 "Tas nodrošina\n"
-"                                                    Izvietošanas iekārta studentam."
+"                                                    prakses iespējas studentiem."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2660,7 +2785,7 @@ msgid ""
 " course"
 msgstr ""
 "Tas nodrošina institūta apmeklējumu uzturēšanas iespēju. Lai uzturētu "
-"apmeklējumu, konkrētai partijai un kursam tiek izveidots apmeklējumu "
+"apmeklētību, konkrētai partijai un kursam tiek izveidots apmeklējumu "
 "reģistrs"
 
 #. module: openeducat_core
@@ -2670,7 +2795,7 @@ msgid ""
 "                                        configure library management"
 msgstr ""
 "Tas nodrošina iespēju\n"
-"                                        Konfigurējiet bibliotēkas pārvaldību"
+"                                        konfigurēt bibliotēkas pārvaldību"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2678,8 +2803,8 @@ msgid ""
 "It provides the facility to configure exam related details like Exam types "
 "and Exam Rooms."
 msgstr ""
-"Tas nodrošina iespēju konfigurēt ar eksāmeniem saistītu informāciju, "
-"piemēram, eksāmenu veidus un eksāmenu telpas."
+"Tas nodrošina iespēju konfigurēt ar eksāmenu saistītu informāciju, piemēram,"
+" eksāmenu veidus un eksāmenu telpas."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2694,7 +2819,7 @@ msgstr "Tas nodrošina iespēju konfigurēt piešķiršanas veidu."
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "It specifies achievement of student."
-msgstr "Tas norāda studenta sasniegšanu."
+msgstr "Tas norāda studenta sasniegumus."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2702,13 +2827,13 @@ msgid ""
 "It specifies health of the\n"
 "                                        student."
 msgstr ""
-"Tas norāda veselību\n"
+"Tas norāda uz veselību\n"
 "                                        students."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "It specifies health of the student."
-msgstr "Tas norāda studenta veselību."
+msgstr "Tas norāda uz studenta veselību."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2716,8 +2841,8 @@ msgid ""
 "It specifies lesson planing\n"
 "                                                            for the upcoming session."
 msgstr ""
-"Tas norāda stundu plānošanu\n"
-"                                                            Par gaidāmo sesiju."
+"Tas nosaka stundu plānošanu\n"
+"                                                            gaidāmajai sesijai."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2725,13 +2850,13 @@ msgid ""
 "It specifies overall\n"
 "                                        discipline of student."
 msgstr ""
-"Tas norāda kopumā\n"
-"                                        Studenta disciplīna."
+"Tas kopumā nosaka\n"
+"                                        studenta disciplīna."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "It specifies overall discipline of student."
-msgstr "Tas norāda vispārējo studentu disciplīnu."
+msgstr "Tas nosaka studenta vispārējo disciplīnu."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2739,8 +2864,8 @@ msgid ""
 "It stores Placement Team details,\n"
 "                                        including the leader and members."
 msgstr ""
-"Tajā tiek glabāta prakses komandas informācija,\n"
-"                                        ieskaitot vadītāju un locekļus."
+"Tajā tiek saglabāta informācija par izvietojumu komandu,\n"
+"                                        ieskaitot vadītāju un biedrus."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2748,8 +2873,8 @@ msgid ""
 "It will generate Secure QR\n"
 "                                        Code."
 msgstr ""
-"Tas radīs drošu QR\n"
-"                                        Kodekss."
+"Tas ģenerēs drošu QR\n"
+"                                        Kods."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2759,12 +2884,12 @@ msgstr "Tas ģenerēs drošu QR kodu."
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Its Specify lesson planing for the upcoming session."
-msgstr "Tās norādīts gaidāmās sesijas stundu plānošana."
+msgstr "Tās Norādiet stundu plānošanu gaidāmajai sesijai."
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_2
 msgid "James"
-msgstr "Džeimsa"
+msgstr "Džeimss"
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_13
@@ -2790,7 +2915,7 @@ msgstr "Darba uzņēmums"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__function
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__function
 msgid "Job Position"
-msgstr "Darba pozīcija"
+msgstr "Darba amats"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2798,13 +2923,13 @@ msgid ""
 "Job type configuration in Placement\n"
 "                                        Management allows users to create jobs."
 msgstr ""
-"Darba veida konfigurācija izvietojumā\n"
-"                                        Pārvaldība ļauj lietotājiem radīt darbu."
+"Darba veida konfigurācija sadaļā Izvietojums\n"
+"                                        Pārvaldība ļauj lietotājiem izveidot darba vietas."
 
 #. module: openeducat_core
 #: model:op.faculty,first_name:openeducat_core.op_faculty_2
 msgid "John"
-msgstr "Jāņja"
+msgstr "Džons"
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_17
@@ -2819,7 +2944,7 @@ msgstr "Džons"
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_24
 msgid "Jun"
-msgstr "Juceklis"
+msgstr "jūnijs"
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_5
@@ -2829,12 +2954,12 @@ msgstr "Kamau"
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_10
 msgid "Kim"
-msgstr "Kaimiņš"
+msgstr "Kim"
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_14
 msgid "King"
-msgstr "Ķēniņš"
+msgstr "Karalis"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2849,7 +2974,7 @@ msgstr "LMS uzņemšana"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_lms_blog
 msgid "LMS Blog Enterprise"
-msgstr "LMS emuāra uzņēmums"
+msgstr "LMS emuārs Enterprise"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_lms
@@ -2859,33 +2984,33 @@ msgstr "LMS uzņēmums"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_lms_forum
 msgid "LMS Forum Enterprise"
-msgstr "LMS foruma uzņēmums"
+msgstr "LMS Forum Enterprise"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_lms_gamification
 msgid "LMS Gamification Enterprise"
-msgstr "LMS azartspēļu uzņēmums"
+msgstr "LMS Gamification Enterprise"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_lms_h5p
 msgid "LMS H5P Enterprise"
-msgstr "LMS H5P uzņēmums"
+msgstr "LMS H5P Enterprise"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_lms_sale
 msgid "LMS Sale Enterprise"
-msgstr "LMS Sale Enterprise"
+msgstr "LMS pārdošanas uzņēmums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_lms_survey
 msgid "LMS Survey Enterprise"
-msgstr "LMS aptaujas uzņēmums"
+msgstr "LMS Survey Enterprise"
 
 #. module: openeducat_core
 #. odoo-javascript
 #: code:addons/openeducat_core/static/src/xml/base.xml:0
 msgid "LOGO"
-msgstr "Logotips"
+msgstr "LOGO"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__lang
@@ -2904,6 +3029,7 @@ msgid "Last Name"
 msgstr "Uzvārds"
 
 #. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_bonafide_certificate_wizard__write_uid
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_term__write_uid
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_year__write_uid
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__write_uid
@@ -2921,9 +3047,10 @@ msgstr "Uzvārds"
 #: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty_employee__write_uid
 #: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_student__write_uid
 msgid "Last Updated by"
-msgstr "Pēdējo reizi atjaunināts"
+msgstr "Pēdējo reizi atjaunināja"
 
 #. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_bonafide_certificate_wizard__write_date
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_term__write_date
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_year__write_date
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__write_date
@@ -2944,9 +3071,15 @@ msgid "Last Updated on"
 msgstr "Pēdējo reizi atjaunināts"
 
 #. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__calendar_last_notif_ack
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__calendar_last_notif_ack
+msgid "Last notification marked as read from base Calendar"
+msgstr "Pēdējais paziņojums atzīmēts kā lasīts no pamata kalendāra"
+
+#. module: openeducat_core
 #: model:op.program.level,name:openeducat_core.program_level_9
 msgid "Lateral Entry Programs"
-msgstr "Sānu ievades programmas"
+msgstr "Sānu ieejas programmas"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__last_login
@@ -2956,12 +3089,12 @@ msgstr "Jaunākais savienojums"
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_15
 msgid "Lee"
-msgstr "Svītra"
+msgstr "Lī"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_lesson
 msgid "Lesson Enterprise"
-msgstr "Stundu uzņēmums"
+msgstr "Nodarbība Enterprise"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2969,8 +3102,8 @@ msgid ""
 "Lets faculty create\n"
 "                                                        rubrics for grading and manage assignments."
 msgstr ""
-"Ļauj fakultātei izveidot\n"
-"                                                        Rubrics vērtēšanas vērtēšanai un pārvaldībai."
+"Ļauj mācībspēkiem radīt\n"
+"                                                        rubrikas uzdevumu vērtēšanai un vadīšanai."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2978,8 +3111,8 @@ msgid ""
 "Leverage the power of an open-source web\n"
 "                                        conferencing system for online learning."
 msgstr ""
-"Izmantojiet atvērtā koda tīmekļa jaudu\n"
-"                                        Konferenču sistēma tiešsaistes mācībām."
+"Izmantojiet atvērtā pirmkoda tīmekļa iespējas\n"
+"                                        konferenču sistēma tiešsaistes mācībām."
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_8
@@ -2995,7 +3128,7 @@ msgstr "Bibliotēka"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_library_barcode
 msgid "Library Barcode Enterprise"
-msgstr "Bibliotēkas svītrkoda uzņēmums"
+msgstr "Bibliotēka Svītrkods Enterprise"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_library_enterprise
@@ -3015,27 +3148,27 @@ msgstr "Līnija"
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Live Classroom Integrations"
-msgstr "Dzīvā klases integrācija"
+msgstr "Tiešraides klases integrācija"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_live
 msgid "Live Meeting"
-msgstr "Tiešraide"
+msgstr "Tiešraides tikšanās"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_live_assignment
 msgid "Live Meeting Assignment"
-msgstr "Tiešraides sanāksmju uzdevums"
+msgstr "Tiešraides sapulces uzdevums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_live_attendance
 msgid "Live Meeting Attendance"
-msgstr "Tiešraides sanāksmju apmeklējums"
+msgstr "Tiešraides sapulču apmeklējums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_live_attentiveness
 msgid "Live Meeting Attentiveness"
-msgstr "Tiešraides tikšanās uzmanība"
+msgstr "Tiešraides sapulču uzmanība"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3044,24 +3177,24 @@ msgid ""
 "                                                    dynamic set of tools to simulate a physical\n"
 "                                                    learning environment."
 msgstr ""
-"Live Classes piedāvā a\n"
-"                                                    Dinamisks rīku komplekts fizikālas simulēšanai\n"
-"                                                    mācību vide."
+"Tiešraides klases piedāvā a\n"
+"                                                    dinamisks rīku komplekts, lai simulētu fizisko\n"
+"                                                    mācību vidi."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__login
 msgid "Login"
-msgstr "Pieteikšanās"
+msgstr "Pieteikties"
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_8
 msgid "Lucas"
-msgstr "Lūkas"
+msgstr "Lūkass"
 
 #. module: openeducat_core
 #: model:op.program,name:openeducat_core.program_2
 msgid "MCA - Big Data Analytics"
-msgstr "MCA - Big Data Analytics"
+msgstr "MCA — lielo datu analīze"
 
 #. module: openeducat_core
 #: model:op.program,code:openeducat_core.program_2
@@ -3071,22 +3204,22 @@ msgstr "MCA-AI"
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_2
 msgid "MCA-BD-Semester-1"
-msgstr "MCA-BD-SEMESTER-1"
+msgstr "MCA-BD-Semester-1"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_3
 msgid "MCA-BD-Semester-2"
-msgstr "MCA-BD-SEMESTER-2"
+msgstr "MCA-BD-Semester-2"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_19
 msgid "MCA-BD-Semester-3"
-msgstr "MCA-BD-SEMESTER-3"
+msgstr "MCA-BD-Semestris-3"
 
 #. module: openeducat_core
 #: model:op.course,name:openeducat_core.op_course_20
 msgid "MCA-BD-Semester-4"
-msgstr "MCA-BD-SEMESTER-4"
+msgstr "MCA-BD-Semester-4"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__main_department_id
@@ -3107,7 +3240,7 @@ msgid ""
 "                                                            with LMS Admission."
 msgstr ""
 "Pārvaldīt\n"
-"                                                            Uzņemšana bez piepūles\n"
+"                                                            reģistrācija bez piepūles\n"
 "                                                            ar LMS uzņemšanu."
 
 #. module: openeducat_core
@@ -3118,8 +3251,8 @@ msgid ""
 "                                                        online admissions process"
 msgstr ""
 "Pārvaldīt\n"
-"                                                        Racionalizējiet un lietotājam draudzīgs\n"
-"                                                        Tiešsaistes uzņemšanas process"
+"                                                        Racionalizēta un lietotājam draudzīga\n"
+"                                                        tiešsaistes uzņemšanas process"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3149,7 +3282,7 @@ msgid ""
 "                                                        more"
 msgstr ""
 "Pārvaldīt\n"
-"                                                        grāmatas, raksti, plašsaziņas līdzekļi un daudz\n"
+"                                                        grāmatas, raksti, plašsaziņas līdzekļi un daudz kas cits\n"
 "                                                        vairāk"
 
 #. module: openeducat_core
@@ -3159,7 +3292,12 @@ msgid ""
 "                                                        studetns progress report"
 msgstr ""
 "Pārvaldīt\n"
-"                                                        Studedns progresa ziņojums"
+"                                                        studentu progresa ziņojums"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
+msgid "Manage Convocation Ceremonies"
+msgstr "Pārvaldiet sasaukšanas ceremonijas"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3167,8 +3305,13 @@ msgid ""
 "Manage Events for\n"
 "                                        students"
 msgstr ""
-"Pārvaldiet pasākumus\n"
+"Pārvaldīt notikumus\n"
 "                                        studenti"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
+msgid "Manage Student Withdrawals"
+msgstr "Pārvaldiet studentu izņemšanu"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3177,9 +3320,9 @@ msgid ""
 "                                        achievements by\n"
 "                                        type, date, and other details."
 msgstr ""
-"Pārvaldīt un izsekot studentam\n"
-"                                        sasniegumi pēc\n"
-"                                        Tips, datums un cita informācija."
+"Pārvaldiet un izsekojiet studentu\n"
+"                                        sasniegumi\n"
+"                                        veids, datums un cita informācija."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3188,14 +3331,20 @@ msgid ""
 "                                                            and engaging content easily with LMS\n"
 "                                                            H5P."
 msgstr ""
-"Pārvaldiet interaktīvu\n"
-"                                                            un viegli iesaistīt saturu ar LMS\n"
+"Pārvaldīt interaktīvu\n"
+"                                                            un viegli piesaistot saturu, izmantojot LMS\n"
 "                                                            H5P."
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
+msgid "Manage thesis registration, submission and evaluation process"
+msgstr ""
+"Pārvaldīt diplomdarbu reģistrācijas, iesniegšanas un vērtēšanas procesu"
 
 #. module: openeducat_core
 #: model:res.groups,name:openeducat_core.group_op_back_office_admin
 msgid "Manger"
-msgstr "Silde"
+msgstr "Silīte"
 
 #. module: openeducat_core
 #: model:op.faculty,first_name:openeducat_core.op_faculty_4
@@ -3205,7 +3354,7 @@ msgstr "Marija"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_mass_subject_registration
 msgid "Mass Subject Registration"
-msgstr "Masu priekšmeta reģistrācija"
+msgstr "Masu priekšmetu reģistrācija"
 
 #. module: openeducat_core
 #: model:op.program.level,name:openeducat_core.program_level_1
@@ -3222,12 +3371,18 @@ msgstr "Maksimālā vienības slodze"
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Meeting"
-msgstr "Sapulce"
+msgstr "Tikšanās"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_meeting_enterprise
 msgid "Meeting Enterprise"
-msgstr "Sanāksmes uzņēmums"
+msgstr "Tikšanās ar uzņēmumu"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__meeting_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__meeting_ids
+msgid "Meetings"
+msgstr "Sanāksmes"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_has_error
@@ -3266,8 +3421,8 @@ msgid ""
 "Microsoft Teams keeps you connected and\n"
 "                                        organized with chat, meetings, calls, and collaboration."
 msgstr ""
-"Microsoft komandas uztur jūs savienojumu un\n"
-"                                        Organizēts ar tērzēšanu, sanāksmēm, zvaniem un sadarbību."
+"Microsoft Teams uztur jums savienojumu un\n"
+"                                        organizēta ar tērzēšanu, sapulcēm, zvaniem un sadarbību."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__middle_name
@@ -3275,7 +3430,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Middle Name"
-msgstr "Otrais vārds"
+msgstr "Vidējais vārds"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_course__min_unit_load
@@ -3299,7 +3454,7 @@ msgstr "Mobilais"
 #: model:res.groups,name:openeducat_core.group_multi_department
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_inherit_user_form_openeducat_core
 msgid "Multi Departments"
-msgstr "Vairāku departamenti"
+msgstr "Vairākas nodaļas"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__my_activity_date_deadline
@@ -3324,7 +3479,7 @@ msgstr "Mans aktivitātes termiņš"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Name"
-msgstr "Nosaukt"
+msgstr "Vārds"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__nationality
@@ -3332,25 +3487,37 @@ msgstr "Nosaukt"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_search
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_search
 msgid "Nationality"
-msgstr "Nacionālā lieta"
+msgstr "Tautība"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_calendar_event_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Nākamais aktivitāšu kalendāra pasākums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_date_deadline
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Nākamais aktivitātes termiņš"
+msgstr "Nākamās aktivitātes termiņš"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_summary
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_summary
 msgid "Next Activity Summary"
-msgstr "Nākamais aktivitātes kopsavilkums"
+msgstr "Nākamās aktivitātes kopsavilkums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_type_id
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_type_id
 msgid "Next Activity Type"
-msgstr "Nākamais aktivitātes tips"
+msgstr "Nākamais darbības veids"
+
+#. module: openeducat_core
+#. odoo-python
+#: code:addons/openeducat_core/wizard/bonafide_certificate_wizard.py:0
+msgid "No students selected for the certificate."
+msgstr "Sertifikāta saņemšanai nav atlasīts neviens skolēns."
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_course__evaluation_type__normal
@@ -3361,7 +3528,7 @@ msgstr "Normāls"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__email_normalized
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__email_normalized
 msgid "Normalized Email"
-msgstr "Normalizēts e -pasts"
+msgstr "Normalizēts e-pasts"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__comment
@@ -3372,12 +3539,12 @@ msgstr "Piezīmes"
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Notice Board"
-msgstr "Paziņojuma padome"
+msgstr "Paziņojumu dēlis"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_notice_board_enterprise
 msgid "Notice Board Enterprise"
-msgstr "Paziņojuma padomes uzņēmums"
+msgstr "Uzņēmuma paziņojumu dēlis"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_needaction_counter
@@ -3395,7 +3562,7 @@ msgstr "Darbību skaits"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_users__department_count
 msgid "Number of Departments"
-msgstr "Departamentu skaits"
+msgstr "Nodaļu skaits"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_has_error_counter
@@ -3421,7 +3588,7 @@ msgstr "Kļūdu skaits"
 #: model:ir.model.fields,help:openeducat_core.field_op_subject__message_needaction_counter
 #: model:ir.model.fields,help:openeducat_core.field_op_subject_registration__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr "Ziņojumu skaits, kas prasa darbību"
+msgstr "To ziņojumu skaits, kuriem nepieciešama darbība"
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_batch__message_has_error_counter
@@ -3440,13 +3607,13 @@ msgstr "Ziņojumu skaits ar piegādes kļūdu"
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_faculty__blood_group__o+
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__o+
 msgid "O+ve"
-msgstr "O+un"
+msgstr "O+ve"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_faculty__blood_group__o-
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__o-
 msgid "O-ve"
-msgstr "O un"
+msgstr "O-un"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_omr
@@ -3460,8 +3627,8 @@ msgid ""
 "Offer HD audio and video live classes\n"
 "                                        with up to 100 participants at an affordable cost."
 msgstr ""
-"Piedāvājiet HD audio un video tiešraides\n"
-"                                        ar līdz 100 dalībniekiem par pieņemamām cenām."
+"Piedāvā HD audio un video tiešraides nodarbības\n"
+"                                        ar līdz 100 dalībniekiem par pieņemamu cenu."
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_19
@@ -3471,12 +3638,12 @@ msgstr "Omari"
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Online Appointment"
-msgstr "Iecelšana tiešsaistē"
+msgstr "Tiešsaistes tikšanās"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_online_appointment
 msgid "Online Appointment Enterprise"
-msgstr "Tiešsaistes iecelšanas uzņēmums"
+msgstr "Tiešsaistes tikšanās uzņēmums"
 
 #. module: openeducat_core
 #: model:op.program.level,name:openeducat_core.program_level_11
@@ -3487,53 +3654,53 @@ msgstr "Tiešsaistes programmas"
 #: model:ir.module.category,name:openeducat_core.module_category_openeducat
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "OpenEduCat"
-msgstr "Atvērts"
+msgstr "OpenEduCat"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_batch
 msgid "OpenEduCat Batch"
-msgstr "Atvērtā sērija"
+msgstr "OpenEduCat partija"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_category
 msgid "OpenEduCat Category"
-msgstr "Atvēršanas kategorija"
+msgstr "OpenEduCat kategorija"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_course
 msgid "OpenEduCat Course"
-msgstr "Atvērts kurss"
+msgstr "OpenEduCat kurss"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_department
 msgid "OpenEduCat Department"
-msgstr "Atvērta nodaļa"
+msgstr "OpenEduCat nodaļa"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_faculty
 msgid "OpenEduCat Faculty"
-msgstr "Atvērta fakultāte"
+msgstr "OpenEduCat fakultāte"
 
 #. module: openeducat_core
 #. odoo-javascript
 #: code:addons/openeducat_core/static/src/xml/base.xml:0
 msgid "OpenEduCat Inc"
-msgstr "Atvereeducat Inc"
+msgstr "OpenEduCat Inc"
 
 #. module: openeducat_core
 #: model:ir.module.category,name:openeducat_core.module_category_openeducat_others
 msgid "OpenEduCat Others"
-msgstr "Atvereeducat citi"
+msgstr "OpenEduCat Citi"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_program
 msgid "OpenEduCat Program"
-msgstr "Atvēršanas programma"
+msgstr "Programma OpenEduCat"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_program_level
 msgid "OpenEduCat Program level"
-msgstr "Atvērtā līmeņa programmas līmenis"
+msgstr "OpenEduCat programmas līmenis"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3542,8 +3709,8 @@ msgid ""
 "                                                        sending leave requests to different groups\n"
 "                                                        or sections, improving the user system."
 msgstr ""
-"Atvērtāeducat atļauj\n"
-"                                                        Nosūtot atvaļinājuma pieprasījumus dažādām grupām\n"
+"OpenEduCat atļauj\n"
+"                                                        atvaļinājuma pieprasījumu nosūtīšana dažādām grupām\n"
 "                                                        vai sadaļas, uzlabojot lietotāju sistēmu."
 
 #. module: openeducat_core
@@ -3558,14 +3725,14 @@ msgid ""
 "Database Backup module user can generate and store database backups to "
 "multiple location."
 msgstr ""
-"OpenedCAT automātiskās rezerves moduļi palīdz jums regulāri ģenerēt datu "
-"bāzu dublējumus regulāri. Ģenerētās dublējumus var saglabāt vietējā krātuvē,"
-" FTP serverī, SFTP serverī, Dropbox, Google Drive vai OneDrive.User var "
-"iespējot automātisko noņemšanu, lai automātiski izdzēstu vecās dublējumus. "
-"Lietotājs var iespējot e -pasta paziņojumu par dublējuma ģenerēšanas un "
-"glabāšanas panākumiem un neveiksmi. Automātiskas datu bāzes dublējuma moduļa"
-" lietošanas lietošanas lietotājs var ģenerēt un saglabāt datu bāzes "
-"dublējumus uz vairākām atrašanās vietām."
+"OpenEduCat automātiskās dublēšanas moduļi palīdz jums regulāri ģenerēt datu "
+"bāzu dublējumus automātiski. Ģenerētās dublējumkopijas var glabāt vietējā "
+"krātuvē, FTP serverī, SFTP serverī, Dropbox, Google diskā vai Onedrive. "
+"Lietotājs var iespējot automātiskās noņemšanas iespēju, lai automātiski "
+"izdzēstu vecās dublējumkopijas. Lietotājs var iespējot e-pasta paziņojumu "
+"saņemšanu par dublējuma ģenerēšanas un uzglabāšanas panākumiem un "
+"neveiksmēm. Izmantojot automātiskās datu bāzes dublēšanas moduli, lietotājs "
+"var ģenerēt un uzglabāt datu bāzes dublējumus vairākās vietās."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3573,8 +3740,8 @@ msgid ""
 "OpenEduCat auto-backup saves\n"
 "                                            databases regularly to local or cloud storage."
 msgstr ""
-"Atvereeducat auto-backup ietaupa\n"
-"                                            Regulāri datu bāzes vietējā vai mākoņu krātuvē."
+"OpenEduCat automātiskā dublēšana saglabā\n"
+"                                            datu bāzes regulāri uz vietējo vai mākoņkrātuvi."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3582,8 +3749,8 @@ msgid ""
 "OpenEduCat learning management system helps you to create your online "
 "course. Create your sections and course material in it."
 msgstr ""
-"Openeducat mācību pārvaldības sistēma palīdz jums izveidot tiešsaistes "
-"kursu. Izveidojiet tās sadaļas un kursa materiālus tajā."
+"OpenEduCat mācību pārvaldības sistēma palīdz jums izveidot tiešsaistes "
+"kursu. Izveidojiet tajā savas sadaļas un kursa materiālu."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3591,8 +3758,8 @@ msgid ""
 "Optimize grading and\n"
 "                                                        assessment with Exam GPA Enterprise."
 msgstr ""
-"Optimizēt vērtēšanu un\n"
-"                                                        Novērtējums ar eksāmenu GPA uzņēmumu."
+"Optimizējiet vērtēšanu un\n"
+"                                                        novērtējums ar Exam GPA Enterprise."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3601,7 +3768,7 @@ msgid ""
 "                                        Educational Facilities."
 msgstr ""
 "Aktīvu pārvaldības optimizēšana\n"
-"                                        Izglītības iespējas."
+"                                        Izglītības iekārtas."
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_22
@@ -3615,9 +3782,9 @@ msgid ""
 "                                                    classrooms with essential equipment and\n"
 "                                                    facilities for effective sessions."
 msgstr ""
-"Organizējiet un pārvaldiet\n"
-"                                                    klases telpas ar būtisku aprīkojumu un\n"
-"                                                    Efektīvu sesiju iespējas."
+"Organizēt un pārvaldīt\n"
+"                                                    klases ar būtisku aprīkojumu un\n"
+"                                                    telpas efektīvām sesijām."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3625,19 +3792,25 @@ msgid ""
 "Organize events, share\n"
 "                                                        details, send RSVPs, and track attendance."
 msgstr ""
-"Organizēt notikumus, dalīties\n"
-"                                                        Sīkāka informācija, nosūtiet RSVP un izseko apmeklējumu."
+"Organizē pasākumus, dalies\n"
+"                                                        detalizētu informāciju, sūtiet atbildes uz pieprasījumu un izsekojiet apmeklējumu."
 
 #. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__bonafide_certificate_wizard__certificate_purpose__other
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__gender__o
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject__type__other
 msgid "Other"
 msgstr "Cits"
 
 #. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_bonafide_certificate_wizard__other_purpose
+msgid "Other Purpose"
+msgstr "Cits mērķis"
+
+#. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_academic_year__term_structure__others
 msgid "Other(overlapping terms, custom schedules)"
-msgstr "Citi (pārklājošie termini, pielāgoti grafiki)"
+msgstr "Cits (termini, kas pārklājas, pielāgoti grafiki)"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_parent
@@ -3658,12 +3831,12 @@ msgstr "Vecāku nodaļa"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_parent_enterprise
 msgid "Parent Enterprise"
-msgstr "Vecāku uzņēmums"
+msgstr "Mātesuzņēmums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_term__parent_term
 msgid "Parent Term"
-msgstr "Vecāku seminārs"
+msgstr "Vecāku termiņš"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__parent_name
@@ -3675,7 +3848,7 @@ msgstr "Vecāku vārds"
 #: model:op.student,last_name:openeducat_core.op_student_1
 #: model:op.student,last_name:openeducat_core.op_student_4
 msgid "Parker"
-msgstr "Krastmala"
+msgstr "Pārkers"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__partner_id
@@ -3687,13 +3860,13 @@ msgstr "Partneris"
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_res_partner_title
 msgid "Partner Title"
-msgstr "Partnerimity nosaukums"
+msgstr "Partnera nosaukums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__same_company_registry_partner_id
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__same_company_registry_partner_id
 msgid "Partner with same Company Registry"
-msgstr "Partneris ar to pašu uzņēmuma reģistru"
+msgstr "Partneris ar to pašu uzņēmumu reģistru"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__same_vat_partner_id
@@ -3702,42 +3875,43 @@ msgid "Partner with same Tax ID"
 msgstr "Partneris ar tādu pašu nodokļu ID"
 
 #. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__bonafide_certificate_wizard__certificate_purpose__passport
+msgid "Passport Application"
+msgstr "Pases pieteikums"
+
+#. module: openeducat_core
 #: model:op.program.level,name:openeducat_core.program_level_12
 msgid "Pathway Programs"
-msgstr "Ceļa programmas"
+msgstr "Ceļu programmas"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Personal Information"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Personiskā informācija"
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_20
 msgid "Phillips"
-msgstr "Phillips"
+msgstr "Filips"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__phone
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__phone
 msgid "Phone"
-msgstr "Telefons"
+msgstr "Tālrunis"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__phone_sanitized_blacklisted
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__phone_sanitized_blacklisted
 msgid "Phone Blacklisted"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Tālrunis iekļauts melnajā sarakstā"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__phone_mobile_search
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__phone_mobile_search
 msgid "Phone/Mobile"
-msgstr "Tālrunis/mobilais"
+msgstr "Tālrunis/Mobilais"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3752,26 +3926,22 @@ msgstr "Izvietošanas uzņēmums"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_placement_job_enterprise
 msgid "Placement Job Enterprise"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Iekārtošanas darba uzņēmums"
 
 #. module: openeducat_core
 #: model:op.program.level,name:openeducat_core.program_level_13
 msgid "Post Doctoral Programs"
-msgstr "Pēc doktora programmām"
+msgstr "Pēcdoktorantūras programmas"
 
 #. module: openeducat_core
 #: model:op.program.level,name:openeducat_core.program_level_10
 msgid "Post Graduate Diploma Program"
-msgstr "Pēcdiploma diplomu programma"
+msgstr "Pēcdiploma programma"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject__type__practical
 msgid "Practical"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Praktiski"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3780,13 +3950,19 @@ msgid ""
 "                                                    fast, accurate, and easy, providing a clear view\n"
 "                                                    of the class roster."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Dāvana liek apmeklēt\n"
+"                                                    ātri, precīzi un vienkārši, nodrošinot skaidru skatu\n"
+"                                                    no klases saraksta."
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_bonafide_certificate_wizard_form
+msgid "Print Certificate"
+msgstr "Drukāt sertifikātu"
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_3
 msgid "Priya"
-msgstr "Priya"
+msgstr "Prija"
 
 #. module: openeducat_core
 #: model:ir.ui.menu,name:openeducat_core.menu_op_student_main_student
@@ -3812,16 +3988,12 @@ msgstr "Programmas līmenis"
 #. module: openeducat_core
 #: model:ir.ui.menu,name:openeducat_core.menu_op_school_config_program
 msgid "Program Management"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Programmas vadība"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_program_form
 msgid "Program Title"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Programmas nosaukums"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_open_op_program_view
@@ -3835,9 +4007,7 @@ msgstr "Programmas"
 #. odoo-javascript
 #: code:addons/openeducat_core/static/src/xml/base.xml:0
 msgid "Provided by"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Nodrošina"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3845,8 +4015,8 @@ msgid ""
 "Provides a\n"
 "                                        helping hand to students."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Nodrošina a\n"
+"                                        palīdzīgu roku studentiem."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3854,8 +4024,8 @@ msgid ""
 "Publish Notice and\n"
 "                                        Circular."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Publicēt Paziņojumu un\n"
+"                                        Apļveida."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3870,63 +4040,53 @@ msgstr "Izdevēja garantijas līgums"
 #. module: openeducat_core
 #: model:ir.actions.server,name:openeducat_core.ir_cron_module_update_notification_openeducat_ir_actions_server
 msgid "Publisher: Update Notification OpenEduCat"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Izdevējs: Atjaunināšanas paziņojums OpenEduCat"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Quiz"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Viktorīna"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_quiz_anti_cheating
 msgid "Quiz Anti Cheating"
-msgstr "Viktorīnas anti krāpšanās"
+msgstr "Viktorīna pret krāpšanos"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_quiz
 msgid "Quiz Enterprise"
-msgstr "Viktorīnas uzņēmums"
+msgstr "Viktorīna Enterprise"
 
 #. module: openeducat_core
 #: model:op.faculty,first_name:openeducat_core.op_faculty_8
 msgid "Raj"
-msgstr "Radžs"
+msgstr "Raj"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__is_read
 msgid "Read?"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Lasīt?"
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_3
 msgid "Reddy"
-msgstr "Sarkans"
+msgstr "Reddy"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__ref
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__ref
 msgid "Reference"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Atsauce"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__gr_no
 msgid "Registration Number"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Reģistrācijas numurs"
 
 #. module: openeducat_core
 #: model:ir.model.constraint,message:openeducat_core.constraint_op_student_unique_gr_no
 msgid "Registration Number must be unique per student!"
-msgstr "Reģistrācijas numuram jābūt unikālam katram studentam!"
+msgstr "Katram studentam ir jābūt unikālam reģistrācijas numuram!"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
@@ -3947,7 +4107,7 @@ msgstr "Saistīts uzņēmums"
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_employee_form_address_inherit
 msgid "Related User"
-msgstr "Saistītais lietotājs"
+msgstr "Saistīts lietotājs"
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__employee_ids
@@ -3969,41 +4129,33 @@ msgstr "Atiestatīt uz melnrakstu"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_user_id
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_user_id
 msgid "Responsible User"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Atbildīgs lietotājs"
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__website_id
 #: model:ir.model.fields,help:openeducat_core.field_op_student__website_id
 msgid "Restrict to a specific website."
-msgstr "Ierobežojiet konkrētu vietni."
+msgstr "Ierobežot ar noteiktu vietni."
 
 #. module: openeducat_core
 #: model:op.faculty,first_name:openeducat_core.op_faculty_3
 msgid "Robert"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Roberts"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__roll_number
 msgid "Roll Number"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Ruļļa numurs"
 
 #. module: openeducat_core
 #: model:ir.model.constraint,message:openeducat_core.constraint_op_student_course_unique_name_roll_number_id
 msgid "Roll Number & Student must be unique per Batch!"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Roll numuram un studentam ir jābūt unikālam katrai partijai!"
 
 #. module: openeducat_core
 #: model:ir.model.constraint,message:openeducat_core.constraint_op_student_course_unique_name_roll_number_course_id
 msgid "Roll Number must be unique per Batch!"
-msgstr "Roll numuram jābūt unikālam katrā partijā!"
+msgstr "Ruļļa numuram ir jābūt unikālam katrai partijai!"
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_7
@@ -4016,8 +4168,8 @@ msgid ""
 "Route configuration in transportation\n"
 "                                        provides startup data for each route."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Maršruta konfigurācija transportā\n"
+"                                        nodrošina starta datus katram maršrutam."
 
 #. module: openeducat_core
 #: model:op.faculty,first_name:openeducat_core.op_faculty_12
@@ -4028,15 +4180,13 @@ msgstr "Rubīns"
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_student_course__state__running
 msgid "Running"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Skriešana"
 
 #. module: openeducat_core
 #: model:ir.ui.menu,name:openeducat_core.menu_op_school_root
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "SIS"
-msgstr "Sis"
+msgstr "SIS"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_has_sms_error
@@ -4054,9 +4204,7 @@ msgstr "SMS piegādes kļūda"
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_idcard
 msgid "STUDENT ID CARD"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "STUDENTA APKATE"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__user_id
@@ -4066,9 +4214,7 @@ msgstr "Pārdevējs"
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_20
 msgid "Sam"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Sems"
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_25
@@ -4079,9 +4225,7 @@ msgstr "Samira"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__phone_sanitized
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__phone_sanitized
 msgid "Sanitized Number"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Sanitizēts numurs"
 
 #. module: openeducat_core
 #: model:op.faculty,first_name:openeducat_core.op_faculty_10
@@ -4095,8 +4239,9 @@ msgid ""
 "                                                        methods like CCE, CPA, and more with just a\n"
 "                                                        few clicks."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Plānojiet eksāmenus, izmantojot\n"
+"                                                        metodes, piemēram, CCE, CPA un citas, tikai ar a\n"
+"                                                        daži klikšķi."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -4105,40 +4250,40 @@ msgid ""
 "                                                            and faculty with just a few clicks on a\n"
 "                                                            single screen."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Plānojiet sesijas un informējiet studentus\n"
+"                                                            un mācībspēki ar dažiem klikšķiem uz a\n"
+"                                                            viens ekrāns."
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__bonafide_certificate_wizard__certificate_purpose__scholarship
+msgid "Scholarship"
+msgstr "Stipendija"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_scholarship_enterprise
 msgid "Scholarship Enterprise"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Stipendiju uzņēmums"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Secure"
-msgstr "Nostiprināt"
+msgstr "Droši"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_secure
 msgid "Secure QR"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Drošs QR"
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_19
 msgid "Sekou"
-msgstr "Atbrīvot"
+msgstr "glābšana"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__self
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__self
 msgid "Self"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Pats"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.action_openeducat_configuration
@@ -4151,7 +4296,7 @@ msgstr "Iestatījumi"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__partner_share
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__partner_share
 msgid "Share Partner"
-msgstr "Dalīt partneri"
+msgstr "Dalīties ar partneri"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -4159,8 +4304,8 @@ msgid ""
 "Share knowledge through\n"
 "                                                        well-crafted blogs by students and faculty."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Dalieties zināšanās caur\n"
+"                                                        studentu un mācībspēku labi izstrādāti emuāri."
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_11
@@ -4175,24 +4320,18 @@ msgstr "Šimons"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_company__signature
 msgid "Signature"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Paraksts"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__signup_type
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__signup_type
 msgid "Signup Token Type"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Reģistrācijas marķiera veids"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_student_skill_assessment
 msgid "Skill Assessment Enterprise"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Prasmju novērtēšanas uzņēmums"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_skill_enterprise
@@ -4202,9 +4341,7 @@ msgstr "Prasmju uzņēmums"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_skypemeet
 msgid "Skype Meet"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Skype tikšanās"
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_7
@@ -4217,8 +4354,8 @@ msgid ""
 "Specify different\n"
 "                                        activities which is held in an institute."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Norādiet citu\n"
+"                                        aktivitātes, kas notiek institūtā."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -4226,18 +4363,18 @@ msgid ""
 "Specify different\n"
 "                                        facilities of an institute."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Norādiet citu\n"
+"                                        institūta telpas."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Specify different activities which is held in an institute."
-msgstr "Norādiet dažādas darbības, kas notiek institūtā."
+msgstr "Norādiet dažādas aktivitātes, kas notiek institūtā."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "Specify different facilities of an institute."
-msgstr "Norādiet dažādas institūta iespējas."
+msgstr "Norādiet dažādas institūta telpas."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -4246,20 +4383,27 @@ msgid ""
 "                                        quiz which is held in an institute for\n"
 "                                        students."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Norādiet dažādus veidus\n"
+"                                        viktorīna, kas tiek rīkota institūtā, lai\n"
+"                                        studenti."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid ""
 "Specify different types of quiz which is held in an institute for students."
-msgstr "Norādiet dažāda veida viktorīnas, kas notiek studentu institūtā."
+msgstr ""
+"Norādiet dažādus viktorīnu veidus, kas tiek rīkoti institūtā studentiem."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_bonafide_certificate_wizard__other_purpose
+msgid "Specify other purpose if selected"
+msgstr "Ja atlasīts, norādiet citu mērķi"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__starred_message_ids
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__starred_message_ids
 msgid "Starred Message"
-msgstr "Filmēta ziņojums"
+msgstr "Ziņojums ar zvaigznīti"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_term__term_start_date
@@ -4276,7 +4420,7 @@ msgstr "Sākuma datums"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "State"
-msgstr "Štats"
+msgstr "valsts"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__state
@@ -4293,10 +4437,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Statuss, pamatojoties uz darbībām\n"
-"Ievērts: termiņš jau ir pagājis\n"
+"Statuss, pamatojoties uz aktivitātēm\n"
+"Nokavēts: izpildes termiņš jau ir pagājis\n"
 "Šodien: aktivitātes datums ir šodien\n"
-"Plānots: turpmākas aktivitātes."
+"Plānots: Nākotnes aktivitātes."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -4305,18 +4449,20 @@ msgid ""
 "                                                            secure remote SFTP server, similar to\n"
 "                                                            FTP, with added security."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Saglabā dublējumkopijas a\n"
+"                                                            drošs attālais SFTP serveris, līdzīgs\n"
+"                                                            FTP ar papildu drošību."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid ""
 "Streamline and improve\n"
 "                                                        the assignment grading workflow with\n"
-"                                                        Assignment Grading Bridge."
+"                                                        assignment gradebook bridge."
 msgstr ""
-"Error 504 (Server Error)!!1504.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Racionalizēt un uzlabot\n"
+"                                                        uzdevumu vērtēšanas darbplūsma ar\n"
+"                                                        uzdevumu atzīmju grāmatiņas tilts."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -4326,24 +4472,20 @@ msgid ""
 "                                                        Grading Bridge."
 msgstr ""
 "Racionalizējiet eksāmenu\n"
-"                                                        šķirošanas process ar novatorisku eksāmenu\n"
-"                                                        Šķirošanas tilts."
+"                                                        vērtēšanas process ar novatorisko eksāmenu\n"
+"                                                        Greiderēšanas tilts."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__street
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__street
 msgid "Street"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Iela"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Street..."
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Iela..."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__street2
@@ -4351,7 +4493,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Street2"
-msgstr "Iela"
+msgstr "Iela2"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_student
@@ -4361,22 +4503,18 @@ msgstr "Iela"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_search
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_tree
 msgid "Student"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Students"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_student_attendance_enterprise
 msgid "Student Attendance Kiosk"
-msgstr "Studentu apmeklētības kiosks"
+msgstr "Studentu apmeklējuma kiosks"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_course_pivot
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_course_search
 msgid "Student Course"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Studentu kurss"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_open_op_student_course_view
@@ -4384,40 +4522,62 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_course_form
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_course_tree
 msgid "Student Course Detail"
-msgstr "Studentu kursa detaļa"
+msgstr "Studentu kursa informācija"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_student_course
 msgid "Student Course Details"
-msgstr "Studentu kursa informācija"
+msgstr "Sīkāka informācija par studentu kursu"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_student_feedback_management
+msgid "Student Feedback"
+msgstr "Studentu atsauksmes"
 
 #. module: openeducat_core
 #: model:ir.actions.report,name:openeducat_core.action_report_student_idcard
 msgid "Student ID Card"
-msgstr "Studenta ID karte"
+msgstr "Studenta apliecība"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_student_leave_enterprise
 msgid "Student Leave"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Studentu atvaļinājums"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_student_mentor
+msgid "Student Mentor"
+msgstr "Studentu mentors"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_exam_migration_bridge
+msgid "Student Migration Exam Bridge"
+msgstr "Studentu migrācijas eksāmenu tilts"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_grading_migration_bridge
+msgid "Student Migration Grading Bridge"
+msgstr "Studentu migrācijas vērtēšanas tilts"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_student_progress_enterprise
 msgid "Student Progress Enterprise"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Studentu progresa uzņēmums"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_student_withdrawal_mgmt
+msgid "Student Withdrawal Management"
+msgstr "Studentu izņemšanas vadība"
 
 #. module: openeducat_core
 #: model:ir.model.constraint,message:openeducat_core.constraint_op_student_course_unique_name_roll_number_student_id
 msgid "Student must be unique per Batch!"
-msgstr "Studentam jābūt unikālam katrā partijā!"
+msgstr "Katrai grupai studentam ir jābūt unikālam!"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_open_op_student_view
 #: model:ir.actions.act_window,name:openeducat_core.act_open_op_student_view_2
+#: model:ir.model.fields,field_description:openeducat_core.field_bonafide_certificate_wizard__student_ids
 #: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_student__student_ids
 #: model:ir.ui.menu,name:openeducat_core.menu_op_school_main
 #: model:ir.ui.menu,name:openeducat_core.menu_op_student_root
@@ -4432,8 +4592,9 @@ msgid ""
 "                                                        using facial recognition from images or\n"
 "                                                        videos."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Studenti var pierakstīties\n"
+"                                                        izmantojot sejas atpazīšanu no attēliem vai\n"
+"                                                        video."
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_subject
@@ -4446,14 +4607,12 @@ msgstr "Priekšmets"
 #. module: openeducat_core
 #: model:ir.ui.menu,name:openeducat_core.menu_op_school_config_subject
 msgid "Subject Management"
-msgstr "Priekšmetu pārvaldība"
+msgstr "Priekšmeta vadība"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_subject_material_allocation
 msgid "Subject Material Allocation"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Priekšmeta materiālu sadale"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_subject_registration_view
@@ -4464,9 +4623,7 @@ msgstr "Priekšmeta reģistrācija"
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_pivot
 msgid "Subject Registration Analysis"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Priekšmeta reģistrācijas analīze"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_subject_registration
@@ -4476,12 +4633,12 @@ msgstr "Priekšmeta reģistrācijas informācija"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject__subject_type
 msgid "Subject Type"
-msgstr "Priekšmeta tips"
+msgstr "Priekšmeta veids"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__res_config_settings__attendance_subject_generic__subject
 msgid "Subject Wise"
-msgstr "Priekšmets"
+msgstr "Priekšmets Gudrs"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_graph
@@ -4492,9 +4649,7 @@ msgstr "Priekšmeta reģistrācijas grafiks"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_course__subject_ids
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__faculty_subject_ids
 msgid "Subject(s)"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Priekšmets(-i)"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -4503,8 +4658,9 @@ msgid ""
 "                                                        session, and general attendance by one\n"
 "                                                        faculty for the day."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Mācību priekšmeta apmeklējums tiek pieņemts pa\n"
+"                                                        sesiju un vispārēju apmeklējumu vienam\n"
+"                                                        mācībspēki šai dienai."
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_res_config_settings__attendance_subject_generic
@@ -4513,8 +4669,8 @@ msgid ""
 "whereas general attendance will be collected by one responsible faculty "
 "member for the entire day."
 msgstr ""
-"Konkrētas sesijas laikā tiks apkopota specifiska apmeklēšana, turpretī "
-"vispārējo apmeklējumu apkopos viens atbildīgs mācībspēks visu dienu."
+"Mācību priekšmeta apmeklējums tiks apkopots konkrētās sesijas laikā, bet "
+"vispārējo apmeklējumu – viens atbildīgais mācībspēks par visu dienu."
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_open_op_subject_view
@@ -4545,20 +4701,18 @@ msgstr "Tagi"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__vat
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__vat
 msgid "Tax ID"
-msgstr "Nodokļu ID"
+msgstr "Nodokļa ID"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__vat_label
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__vat_label
 msgid "Tax ID Label"
-msgstr "Nodokļu ID etiķete"
+msgstr "Nodokļa ID etiķete"
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_5
 msgid "Taye"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "apgriezt"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_teams
@@ -4568,9 +4722,7 @@ msgstr "Komandas"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_academic_year__term_structure
 msgid "Term Structure"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Terminu struktūra"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__academic_term_id
@@ -4584,8 +4736,8 @@ msgid ""
 "The ISO country code in two chars. \n"
 "You can use this field for quick search."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"ISO valsts kods divās rakstzīmēs. \n"
+"Varat izmantot šo lauku ātrai meklēšanai."
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__vat
@@ -4595,8 +4747,9 @@ msgid ""
 "country format. You can use '/' to indicate that the partner is not subject "
 "to tax."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Nodokļu identifikācijas numurs. Šeit esošās vērtības tiks apstiprinātas, "
+"pamatojoties uz valsts formātu. Varat izmantot “/”, lai norādītu, ka "
+"partneris nav apliekams ar nodokli."
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__website_url
@@ -4607,7 +4760,7 @@ msgstr "Pilns URL, lai piekļūtu dokumentam, izmantojot vietni."
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__user_id
 msgid "The internal user in charge of this contact."
-msgstr "Iekšējais lietotājs, kas atbild par šo kontaktu."
+msgstr "Iekšējais lietotājs, kas ir atbildīgs par šo kontaktpersonu."
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__company_registry
@@ -4616,15 +4769,24 @@ msgid ""
 "The registry number of the company. Use it if it is different from the Tax "
 "ID. It must be unique across all partners of a same country"
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Uzņēmuma reģistrācijas numurs. Izmantojiet to, ja tas atšķiras no nodokļu "
+"maksātāja ID. Tam ir jābūt unikālam visos vienas valsts partneros"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "The student is currently studying"
+msgstr "Studente šobrīd mācās"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject__type__theory
 msgid "Theory"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Teorija"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_thesis
+#: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
+msgid "Thesis"
+msgstr "Diplomdarbs"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -4635,8 +4797,8 @@ msgid ""
 "                                                            Dropbox."
 msgstr ""
 "Šis\n"
-"                                                            module allows to store\n"
-"                                                            generated backups on\n"
+"                                                            modulis ļauj uzglabāt\n"
+"                                                            ģenerētas dublējumkopijas\n"
 "                                                            Dropbox."
 
 #. module: openeducat_core
@@ -4648,8 +4810,8 @@ msgid ""
 "                                                            Onedrive."
 msgstr ""
 "Šis\n"
-"                                                            module allows to store\n"
-"                                                            generated backups on\n"
+"                                                            modulis ļauj uzglabāt\n"
+"                                                            ģenerētas dublējumkopijas\n"
 "                                                            Onedrive."
 
 #. module: openeducat_core
@@ -4661,9 +4823,9 @@ msgid ""
 "                                                            Drive."
 msgstr ""
 "Šis\n"
-"                                                            module allows to store\n"
-"                                                            generated backups on Google\n"
-"                                                            Drive."
+"                                                            modulis ļauj uzglabāt\n"
+"                                                            ģenerētas dublējumkopijas Google tīklā\n"
+"                                                            Braukt."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -4674,9 +4836,16 @@ msgid ""
 "                                                            FTP server."
 msgstr ""
 "Šis\n"
-"                                                            module allows to store\n"
-"                                                            generated backups to remote\n"
-"                                                            FTP server."
+"                                                            modulis ļauj uzglabāt\n"
+"                                                            ģenerētas dublējumkopijas uz tālvadības pulti\n"
+"                                                            FTP serveris."
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid ""
+"This certificate is issued upon the request of the student for the purpose "
+"of"
+msgstr "Šis sertifikāts tiek izsniegts pēc studenta pieprasījuma ar mērķi"
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__email_normalized
@@ -4685,13 +4854,13 @@ msgid ""
 "This field is used to search on email address as the primary email field can"
 " contain more than strictly an email address."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Šis lauks tiek izmantots, lai meklētu pēc e-pasta adreses, jo primārajā "
+"e-pasta laukā var būt vairāk nekā tikai e-pasta adrese."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
 msgid "This is to certify that"
-msgstr "Tas ir, lai to sertificētu"
+msgstr "Tas ir, lai to apliecinātu"
 
 #. module: openeducat_core
 #: model:op.faculty,first_name:openeducat_core.op_faculty_5
@@ -4701,9 +4870,7 @@ msgstr "Tomass"
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_academic_year__term_structure__three_sem
 msgid "Three Trimesters"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Trīs trimestri"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_timetable
@@ -4714,19 +4881,19 @@ msgstr "Grafiks"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_openeducat_timetable_enterprise
 msgid "Timetable Enterprise"
-msgstr "Grafika uzņēmums"
+msgstr "Uzņēmējdarbības grafiks"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__tz
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__tz
 msgid "Timezone"
-msgstr "Laika josons"
+msgstr "Laika josla"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__tz_offset
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__tz_offset
 msgid "Timezone offset"
-msgstr "Laika josla kompensācija"
+msgstr "Laika joslas nobīde"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__title
@@ -4734,14 +4901,7 @@ msgstr "Laika josla kompensācija"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Title"
-msgstr "Tituls"
-
-#. module: openeducat_core
-#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "To the best of my knowledge, he / she bears a Good Moral character."
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Nosaukums"
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_6
@@ -4766,32 +4926,30 @@ msgstr "Divi semestri"
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_academic_year__term_structure__two_sem_qua
 msgid "Two Semesters subdivided by Quarters"
-msgstr "Divi semestri, kurus sadala ceturtdaļas"
+msgstr "Divi semestri, kas sadalīti pa ceturkšņiem"
 
 #. module: openeducat_core
 #: model:ir.model.fields.selection,name:openeducat_core.selection__op_academic_year__term_structure__two_sem_final
 msgid "Two Semesters subdivided by Quarters and Final Exams"
-msgstr "Divi semestri, kurus sadala ceturtdaļas un gala eksāmeni"
+msgstr "Divi semestri, kas sadalīti pa ceturkšņiem un gala eksāmeniem"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject__type
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_subject_search
 msgid "Type"
-msgstr "Ierakstīt"
+msgstr "Tips"
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__activity_exception_decoration
 #: model:ir.model.fields,help:openeducat_core.field_op_student__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Reģistrētās izņēmuma darbības veids."
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__barcode
 #: model:ir.model.fields,help:openeducat_core.field_op_student__barcode
 msgid "Use a barcode to identify this contact."
-msgstr "Izmantojiet svītrkodu, lai identificētu šo kontaktu."
+msgstr "Izmantojiet svītrkodu, lai identificētu šo kontaktpersonu."
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__login
@@ -4809,15 +4967,18 @@ msgstr "Lietotājs"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_users__user_line
 msgid "User Line"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Lietotāja līnija"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__user_ids
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__user_ids
 msgid "Users"
 msgstr "Lietotāji"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__bonafide_certificate_wizard__certificate_purpose__visa
+msgid "Visa"
+msgstr "Vīza"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__visa_info
@@ -4835,20 +4996,18 @@ msgstr "Redzams pašreizējā vietnē"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__visitor_ids
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__visitor_ids
 msgid "Visitors"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Apmeklētāji"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty_employee__user_boolean
 msgid "Want to create user too ?"
-msgstr "Vai vēlaties arī izveidot lietotāju?"
+msgstr "Vai vēlaties izveidot arī lietotāju?"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__website_id
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__website_id
 msgid "Website"
-msgstr "Vietne"
+msgstr "Tīmekļa vietne"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__website
@@ -4873,7 +5032,7 @@ msgstr "Vietnes ziņojumi"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__website_url
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__website_url
 msgid "Website URL"
-msgstr "Vietņu URL"
+msgstr "Vietnes URL"
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_batch__website_message_ids
@@ -4886,7 +5045,7 @@ msgstr "Vietņu URL"
 #: model:ir.model.fields,help:openeducat_core.field_op_subject__website_message_ids
 #: model:ir.model.fields,help:openeducat_core.field_op_subject_registration__website_message_ids
 msgid "Website communication history"
-msgstr "Tīmekļa komunikācijas vēsture"
+msgstr "Vietnes komunikācijas vēsture"
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__tz
@@ -4896,15 +5055,14 @@ msgid ""
 "If the timezone is not set, UTC (Coordinated Universal Time) is used.\n"
 "Anywhere else, time values are computed according to the time offset of your web client."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Drukājot dokumentus un eksportējot/importējot datus, laika vērtības tiek aprēķinātas atbilstoši šai laika joslai.\n"
+"Ja laika josla nav iestatīta, tiek izmantots UTC (koordinētais universālais laiks).\n"
+"Visur citur laika vērtības tiek aprēķinātas atbilstoši jūsu tīmekļa klienta laika nobīdei."
 
 #. module: openeducat_core
 #: model:op.faculty,first_name:openeducat_core.op_faculty_1
 msgid "William"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Viljams"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -4912,18 +5070,18 @@ msgid ""
 "With the increasing use\n"
 "                                                        of online learning and examinations."
 msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+"Ar pieaugošo izmantošanu\n"
+"                                                        tiešsaistes mācībām un eksāmeniem."
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_21
 msgid "Wood"
-msgstr "Malka"
+msgstr "Koksne"
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_24
 msgid "Wu"
-msgstr "Būda"
+msgstr "Wu"
 
 #. module: openeducat_core
 #: model:op.faculty,first_name:openeducat_core.op_faculty_9
@@ -4931,17 +5089,10 @@ msgid "Xiulan"
 msgstr "Xiulan"
 
 #. module: openeducat_core
-#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "Year"
-msgstr "Gads"
-
-#. module: openeducat_core
 #. odoo-python
 #: code:addons/openeducat_core/models/course.py:0
 msgid "You cannot create recursive categories."
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Jūs nevarat izveidot rekursīvas kategorijas."
 
 #. module: openeducat_core
 #: model:op.student,last_name:openeducat_core.op_student_9
@@ -4951,51 +5102,101 @@ msgstr "Jauns"
 #. module: openeducat_core
 #: model:op.faculty,first_name:openeducat_core.op_faculty_13
 msgid "Yusuf"
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "Jusufs"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "ZIP"
-msgstr "Rāvējslēdzējs"
+msgstr "ZIP"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__zip
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__zip
 msgid "Zip"
-msgstr "Rāvējslēdzējs"
+msgstr "Zip"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_config_settings__module_zoom
 msgid "Zoom"
-msgstr "Tuvināt"
+msgstr "Tālummaiņa"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "a bonafide student of"
+msgstr "labticīgs students"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "at"
+msgstr "plkst"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "bearing the Enrollment Student ID :"
+msgstr "ar reģistrācijas studenta ID:"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_form
 msgid "e.g. \"Computer Science for kids\""
-msgstr ""
-"Error 500 (Server Error)!!1500.That’s an error.There was an error. Please "
-"try again later.That’s all we know."
+msgstr "piem. \"Datorzinātnes bērniem\""
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_program_form
 msgid "e.g. \"MBA\""
-msgstr "piem. \"HAVE\""
+msgstr "piem. \"IR\""
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_program_level_form
 msgid "e.g. \"Master\""
-msgstr "piem. \"Master\""
+msgstr "piem. \"Meistars\""
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "from"
+msgstr "no"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "in the"
+msgstr "sadaļā"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "is"
+msgstr "ir"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "miscellaneous"
-msgstr "dažāds"
+msgstr "dažādi"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "of the"
+msgstr "no"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
 #: model_terms:ir.ui.view,arch_db:openeducat_core.op_student_user_create_view
 msgid "or"
 msgstr "vai"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid ""
+"program\n"
+"                                under"
+msgstr ""
+"programma\n"
+"                                zem"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "to"
+msgstr "uz"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "was"
+msgstr "bija"
