@@ -4,14 +4,22 @@ import { CharField, charField } from "@web/views/fields/char/char_field";
 import { registry } from "@web/core/registry";
 import { onMounted, onPatched, onWillDestroy } from "@odoo/owl";
 
+// Modern browsers size the input to its content with CSS (see the
+// openeducat_core.InlineCharField template); measure in JS only otherwise.
+const HAS_FIELD_SIZING = window.CSS?.supports?.("field-sizing", "content");
+
 export class InlineCharField extends CharField {
     static template = 'openeducat_core.InlineCharField';
 
     setup() {
         super.setup();
+        if (HAS_FIELD_SIZING) {
+            return;
+        }
         onMounted(() => this._resizeInput());
         onPatched(() => this._resizeInput());
         onWillDestroy(() => {
+            cancelAnimationFrame(this._resizeFrame);
             if (this._sizer) {
                 this._sizer.remove();
                 this._sizer = null;
@@ -20,7 +28,9 @@ export class InlineCharField extends CharField {
     }
 
     onInputType() {
-        this._resizeInput();
+        if (!HAS_FIELD_SIZING) {
+            this._resizeInput();
+        }
     }
 
     _createSizer() {
@@ -38,7 +48,12 @@ export class InlineCharField extends CharField {
     _resizeInput() {
         // Odoo 20 (Owl 3): refs are signals, read by calling them
         const input = this.input();
-        if (!input) return;
+        if (!input || !input.isConnected) {
+            // not in the document yet: measure on the next frame
+            cancelAnimationFrame(this._resizeFrame);
+            this._resizeFrame = requestAnimationFrame(() => this._resizeInput());
+            return;
+        }
 
         this._createSizer();
         this._sizer.style.font = getComputedStyle(input).font;

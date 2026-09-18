@@ -78,7 +78,7 @@
             <field name="model">op.student</field>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <form string="Student" js_class="hr_employee_form">
+                <form string="Student">
                     <header>
                     </header>
                     <sheet>
@@ -160,9 +160,9 @@
                                             <field name="is_company"/>
                                             <templates>
                                                 <t t-name="card" class="flex-row">
-                                                    <aside class="o_kanban_aside_full">
-                                                        <field name="avatar_128" class="o_kanban_image_fill w-100" widget="image" options="{'img_class': 'object-fit-cover'}" alt="Contact image" invisible="type != 'contact'"/>
-                                                        <field name="avatar_128" class="o_kanban_image_fill w-100" widget="image" options="{'img_class': 'object-fit-contain p-2'}" alt="Contact image" invisible="type == 'contact'"/>
+                                                    <aside class="o_card_aside_full">
+                                                        <field name="avatar_128" class="o_card_image_fill w-100" widget="image" options="{'img_class': 'w-100 h-100 object-fit-cover'}" alt="Contact image" invisible="type != 'contact'"/>
+                                                        <field name="avatar_128" class="o_card_image_fill w-100" widget="image" options="{'img_class': 'w-100 h-100 object-fit-contain p-2'}" alt="Contact image" invisible="type == 'contact'"/>
                                                     </aside>
                                                     <main class="ps-2 ps-md-0">
                                                         <field name="name" invisible="not name" class="fw-bold"/>
