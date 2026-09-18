@@ -20,7 +20,7 @@
 
 {
     'name': 'OpenEduCat Facility',
-    'version': '19.0.1.0',
+    'version': '20.0.1.0.0',
     'license': 'LGPL-3',
     'category': 'Education',
     "sequence": 3,
@@ -31,7 +31,7 @@
     'depends': ['openeducat_core'],
     'data': [
         'security/op_facility_security.xml',
-        'security/ir.model.access.csv',
+        'security/ir.access.csv',
         'views/facility_view.xml',
         'views/facility_line_view.xml',
         'menus/op_menu.xml',
