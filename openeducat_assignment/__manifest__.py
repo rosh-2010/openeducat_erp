@@ -20,7 +20,7 @@
 
 {
     'name': 'OpenEduCat Assignment',
-    'version': '19.0.1.0',
+    'version': '20.0.1.0.0',
     'license': 'LGPL-3',
     'category': 'Education',
     "sequence": 3,
@@ -34,7 +34,7 @@
     ],
     'data': [
         'security/op_security.xml',
-        'security/ir.model.access.csv',
+        'security/ir.access.csv',
         'views/assignment_view.xml',
         'views/assignment_type_view.xml',
         'views/assignment_sub_line_view.xml',

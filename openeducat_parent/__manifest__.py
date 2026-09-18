@@ -20,7 +20,7 @@
 
 {
     'name': 'OpenEduCat Parent',
-    'version': '19.0.1.0',
+    'version': '20.0.1.0.0',
     'license': 'LGPL-3',
     'category': 'Education',
     "sequence": 3,
@@ -31,7 +31,7 @@
     'depends': ['openeducat_core'],
     'data': [
         'security/op_security.xml',
-        'security/ir.model.access.csv',
+        'security/ir.access.csv',
         'data/parent_user_data.xml',
         'views/parent_view.xml',
         'views/parent_relationship_view.xml',

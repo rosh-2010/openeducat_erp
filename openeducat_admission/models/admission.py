@@ -27,7 +27,7 @@ from odoo.exceptions import UserError, ValidationError
 
 class OpAdmission(models.Model):
     _name = "op.admission"
-    _inherit = ['mail.activity.mixin', 'mail.tracking.duration.mixin']
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     _rec_name = "application_number"
     _description = "Admission"
     _order = 'id DESC'
@@ -67,7 +67,7 @@ class OpAdmission(models.Model):
     email = fields.Char(
         'Email', size=256, required=True)
     city = fields.Char('City', size=64)
-    zip = fields.Char('Zip', size=8)
+    zip = fields.Char('Zip')
     state_id = fields.Many2one(
         'res.country.state', 'States', domain="[('country_id', '=', country_id)]")
     country_id = fields.Many2one(

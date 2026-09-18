@@ -1,60 +1,8 @@
 /** @odoo-module **/
 
-import {PageDependencies} from '@website/components/dialog/page_properties';
 import {standardFieldProps} from '@web/views/fields/standard_field_props';
-import { UrlField, urlField } from "@web/views/fields/url/url_field";
 import {registry} from '@web/core/registry';
-import { _t } from '@web/core/l10n/translation';
-import { Component, useEffect, useRef } from "@odoo/owl";
-
-/**
- * Displays website page dependencies and URL redirect options when the page URL
- * is updated.
- */
-class PageUrlField extends UrlField {
-    static components = { PageDependencies };
-    static template = "website.PageUrlField";
-    static defaultProps = {
-        ...UrlField.defaultProps,
-        websitePath: true,
-    };
-
-    setup() {
-        super.setup();
-        this.serverUrl = `${window.location.origin}/`;
-        this.inputRef = useRef("input");
-
-        // Trigger onchange api on input event to display redirection
-        // parameters as soon as the user types.
-        // TODO should find a way to do this more automatically (and option in
-        // the framework? or at least a t-on-input?)
-        useEffect(
-            (inputEl) => {
-                if (inputEl) {
-                    const fireChangeEvent = () => {
-                        inputEl.dispatchEvent(new Event("change"));
-                    };
-
-                    inputEl.addEventListener("input", fireChangeEvent);
-                    return () => {
-                        inputEl.removeEventListener("input", fireChangeEvent);
-                    };
-                }
-            },
-            () => [this.inputRef.el],
-        );
-    }
-
-    get value() {
-        let value = super.value;
-        if (value[0] === "/") {
-            value = value.substring(1);
-        }
-        this.props.record.data[this.props.name] = `/${value.trim()}`;
-        return value;
-    }
-}
-
+import { Component } from "@odoo/owl";
 
 export class FeesTermsDisplay extends Component {
     static template = "website.FieldFeesTermsDisplay";
@@ -62,15 +10,13 @@ export class FeesTermsDisplay extends Component {
         ...standardFieldProps,
     };
 
-    setup() {
+    get terms() {
         const selection = this.props.record.fields[this.props.name].selection;
-        this.terms = selection.filter(item => item[0] || item[1]).map(item => ({
+        return selection.filter(item => item[0] || item[1]).map(item => ({
             value: item[0],
             label: item[1],
             description: this.props.record.data.fees_terms_description || ''
-//            image: this.getImagePath(item[0]),
         }));
-
     }
     _onClickLabel(value) {
         this.props.record.update({ [this.props.name]: value });

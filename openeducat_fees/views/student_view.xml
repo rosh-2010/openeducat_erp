@@ -11,7 +11,7 @@
                     <button class="btn oe_stat_button" type="object"
                             name="action_view_invoice"
                             style="border-right: 1px solid;"
-                            icon="fa-pencil-square-o"
+                            icon="receipt_long"
                             groups="openeducat_fees.group_op_fees_admin">
                         <field string="Invoiced" name="total_invoiced" widget="statinfo"/>
                     </button>

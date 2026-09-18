@@ -20,7 +20,7 @@
 
 {
     'name': "OpenEduCat Admission",
-    'version': '19.0.1.0',
+    'version': '20.0.1.0.0',
     'license': 'LGPL-3',
     'category': 'Education',
     'sequence': 3,
@@ -34,7 +34,7 @@
     ],
     'data': [
         'security/op_admission_security.xml',
-        'security/ir.model.access.csv',
+        'security/ir.access.csv',
         'data/admission_sequence.xml',
         'data/parameter_data.xml',
         'views/admission_register_view.xml',

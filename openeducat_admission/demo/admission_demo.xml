@@ -686,7 +686,7 @@
             <field name="street">250 King Fahd Road</field>
             <field name="street2">Apartment 10B</field>
             <field name="zip">11564</field>
-            <field name="state_id" ref="base.state_sa_70"/>
+            <field name="state_id" ref="base.state_sa_001"/>
             <field name="country_id" ref="base.sa"/>
             <field name="student_id" ref="openeducat_core.op_student_25"/>
             <field name="course_id" ref="openeducat_core.op_course_5"/>

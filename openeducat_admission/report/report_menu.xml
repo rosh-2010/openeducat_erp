@@ -5,6 +5,5 @@
             <field name="model">admission.analysis</field>
             <field name="report_type">qweb-pdf</field>
             <field name="report_name">openeducat_admission.report_admission_analysis</field>
-            <field name="report_file">openeducat_admission.report_admission_analysis</field>
         </record>
 </odoo>

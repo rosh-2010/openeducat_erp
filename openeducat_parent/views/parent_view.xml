@@ -10,7 +10,7 @@
                 <xpath expr="//div[@name='button_box']" position="inside">
                     <button name="get_parent"
                         class="btn oe_stat_button"
-                        icon="fa-user-o"
+                        icon="group"
                         type="object"
                         groups="openeducat_parent.group_op_parent_manager">
                         <div class="o_field_widget o_stat_info">
