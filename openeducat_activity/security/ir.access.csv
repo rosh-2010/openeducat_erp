@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,operation,domain
+access_op_activity_student,name_op_activity_student,model_op_activity,openeducat_activity.group_activity_manager,crud,"['|', ('student_id.user_id', '=', user.id), ('student_id.user_id', 'in', user.child_ids.ids)]"
+access_op_activity_op_faculty,name_op_activity_op_faculty,model_op_activity,openeducat_activity.group_activity_user,ru,"['|', ('faculty_id.user_id', '=', user.id), ('faculty_id.user_id', 'in', user.child_ids.ids)]"
+access_op_activity_type_op_faculty,name_op_activity_type_op_faculty,model_op_activity_type,openeducat_activity.group_activity_user,r,
+access_op_activity_type_back_office_admin,name_op_activity_type_back_office_admin,model_op_activity_type,openeducat_activity.group_activity_manager,crud,
+access_student_migrate_user,name_student_migrate_user,model_student_migrate,openeducat_activity.group_activity_user,cru,
+access_student_migrate,name_student_migrate,model_student_migrate,openeducat_activity.group_activity_manager,crud,
