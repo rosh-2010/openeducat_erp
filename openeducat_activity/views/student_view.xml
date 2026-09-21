@@ -9,7 +9,6 @@
                 <xpath expr="//div[@name='button_box']" position="inside">
                     <button class="btn oe_stat_button" type="object"
                                 name="get_activity"
-                                style="border-right: 1px solid;"
                                 icon="book"
                                 context="{'default_student_id': id}"
                                 groups="openeducat_activity.group_activity_user,openeducat_activity.group_activity_manager">
