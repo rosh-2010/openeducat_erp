@@ -112,7 +112,6 @@ class OpParent(models.Model):
                 usr_ids = [student_id.user_id.id for student_id in student_ids
                            if student_id.user_id]
                 rec.user_id.child_ids = [(6, 0, usr_ids)]
-            rec.env.registry.clear_cache()
         return res
 
     def unlink(self):
@@ -197,7 +196,6 @@ class OpStudent(models.Model):
                 child_ids = parent_id.user_id.child_ids.ids
                 child_ids.append(vals['user_id'])
                 parent_id.name.user_id.child_ids = [(6, 0, child_ids)]
-        self.env.registry.clear_cache()
         return res
 
     def unlink(self):

@@ -164,7 +164,7 @@ class OpAdmission(models.Model):
             self.partner_id = sd.partner_id and sd.partner_id.id or False
         else:
             self.birth_date = ''
-            self.gender = ''
+            self.gender = False
             self.image = False
             self.street = ''
             self.street2 = ''
