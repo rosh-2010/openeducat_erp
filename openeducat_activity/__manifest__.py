@@ -37,8 +37,9 @@
         'views/activity_view.xml',
         'views/activity_type_view.xml',
         'views/student_view.xml',
-        'menus/op_menu.xml'
+        'menus/op_menu.xml',
     ],
+
     'demo': [
         'demo/activity_demo.xml',
     ],

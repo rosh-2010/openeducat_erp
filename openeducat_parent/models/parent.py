@@ -196,6 +196,7 @@ class OpStudent(models.Model):
                 child_ids = parent_id.user_id.child_ids.ids
                 child_ids.append(vals['user_id'])
                 parent_id.name.user_id.child_ids = [(6, 0, child_ids)]
+        self.env.invalidate_all()
         return res
 
     def unlink(self):
