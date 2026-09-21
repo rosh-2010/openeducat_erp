@@ -61,7 +61,7 @@
                                    <separator string="Fees Elements" colspan="4"/>
                                    <group colspan="4">
                                        <field name="fees_element_line" nolabel="1">
-                                           <list string="Information" editable="top">
+                                           <list string="Information" editable="bottom">
                                                <field name="product_id"/>
                                                <field name="value"/>
                                            </list>
