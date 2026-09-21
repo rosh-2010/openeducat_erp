@@ -42,7 +42,7 @@
                                 type="action"
                                 string="Student Hall Tickets"
                                 class="btn-primary"
-                                icon="picture_as_pdf" invisible="state != 'schedule'"/>
+                                icon="picture_as_pdf" invisible="state != 'schedule' or exams_count == 0"/>
                         <field name="state" widget="statusbar"
                                statusbar_visible="draft,held,scheduled,done"/>
                     </header>
