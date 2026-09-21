@@ -243,7 +243,7 @@ class OpAdmission(models.Model):
             record.state = 'confirm'
 
     def get_student_vals(self):
-        enable_create_student_user = self.env['ir.config_parameter'].get_param(
+        enable_create_student_user = self.env['ir.config_parameter'].get_bool(
             'openeducat_admission.enable_create_student_user')
         for student in self:
             student_user = False

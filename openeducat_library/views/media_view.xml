@@ -75,15 +75,15 @@
                                         <field name="date_to"/>
                                         <field name="state"/>
                                         <button name="do_accept" string="Accept" type="object"
-                                                invisible="state != 'request'" icon="fa-thumbs-up"
+                                                invisible="state != 'request'" icon="thumb_up"
                                                 style="font-size: 15px;"
                                                 groups="openeducat_library.group_op_library"/>
                                         <button name="do_reject" string="Reject" type="object"
-                                                invisible="state not in ('request','accept')" icon="fa-thumbs-down"
+                                                invisible="state not in ('request','accept')" icon="thumb_down"
                                                 style="font-size: 15px;"
                                                 groups="openeducat_library.group_op_library"/>
                                         <button name="do_request_again" string="Request Again"
-                                                invisible="state != 'reject'" type="object" icon="fa-undo"
+                                                invisible="state != 'reject'" type="object" icon="undo"
                                                 style="font-size: 15px;"
                                                 groups="openeducat_library.group_op_library"/>
                                     </list>

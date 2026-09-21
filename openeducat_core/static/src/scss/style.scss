@@ -135,3 +135,44 @@
         overflow: hidden !important;
     }
 }
+
+// Display boolean checkboxes as radio buttons
+.o_boolean_radio .o-checkbox:not(.form-switch) .form-check-input {
+    border-radius: 50%;
+
+    &:checked {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+    }
+}
+
+// Faculty and student profile header
+.o_faculty_profile, .o_student_profile {
+    .o_profile_avatar img {
+        width: 128px;
+        height: 158px;
+        object-fit: cover;
+        border: 1px solid $border-color;
+        border-radius: $border-radius-lg;
+    }
+    .o_profile_info {
+        min-width: 0;
+        padding-top: map-get($spacers, 2);
+    }
+}
+
+// Employee presence dot next to the name, in the same column as the header icons
+.o_employee_form_header_info {
+    .o_field_hr_presence_status, .o_field_hr_presence_status_private {
+        display: inline-flex;
+        flex: 0 0 auto;
+        width: auto !important;
+        font-size: $font-size-base;
+
+        .oi-fw {
+            width: 1em;
+        }
+    }
+    .o_field_widget[name="name"] {
+        flex: 1 1 auto;
+    }
+}

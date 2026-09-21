@@ -244,14 +244,14 @@ class OpSession(models.Model):
                     'batch_id', 'subject_id')
     def check_timetable_fields(self):
         res_param = self.env['ir.config_parameter'].sudo()
-        is_faculty_constraint = res_param.search([
-            ('key', '=', 'timetable.is_faculty_constraint')]).value
-        is_classroom_constraint = res_param.search([
-            ('key', '=', 'timetable.is_classroom_constraint')]).value
-        is_batch_and_subject_constraint = res_param.search([
-            ('key', '=', 'timetable.is_batch_and_subject_constraint')]).value
-        is_batch_constraint = res_param.search([
-            ('key', '=', 'timetable.is_batch_constraint')]).value
+        is_faculty_constraint = res_param.get_bool(
+            'timetable.is_faculty_constraint')
+        is_classroom_constraint = res_param.get_bool(
+            'timetable.is_classroom_constraint')
+        is_batch_and_subject_constraint = res_param.get_bool(
+            'timetable.is_batch_and_subject_constraint')
+        is_batch_constraint = res_param.get_bool(
+            'timetable.is_batch_constraint')
 
         # Batch- and batch-and-subject constraints compare `batch_id.id`
         # equality. Two sessions with no batch would compare

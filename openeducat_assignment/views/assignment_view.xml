@@ -63,7 +63,7 @@
 
                         <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
                                 invisible="active == True"/>
-                        <div>
+                        <div class="mb-4">
                             <h1>
 
                                 <field name="name" placeholder="Assignment Name"

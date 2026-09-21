@@ -42,7 +42,7 @@
                                 type="action"
                                 string="Student Hall Tickets"
                                 class="btn-primary"
-                                icon="fa-file-pdf-o" invisible="state != 'schedule'"/>
+                                icon="picture_as_pdf" invisible="state != 'schedule'"/>
                         <field name="state" widget="statusbar"
                                statusbar_visible="draft,held,scheduled,done"/>
                     </header>

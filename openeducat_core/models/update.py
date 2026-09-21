@@ -41,8 +41,8 @@ class PublisherWarrantyContract(AbstractModel):
     def _get_message_logs(self):
         Users = self.env['res.users']
         IrParamSudo = self.env['ir.config_parameter'].sudo()
-        dbuuid = IrParamSudo.get_param('database.uuid')
-        db_create_date = IrParamSudo.get_param('database.create_date')
+        dbuuid = IrParamSudo.get_str('database.uuid')
+        db_create_date = IrParamSudo.get_str('database.create_date')
         limit_date = datetime.datetime.now()
         limit_date = limit_date - datetime.timedelta(15)
         limit_date_str = limit_date.strftime(
@@ -66,7 +66,7 @@ class PublisherWarrantyContract(AbstractModel):
                   ('state', 'in', ['installed', 'to upgrade', 'to remove'])]
         apps = self.env['ir.module.module'].sudo().search_read(domain,
                                                                ['name'])
-        web_base_url = IrParamSudo.get_param('web.base.url')
+        web_base_url = IrParamSudo.get_str('web.base.url')
         msg = {
             "dbuuid": dbuuid,
             "nbr_users": nbr_users,
