@@ -5,6 +5,5 @@
             <field name="model">op.student</field>
             <field name="report_type">qweb-pdf</field>
             <field name="report_name">openeducat_attendance.student_attendance_report</field>
-            <field name="report_file">openeducat_attendance.student_attendance_report</field>
         </record>
 </odoo>

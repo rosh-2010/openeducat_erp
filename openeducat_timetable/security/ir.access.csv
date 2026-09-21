@@ -1,0 +1,13 @@
+id,name,model_id,group_id/id,operation,domain
+access_op_timing_timetable_manager,name_op_timing_timetable_manager,op.timing,openeducat_timetable.group_op_timetable_manager,crud,
+access_op_session_student,name_op_session_student,op.session,openeducat_timetable.group_op_timetable_manager,crud,
+access_op_session_timetable_user,name_op_session_timetable_user,op.session,openeducat_timetable.group_op_timetable_user,cru,
+access_op_timing_timetable_user,name_op_timing_timetable_user,op.timing,openeducat_timetable.group_op_timetable_user,cr,
+access_generate_time_table,name_generate_time_table,generate.time.table,openeducat_timetable.group_op_timetable_manager,crud,
+access_generate_time_table_user,name_generate_time_table_user,generate.time.table,openeducat_timetable.group_op_timetable_user,cru,
+access_gen_time_table_line,name_gen_time_table_line,gen.time.table.line,openeducat_timetable.group_op_timetable_manager,crud,
+access_gen_time_table_line_user,name_gen_time_table_line_user,gen.time.table.line,openeducat_timetable.group_op_timetable_user,cru,
+access_session_confirmation,name_session_confirmation,session.confirmation,openeducat_timetable.group_op_timetable_manager,crud,
+access_time_table_report,name_time_table_report,time.table.report,openeducat_timetable.group_op_timetable_manager,crud,
+access_op_session_student_rule,op_session_student_rule,op.session,openeducat_timetable.group_op_timetable_user,cru,"['|', ('user_ids', 'in', user.id), ('user_ids', 'in', user.child_ids.ids)]"
+access_op_session_faculty_rule,op_session_faculty_rule,op.session,openeducat_timetable.group_op_timetable_user,cru,"[('faculty_id.user_id', '=', user.id)]"
