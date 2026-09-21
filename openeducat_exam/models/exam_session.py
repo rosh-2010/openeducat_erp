@@ -71,9 +71,10 @@ class OpExamSession(models.Model):
 
     @api.constrains('start_date', 'end_date')
     def _check_date_time(self):
-        if self.start_date > self.end_date:
-            raise ValidationError(
-                _('End Date cannot be set before Start Date.'))
+        for record in self:
+            if record.start_date > record.end_date:
+                raise ValidationError(
+                    _('End Date cannot be set before Start Date.'))
 
     @api.onchange('course_id')
     def onchange_course(self):

@@ -8,11 +8,11 @@
             <xpath expr="//field[@name='phone']/.." position="after">
                 <div class="d-flex align-items-baseline gap-3">
                     <div class="d-flex flex-row">
-                        <field name="is_parent" nolabel="1" />
+                        <field name="is_parent" nolabel="1" class="o_boolean_radio"/>
                         <label for="is_parent" class="me-3">Parent</label>
                     </div>
                     <div class="d-flex flex-row">
-                        <field name="is_student" nolabel="1" />
+                        <field name="is_student" nolabel="1" class="o_boolean_radio"/>
                         <label for="is_student">Student</label>
                     </div>
                 </div>

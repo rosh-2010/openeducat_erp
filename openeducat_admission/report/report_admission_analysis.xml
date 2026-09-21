@@ -15,11 +15,11 @@
                             </div>
                             <div class="col-auto col-3" t-if="data.get('start_date')" name="start_date">
                                 <strong>FROM DATE</strong>
-                                <p class="m-0" t-esc="data['start_date']" t-options="{'widget': 'date'}"/>
+                                <p class="m-0" t-out="data['start_date']" t-options="{'widget': 'date'}"/>
                             </div>
                             <div class="col-auto col-3" t-if="data.get('end_date')" name="end_date">
                                 <strong>TO DATE</strong>
-                                <p class="m-0" t-esc="data['end_date']" t-options="{'widget': 'date'}"/>
+                                <p class="m-0" t-out="data['end_date']" t-options="{'widget': 'date'}"/>
                             </div>
                         </div>
                         <table class="table o_main_table table-borderless mt-2" style="font-size:14px;">
@@ -33,7 +33,7 @@
                                 <t t-foreach="get_data" t-as="record">
                                     <tr>
                                         <td class="text-start">
-                                            <span t-esc="record['name']"/>
+                                            <span t-out="record['name']"/>
                                         </td>
                                         <td class="text-start">
                                             <span t-out="record['application_no'] if record.get('application_no') else ''"/>
@@ -48,7 +48,7 @@
                                     <tr class="o_total">
                                         <td><strong>TOTAL STUDENTS</strong></td>
                                         <td class="text-end">
-                                            <strong><span t-esc="get_total_student"/></strong>
+                                            <strong><span t-out="get_total_student"/></strong>
                                         </td>
                                     </tr>
                                 </table>

@@ -7,7 +7,7 @@ Regression guards:
 
 from datetime import datetime
 
-from odoo.tests.common import Form
+from odoo.tests import Form
 
 from .common import SessionFixtureCase
 

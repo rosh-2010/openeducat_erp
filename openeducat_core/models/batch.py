@@ -49,9 +49,13 @@ class OpBatch(models.Model):
     @api.model
     def name_search(self, name='', domain=None, operator='ilike', limit=100):
         if self.env.context.get('get_parent_batch', False):
+            
             lst = []
-            lst.append(self.env.context.get('course_id'))
-            courses = self.env['op.course'].browse(lst)
+            course_id = self.env.context.get('course_id')
+            if not course_id:
+                return []
+            lst.append(course_id)
+            courses = self.env['op.course'].browse(course_id)
             while courses.parent_id:
                 lst.append(courses.parent_id.id)
                 courses = courses.parent_id

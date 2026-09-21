@@ -1,46 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    <!-- Main category -->
     <record id="module_category_all_op_activity" model="ir.module.category">
         <field name="name">Activity</field>
-        <field name="description">Helps you manage your institutes different-different users.</field>
+        <field name="description">
+            Helps you manage your institute users.
+        </field>
         <field name="sequence">101</field>
         <field name="parent_id" eval="False"/>
     </record>
 
+    <!-- Activity category -->
     <record id="module_category_openeducat_activity" model="ir.module.category">
         <field name="name">Activity</field>
-        <field name="description">Helps you manage your institutes different-different users.</field>
+        <field name="description">
+            Helps you manage your institute users.
+        </field>
         <field name="parent_id"
                ref="openeducat_activity.module_category_all_op_activity"/>
         <field name="sequence">1</field>
     </record>
 
+    <!-- Activity privilege -->
     <record id="module_activity_privilege" model="res.groups.privilege">
-        <field name="name">Openeducat Activity Privilege</field>
+        <field name="name">Activity</field>
+        <field name="sequence">1</field>
         <field name="category_id"
-               ref="module_category_openeducat_activity"/>
+               ref="openeducat_activity.module_category_openeducat_activity"/>
     </record>
 
+    <!-- Activity User group -->
     <record id="group_activity_user" model="res.groups">
         <field name="name">User</field>
         <field name="privilege_id"
-               ref="module_activity_privilege"/>
-        <field name="user_ids"
-               eval="[(4, ref('base.user_admin'))]"/>
-        <field name="implied_ids"
-               eval="[(4, ref('base.group_user'))]"/>
+               ref="openeducat_activity.module_activity_privilege"/>
     </record>
 
+    <!-- Activity Manager group -->
     <record id="group_activity_manager" model="res.groups">
         <field name="name">Manager</field>
         <field name="privilege_id"
-               ref="module_activity_privilege"/>
+               ref="openeducat_activity.module_activity_privilege"/>
         <field name="user_ids"
                eval="[(4, ref('base.user_admin'))]"/>
         <field name="implied_ids"
                eval="[(4, ref('openeducat_activity.group_activity_user'))]"/>
     </record>
-
 
 </odoo>

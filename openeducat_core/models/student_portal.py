@@ -18,7 +18,7 @@
 #
 ###############################################################################
 
-from odoo import fields, models
+from odoo import api, fields, models
 
 
 class StudentPortal(models.Model):
@@ -26,3 +26,13 @@ class StudentPortal(models.Model):
 
     is_parent = fields.Boolean("Is a Parent")
     is_student = fields.Boolean("Is a Student")
+
+    @api.onchange('is_parent')
+    def _onchange_is_parent(self):
+        if self.is_parent:
+            self.is_student = False
+
+    @api.onchange('is_student')
+    def _onchange_is_student(self):
+        if self.is_student:
+            self.is_parent = False
