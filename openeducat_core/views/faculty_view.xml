@@ -12,7 +12,7 @@
                     <field name="email"/>
                     <field name="phone"/>
                     <templates>
-                        <t t-name="card" class="d-flex flex-column bg-white shadow-sm border-0 p-0" style="border-radius: 8px; overflow: hidden; transition: all 0.2s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 .125rem .25rem rgba(0,0,0,.075)';">
+                        <t t-name="card" class="d-flex flex-column bg-white shadow-sm border p-0" style="border-radius: 8px; overflow: hidden; transition: all 0.2s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 .125rem .25rem rgba(0,0,0,.075)';">
                             <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
 
                             <!-- Main Header: Square Image + Contact Info -->
