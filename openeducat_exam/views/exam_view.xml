@@ -42,10 +42,18 @@
                     </header>
                     <sheet>
                         <div class="oe_button_box" name="button_box">
-                                <button class="oe_stat_button"
-                                        name="open_exam_attendees" type="object"
-                                        icon="fa-user-circle" string="Attendees">
-                                    <field string="Attendees" name="attendees_count" widget="statinfo"/>
+                            <button class="oe_stat_button"
+                                    name="open_exam_attendees"
+                                    type="object">
+
+                                <i class="oi oi-fw o_button_icon" data-icon="group" title="Attendees"/>
+
+                                <div class="o_field_widget o_stat_info">
+                                    <span class="o_stat_value">
+                                        <field name="attendees_count"/>
+                                    </span>
+                                    <span class="o_stat_text">Attendees</span>
+                                </div>
                             </button>
                         </div>
                         <field name="active" invisible="1"/>

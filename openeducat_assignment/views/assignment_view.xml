@@ -55,7 +55,7 @@
                     </header>
                     <sheet>
                         <div name="button_box" class="oe_button_box">
-                            <button name="get_assignment_submissions" type="object" class="oe_stat_button" icon="fa-book" string="Submissions">
+                            <button name="get_assignment_submissions" type="object" class="oe_stat_button" icon="assignment" string="Submissions">
                                 <field name="assignment_sub_line_count" widget="statinfo" />
                             </button>
                         </div>
@@ -63,7 +63,7 @@
 
                         <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
                                 invisible="active == True"/>
-                        <div>
+                        <div class="mb-4">
                             <h1>
 
                                 <field name="name" placeholder="Assignment Name"

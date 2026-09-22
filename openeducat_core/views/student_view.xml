@@ -13,7 +13,7 @@
                     <field name="email"/>
                     <field name="phone"/>
                     <templates>
-                        <t t-name="card" class="d-flex flex-column bg-white shadow-sm border-0 p-0" style="border-radius: 8px; overflow: hidden; transition: all 0.2s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 .125rem .25rem rgba(0,0,0,.075)';">
+                        <t t-name="card" class="d-flex flex-column bg-white shadow-sm border p-0" style="border-radius: 8px; overflow: hidden; transition: all 0.2s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 .125rem .25rem rgba(0,0,0,.075)';">
                             <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
                             
                             <!-- Main Header: Square Image + Contact Info -->
@@ -29,11 +29,11 @@
                                 <div class="d-flex flex-column justify-content-center flex-grow-1" style="min-width: 0;">
                                     <field name="name" class="fw-bold text-dark d-block text-truncate mb-1" style="font-size:1.15rem;"/>
                                     <div class="d-flex align-items-center text-truncate mb-1" t-if="record.email.value" style="font-size:0.85rem; min-width: 0;">
-                                        <i class="fa fa-envelope text-primary me-2 flex-shrink-0" title="Email"/>
+                                        <i class="oi text-primary me-2 flex-shrink-0 oi-filled" data-icon="mail" title="Email"/>
                                         <span class="text-truncate d-block text-dark" style="min-width: 0; color: #374151 !important;"><field name="email"/></span>
                                     </div>
                                     <div class="d-flex align-items-center text-truncate" t-if="record.phone.value" style="font-size:0.85rem; min-width: 0;">
-                                        <i class="fa fa-phone text-success me-2 flex-shrink-0" title="Phone"/>
+                                        <i class="oi text-success me-2 flex-shrink-0 oi-filled" data-icon="phone" title="Phone"/>
                                         <span class="text-truncate d-block text-dark" style="min-width: 0; color: #374151 !important;"><field name="phone"/></span>
                                     </div>
                                     <div class="text-primary fw-semibold text-truncate mt-1" t-if="record.gr_no.value" style="font-size:0.75rem; background: rgba(13, 110, 253, 0.08); padding: 1px 6px; border-radius: 4px; display: inline-block; width: fit-content;">
@@ -78,21 +78,6 @@
             <field name="model">op.student</field>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <!-- No js_class here. `hr_employee_form` registers hr's
-                     EmployeeFormController, which overrides the Archive action
-                     to open the "Employee Termination" wizard
-                     (hr/static/src/views/archive_employee_hook.js) and passes
-                     `this.model.root.resId` as active_ids. On this form that
-                     is an op.student id, handed to hr.departure.wizard, which
-                     expects an hr.employee id — so archiving a student either
-                     errored or wrote departure fields onto whichever employee
-                     happened to share that id.
-
-                     It was added in d6485eb0 ([19.0][MOD] updated UI for
-                     student and faculty, 2025-10-08) as part of a pure restyle;
-                     the styling in that commit is a global .oe_stat_button rule
-                     and does not depend on the js_class, so removing it changes
-                     appearance not at all and restores the standard Archive. -->
                 <form string="Student">
                     <header>
                     </header>
@@ -102,34 +87,29 @@
                         <field name="active" invisible="True"/>
                         <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
                                 invisible ="active == True"/>
-                        <div class="row flex-column flex-sm-row align-items-center">
-                            <div class="o_employee_avatar ms-2 p-0 h-100 mw-25 align-self-start align-self-sm-center">
+                        <div class="o_student_profile d-flex flex-column flex-sm-row align-items-center align-items-sm-start gap-4 mb-3">
+                            <div class="o_profile_avatar flex-shrink-0">
                                 <field name="image_1920" widget='image' class="m-0" options='{"size": [128,158], "zoom": true, "preview_image":"avatar_128"}'/>
                             </div>
-                            <div class="align-self-start o_employee_form_header_info">
-                                <div class="oe_title ps-0 pe-2 mw-100">
-                                    <h5 class="d-flex align-items-baseline mb-0">
-                                        <field name="title" options="{'no_create': True}" placeholder="Title"/>
-                                    </h5>
-                                    <div class="d-flex student-name">
-                                        <div class="">
-                                            <h1 class="d-md-flex align-items-center gap-1 w-50">
-                                                <field name="name" placeholder="Name" required="1" invisible="True"/>
-                                                <field name="first_name" widget="inline_char" required="1" placeholder="First Name"/>
-                                                <field name="middle_name" widget="inline_char" placeholder="Middle Name"/>
-                                                <field name="last_name" widget="inline_char" placeholder="Last Name"/>
-                                            </h1>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-baseline w-md-50">
-                                        <i class="fa fa-fw me-1 fa-envelope text-primary" title="Email"/>
-                                        <field name="email" class="w-100" widget="email" placeholder="Email"/>
-                                    </div>
-                                    <div class="d-flex align-items-baseline w-md-50">
-                                        <i class="fa fa-fw me-1 fa-phone text-primary" title="Phone"/>
-                                        <field name="phone" class="w-100" widget="phone" placeholder="Phone"/>
-                                    </div>
-
+                            <div class="o_profile_info d-flex flex-column flex-grow-1 w-100 gap-1">
+                                <h5 class="d-flex align-items-baseline mb-0 text-muted">
+                                    <field name="title" options="{'no_create': True}" placeholder="Title"/>
+                                </h5>
+                                <div class="d-flex student-name">
+                                    <h1 class="d-md-flex align-items-center gap-1 mb-2">
+                                        <field name="name" placeholder="Name" required="1" invisible="True"/>
+                                        <field name="first_name" widget="inline_char" required="1" placeholder="First Name"/>
+                                        <field name="middle_name" widget="inline_char" placeholder="Middle Name"/>
+                                        <field name="last_name" widget="inline_char" placeholder="Last Name"/>
+                                    </h1>
+                                </div>
+                                <div class="d-flex align-items-baseline gap-2 w-md-50">
+                                    <i class="oi oi-fw text-primary oi-filled" data-icon="mail" title="Email"/>
+                                    <field name="email" class="w-100" widget="email" placeholder="Email"/>
+                                </div>
+                                <div class="d-flex align-items-baseline gap-2 w-md-50">
+                                    <i class="oi oi-fw text-primary oi-filled" data-icon="phone" title="Phone"/>
+                                    <field name="phone" class="w-100" widget="phone" placeholder="Phone"/>
                                 </div>
                             </div>
                         </div>
@@ -173,40 +153,58 @@
                                             <field name="color"/>
                                             <field name="type"/>
                                             <field name="is_company"/>
+                                            <field name="image_128"/>
+                                            <field name="name"/>
                                             <templates>
-                                                <t t-name="card" class="flex-row">
-                                                    <aside class="o_kanban_aside_full">
-                                                        <field name="avatar_128" class="o_kanban_image_fill w-100" widget="image" options="{'img_class': 'object-fit-cover'}" alt="Contact image" invisible="type != 'contact'"/>
-                                                        <field name="avatar_128" class="o_kanban_image_fill w-100" widget="image" options="{'img_class': 'object-fit-contain p-2'}" alt="Contact image" invisible="type == 'contact'"/>
-                                                    </aside>
-                                                    <main class="ps-2 ps-md-0">
-                                                        <field name="name" invisible="not name" class="fw-bold"/>
-                                                        <field name="type" invisible="name" class="fw-bold"/>
-                                                        <div t-if="record.email.raw_value" class="text-truncate">
-                                                            <i class="fa fa-fw me-1 fa-envelope text-primary" title="Email"/>
-                                                            <field name="email"/>
+                                                <t t-name="card" class="o_res_partner_kanban_card flex-row gap-2">
+                                                    <main class="gap-2">
+                                                        <div class="d-flex flex-column w-100">
+                                                            <field name="name" invisible="not name" class="flex-grow-1 fw-bold"/>
+                                                            <field name="type" invisible="name" class="flex-grow-1 fw-bold"/>
+                                                            <span t-if="record.type.raw_value != 'contact'" class="text-muted">
+                                                                <i class="oi oi-fw me-1" t-att-data-icon="{'invoice': 'description','delivery': 'local_shipping', 'other': 'deployed_code'}[record.type.raw_value]" role="img" t-att-title="{'invoice': 'Invoice','delivery': 'Delivery', 'other': 'Other'}[record.type.raw_value]"/>
+                                                                <field name="type"/> address
+                                                            </span>
                                                         </div>
-                                                        <div t-if="record.phone.raw_value">
-                                                            <i class="fa fa-fw me-1 fa-phone text-primary" title="Phone"/>
-                                                            <field name="phone"/>
-                                                        </div>
-                                                        <div invisible="not function or is_company">
-                                                            <i class="fa fa-fw me-1 fa-suitcase text-primary" title="Position"/>
-                                                            <field name="function"/>
-                                                        </div>
-                                                        <div t-if="record.type.raw_value != 'contact' and (record.city.raw_value or record.country_id.raw_value)">
-                                                            <i class="fa fa-fw me-1 fa-map-marker text-primary" title="Location"/>
-                                                            <field name="city"/>
-                                                            <span t-if="record.city.raw_value and record.country_id.raw_value">, </span>
-                                                            <field name="country_id"/>
+                                                        <div>
+                                                            <div t-if="record.email.raw_value" class="text-truncate">
+                                                                <i class="oi oi-fw oi-filled me-1" data-icon="mail" title="Email"/>
+                                                                <field name="email"/>
+                                                            </div>
+                                                            <div t-if="record.phone.raw_value">
+                                                                <i class="oi oi-fw oi-filled me-1" data-icon="phone" title="Phone"/>
+                                                                <field name="phone"/>
+                                                            </div>
+                                                            <div invisible="not function">
+                                                                <i class="oi oi-fw me-1" data-icon="luggage" title="Position"/>
+                                                                <field name="function"/>
+                                                            </div>
+                                                            <div t-if="record.type.raw_value != 'contact' and (record.city.raw_value or record.country_id.raw_value)">
+                                                                <i class="oi oi-fw me-1" data-icon="location_on" title="Location"/>
+                                                                <field name="city"/>
+                                                                <span t-if="record.city.raw_value and record.country_id.raw_value">, </span>
+                                                                <field name="country_id"/>
+                                                            </div>
                                                         </div>
                                                     </main>
+                                                    <aside>
+                                                        <field name="avatar_128" class="o_card_image_fill w-100" widget="image" options="{'img_class': 'w-100 rounded border object-fit-contain'}"/>
+                                                    </aside>
                                                 </t>
                                             </templates>
                                         </kanban>
                                         <form string="Contact / Address">
                                             <sheet>
-                                                <field name="type" required="1" widget="radio" options="{'horizontal': true}"/>
+                                                <field name="type" required="1" widget="badges_selection" class="mb-2 oi-filled"
+                                                    options="{
+                                                        'icon_mapping': {
+                                                            'contact': 'group',
+                                                            'invoice': 'description',
+                                                            'delivery': 'local_shipping',
+                                                            'other': 'deployed_code',
+                                                        },
+                                                    }"
+                                                />
                                                 <div class="d-flex align-items-center gap-3">
                                                     <field name="image_1920" widget="contact_image" nolabel="1" options="{'preview_image': 'avatar_128', 'size': [100,100], 'img_class': 'rounded border'}"/>
                                                     <div class="flex-grow-1">
@@ -215,15 +213,15 @@
                                                         </h3>
                                                         <div class="row flex-row">
                                                             <div class="d-flex align-items-baseline">
-                                                                <i class="fa fa-fw me-1 fa-envelope text-primary" title="Email"/>
+                                                                <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="mail" title="Email"/>
                                                                 <field name="email" widget="email" class="w-100" context="{'gravatar_image': True}" required="user_ids" placeholder="Email"/>
                                                             </div>
                                                             <div class="d-flex align-items-baseline">
-                                                                <i class="fa fa-fw me-1 fa-phone text-primary" title="Phone"/>
+                                                                <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="phone" title="Phone"/>
                                                                 <field name="phone" widget="phone" class="w-100" placeholder="Phone"/>
                                                             </div>
                                                             <div invisible="is_company or type != 'contact'" class="d-flex align-items-baseline">
-                                                                <i class="fa fa-fw me-1 fa-suitcase text-primary" title="Position"/>
+                                                                <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="work" title="Position"/>
                                                                 <field name="function" placeholder="Job title"/>
                                                             </div>
                                                         </div>

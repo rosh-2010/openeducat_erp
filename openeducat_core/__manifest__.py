@@ -20,7 +20,7 @@
 
 {
     'name': 'OpenEduCat Core',
-    'version': '19.0.1.0',
+    'version': '20.0.1.0.0',
     'license': 'LGPL-3',
     'category': 'Education',
     "sequence": 1,
@@ -31,7 +31,7 @@
     'depends': ['board', 'hr', 'web', 'website','contacts'],
     'data': [
         'security/op_security.xml',
-        'security/ir.model.access.csv',
+        'security/ir.access.csv',
         'report/report_menu.xml',
         'report/report_student_bonafide.xml',
         'report/report_student_idcard.xml',

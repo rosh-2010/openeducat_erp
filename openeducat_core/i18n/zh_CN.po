@@ -33,23 +33,33 @@ msgstr "'学生证 - %s' % (object.name)"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<strong>Certificate No: </strong>"
-msgstr "<strong>证书编号： </strong>"
+msgid "<b>Certificate No. : </b>"
+msgstr "<b>证书编号：</b>"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<strong>Date: </strong>"
-msgstr "<strong>日期： </strong>"
+msgid "<b>Date : </b>"
+msgstr "<b>日期：</b>"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<strong>Principal / Head of Institution</strong>"
-msgstr "<strong>校长/机构负责人</strong>"
+msgid ""
+"<b>Principal / Head of Institution</b><br/>\n"
+"                                   (Signature with seal)<br/>\n"
+"                                   Name :"
+msgstr ""
+"<b>校长/机构负责人</b><br/>\n"
+"                                   （签名加盖章）<br/>\n"
+"                                   姓名："
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<strong>Designation:</strong>"
-msgstr "<strong>指定：</strong>"
+msgid ""
+"<br/>\n"
+"                                   Designation :"
+msgstr ""
+"<br/>\n"
+"                                   名称："
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
@@ -5623,6 +5633,11 @@ msgid "at"
 msgstr "在"
 
 #. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "bearing the Enrollment Student ID :"
+msgstr "附有入学学生证："
+
+#. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_form
 msgid "e.g. \"Computer Science for kids\""
 msgstr "例如“儿童计算机科学”"
@@ -5703,11 +5718,3 @@ msgstr "到"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
 msgid "was"
 msgstr "曾是"
-
-#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "(Signature with seal)"
-msgstr "（签名加盖章）"
-
-#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "bearing the Enrollment Student ID:"
-msgstr "附有入学学生证："

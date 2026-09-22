@@ -25,5 +25,5 @@ class OpPublisher(models.Model):
     _name = "op.publisher"
     _description = "Publisher"
 
-    name = fields.Char('Name', size=20, required=True)
+    name = fields.Char('Name', required=True)
     media_ids = fields.Many2many('op.media', string='Media(s)')

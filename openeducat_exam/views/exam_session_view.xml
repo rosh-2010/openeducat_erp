@@ -42,16 +42,22 @@
                                 type="action"
                                 string="Student Hall Tickets"
                                 class="btn-primary"
-                                icon="fa-file-pdf-o" invisible="state != 'schedule'"/>
+                                icon="picture_as_pdf" invisible="state != 'schedule' or exams_count == 0"/>
                         <field name="state" widget="statusbar"
                                statusbar_visible="draft,held,scheduled,done"/>
                     </header>
                     <sheet>
                     <div name="button_box" class="oe_button_box">
-                            <button name="get_exam" type="object" class="oe_stat_button" icon="fa-book" string="exam">
-                                <field name="exams_count" widget="statinfo" />
-                            </button>
-                        </div>
+                        <button name="get_exam" type="object" class="oe_stat_button" string="exam">
+                            <i class="oi oi-fw o_button_icon" data-icon="book" title="Exam"/>
+                            <div class="o_field_widget o_stat_info">
+                                <span class="o_stat_value">
+                                    <field name="exams_count"/>
+                                </span>
+                                <span class="o_stat_text">Exam</span>
+                            </div>
+                        </button>
+                    </div>
                         <field name="active" invisible="1"/>
                         <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
                                 invisible="active == True"/>

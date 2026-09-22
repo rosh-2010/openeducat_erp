@@ -71,14 +71,15 @@ class ReportTicket(models.AbstractModel):
             for student in student_search:
                 student_course = self.env['op.student.course'].search(
                     [('student_id', '=' , student.id),
-                     ('course_id', '=' , exam_session.course_id.id)])
+                     ('course_id', '=' , exam_session.course_id.id)],
+                     limit=1)
                 res = {
                     'exam': exam_session.name,
                     'exam_code': exam_session.exam_code,
                     'course': exam_session.course_id.name,
                     'student': student.name,
                     'image': student.image_1920,
-                    'roll_number': student_course.roll_number,
+                    'roll_number': student_course.roll_number if student_course else '',
                     'line': self.get_subject(exam_session),
                 }
                 final_lst.append(res)

@@ -33,23 +33,33 @@ msgstr "'Studentenausweis – %s' % (object.name)"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<strong>Certificate No: </strong>"
-msgstr "<strong>Zertifikatsnr.: </strong>"
+msgid "<b>Certificate No. : </b>"
+msgstr "<b>Zertifikatsnr.: </b>"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<strong>Date: </strong>"
-msgstr "<strong>Datum: </strong>"
+msgid "<b>Date : </b>"
+msgstr "<b>Datum: </b>"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<strong>Principal / Head of Institution</strong>"
-msgstr "<strong>Schulleiter / Institutsleiter</strong>"
+msgid ""
+"<b>Principal / Head of Institution</b><br/>\n"
+"                                   (Signature with seal)<br/>\n"
+"                                   Name :"
+msgstr ""
+"<b>Schulleiter / Institutsleiter</b><br/>\n"
+"                                   (Unterschrift mit Siegel)<br/>\n"
+"                                   Name:"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "<strong>Designation:</strong>"
-msgstr "<strong>Bezeichnung:</strong>"
+msgid ""
+"<br/>\n"
+"                                   Designation :"
+msgstr ""
+"<br/>\n"
+"                                   Bezeichnung:"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
@@ -5714,6 +5724,11 @@ msgid "at"
 msgstr "bei"
 
 #. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "bearing the Enrollment Student ID :"
+msgstr "mit dem Immatrikulationsausweis:"
+
+#. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_form
 msgid "e.g. \"Computer Science for kids\""
 msgstr "z.B. „Informatik für Kinder“"
@@ -5794,13 +5809,3 @@ msgstr "Zu"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
 msgid "was"
 msgstr "War"
-
-#. module: openeducat_core
-#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "(Signature with seal)"
-msgstr "(Unterschrift mit Siegel)"
-
-#. module: openeducat_core
-#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
-msgid "bearing the Enrollment Student ID:"
-msgstr "mit dem Immatrikulationsausweis:"

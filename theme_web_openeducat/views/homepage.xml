@@ -221,11 +221,11 @@
                                             <div>
                                                 <div class="d-flex gap-2 mt-3">
                                                     <div class="text-warning">
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
                                                     </div>
                                                     (11 Reviews)
                                                 </div>
@@ -245,11 +245,11 @@
                                             <div>
                                                 <div class="d-flex gap-2 mt-3">
                                                     <div class="text-warning">
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
                                                     </div>
                                                     (13 Reviews)
                                                 </div>
@@ -270,11 +270,11 @@
                                             <div>
                                                 <div class="d-flex gap-2 mt-3">
                                                     <div class="text-warning">
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
-                                                        <i class="fa fa-star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
+                                                        <i class="oi oi-filled" data-icon="star"/>
                                                     </div>
                                                     (15 Reviews)
                                                 </div>
@@ -339,7 +339,7 @@
                                             <div class="oe-feature-wrapper mt--20 ml_dec_20">
                                                 <div class="oe-feature feature-style-2 oe-radius hover">
                                                     <div class="icon bg-pink-opacity">
-                                                        <i class="fa fa-heart"/>
+                                                        <i class="oi oi-filled" data-icon="favorite"/>
                                                     </div>
                                                     <div class="feature-content">
                                                         <h6 class="feature-title">Flexible Classes</h6>
@@ -350,7 +350,7 @@
 
                                                 <div class="oe-feature feature-style-2 oe-radius hover">
                                                     <div class="icon bg-primary-opacity">
-                                                        <i class="fa fa-book"/>
+                                                        <i class="oi" data-icon="book"/>
                                                     </div>
                                                     <div class="feature-content">
                                                         <h6 class="feature-title">Learn From Anywhere</h6>
@@ -541,11 +541,11 @@
 
                                                <ul class="d-flex gap-3 list-unstyled pt-3">
                                                     <li class="align-items-center d-flex gap-2">
-                                                        <i class="fa fa-map-marker"/>
+                                                        <i class="oi" data-icon="location_on"/>
                                                         Vancouver
                                                     </li>
                                                     <li class="align-items-center d-flex gap-2">
-                                                        <i class="fa fa-clock-o"/>
+                                                        <i class="oi" data-icon="schedule"/>
                                                         8:00 am - 5:00 pm
                                                     </li>
                                                 </ul>
@@ -571,11 +571,11 @@
 
                                                <ul class="d-flex gap-3 list-unstyled pt-3">
                                                     <li class="align-items-center d-flex gap-2">
-                                                        <i class="fa fa-map-marker"/>
+                                                        <i class="oi" data-icon="location_on"/>
                                                         IAC Building
                                                     </li>
                                                     <li class="align-items-center d-flex gap-2">
-                                                        <i class="fa fa-clock-o"/>
+                                                        <i class="oi" data-icon="schedule"/>
                                                         11:00 am - 3:00 pm
                                                     </li>
                                                 </ul>
@@ -601,11 +601,11 @@
 
                                                <ul class="d-flex gap-3 list-unstyled pt-3">
                                                     <li class="align-items-center d-flex gap-2">
-                                                        <i class="fa fa-map-marker"/>
+                                                        <i class="oi" data-icon="location_on"/>
                                                         Vancouver
                                                     </li>
                                                     <li class="align-items-center d-flex gap-2">
-                                                        <i class="fa fa-clock-o"/>
+                                                        <i class="oi" data-icon="schedule"/>
                                                         6:00 am - 1:00 pm
                                                     </li>
                                                 </ul>
@@ -659,7 +659,7 @@
                                                     <h4 class="fs-3 fw-bolder">Ms. Jane Smith</h4>
                                                     <span class="fs-4 text-primary"> Teaching Mathematics</span>
                                                     <div class="my-3">
-                                                        <i class="fa fa-map-marker"/>
+                                                        <i class="oi" data-icon="location_on"/>
                                                         <span class="fst-italic">CO Miego, AD,USA</span>
                                                     </div>
                                                 </div>
@@ -667,13 +667,13 @@
                                                  guiding students through various mathematical concepts
                                                 </p>
                                                 <ul class="d-flex gap-3 list-unstyled social-default">
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-facebook"/></div></li>
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-twitter"/></div></li>
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-instagram"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_facebook"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_x"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_instagram"/></div></li>
                                                 </ul>
                                                 <ul class="list-unstyled pt-3">
-                                                    <li class=" d-flex gap-3"><i class="fa fa-phone"/>+1-202-555-0174</li>
-                                                    <li class=" d-flex gap-3"><i class="fa fa-envelope-o"/>jsmith@gmail.com </li>
+                                                    <li class=" d-flex gap-3"><i class="oi" data-icon="phone"/>+1-202-555-0174</li>
+                                                    <li class=" d-flex gap-3"><i class="oi" data-icon="mail"/>jsmith@gmail.com </li>
 
                                                 </ul>
                                             </div>
@@ -682,7 +682,7 @@
                                                     <h4 class="fs-3 fw-bolder">Mames Mary</h4>
                                                     <span class="fs-4 text-primary">English Teacher</span>
                                                     <div class="my-3">
-                                                        <i class="fa fa-map-marker"/>
+                                                        <i class="oi" data-icon="location_on"/>
                                                         <span class="fst-italic">CO Miego, AD,USA</span>
                                                     </div>
                                                 </div>
@@ -690,13 +690,13 @@
                                                  guiding students through various mathematical concepts
                                                 </p>
                                                  <ul class="d-flex gap-3 list-unstyled social-default">
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-facebook"/></div></li>
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-twitter"/></div></li>
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-instagram"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_facebook"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_x"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_instagram"/></div></li>
                                                 </ul>
                                                 <ul class="list-unstyled pt-3">
-                                                    <li class=" d-flex gap-3"><i class="fa fa-phone"/>+1-202-555-0174</li>
-                                                    <li class=" d-flex gap-3"><i class="fa fa-envelope-o"/>mames@gmail.com </li>
+                                                    <li class=" d-flex gap-3"><i class="oi" data-icon="phone"/>+1-202-555-0174</li>
+                                                    <li class=" d-flex gap-3"><i class="oi" data-icon="mail"/>mames@gmail.com </li>
 
                                                 </ul>
                                             </div>
@@ -705,7 +705,7 @@
                                                     <h4 class="fs-3 fw-bolder">Olivia</h4>
                                                     <span class="fs-4 text-primary"> Math Teacher</span>
                                                     <div class="my-3">
-                                                        <i class="fa fa-map-marker"/>
+                                                        <i class="oi" data-icon="location_on"/>
                                                         <span class="fst-italic">CO Miego, AD,USA</span>
                                                     </div>
                                                 </div>
@@ -713,13 +713,13 @@
                                                  guiding students through various mathematical concepts
                                                 </p>
                                                  <ul class="d-flex gap-3 list-unstyled social-default">
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-facebook"/></div></li>
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-twitter"/></div></li>
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-instagram"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_facebook"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_x"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_instagram"/></div></li>
                                                 </ul>
                                                 <ul class="list-unstyled pt-3">
-                                                    <li class=" d-flex gap-3"><i class="fa fa-phone"/>+1-202-555-0174</li>
-                                                    <li class=" d-flex gap-3"><i class="fa fa-envelope-o"/>olivia@gmail.com </li>
+                                                    <li class=" d-flex gap-3"><i class="oi" data-icon="phone"/>+1-202-555-0174</li>
+                                                    <li class=" d-flex gap-3"><i class="oi" data-icon="mail"/>olivia@gmail.com </li>
 
                                                 </ul>
                                             </div>
@@ -728,7 +728,7 @@
                                                     <h4 class="fs-3 fw-bolder">Thomas Dal</h4>
                                                     <span class="fs-4 text-primary">Graphic Teacher</span>
                                                     <div class="my-3">
-                                                        <i class="fa fa-map-marker"/>
+                                                        <i class="oi" data-icon="location_on"/>
                                                         <span class="fst-italic">CO Miego, AD,USA</span>
                                                     </div>
                                                 </div>
@@ -736,13 +736,13 @@
                                                  guiding students through various mathematical concepts
                                                 </p>
                                                  <ul class="d-flex gap-3 list-unstyled social-default">
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-facebook"/></div></li>
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-twitter"/></div></li>
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-instagram"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_facebook"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_x"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_instagram"/></div></li>
                                                 </ul>
                                                 <ul class="list-unstyled pt-3">
-                                                    <li class=" d-flex gap-3"><i class="fa fa-phone"/>+1-202-555-0174</li>
-                                                    <li class=" d-flex gap-3"><i class="fa fa-envelope-o"/>thomas@gmail.com </li>
+                                                    <li class=" d-flex gap-3"><i class="oi" data-icon="phone"/>+1-202-555-0174</li>
+                                                    <li class=" d-flex gap-3"><i class="oi" data-icon="mail"/>thomas@gmail.com </li>
 
                                                 </ul>
                                             </div>
@@ -751,7 +751,7 @@
                                                     <h4 class="fs-3 fw-bolder">Christopher Lisa</h4>
                                                     <span class="fs-4 text-primary"> Networking</span>
                                                     <div class="my-3">
-                                                        <i class="fa fa-map-marker"/>
+                                                        <i class="oi" data-icon="location_on"/>
                                                         <span class="fst-italic">CO Miego, AD,USA</span>
                                                     </div>
                                                 </div>
@@ -759,13 +759,13 @@
                                                  guiding students through various mathematical concepts
                                                 </p>
                                                  <ul class="d-flex gap-3 list-unstyled social-default">
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-facebook"/></div></li>
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-twitter"/></div></li>
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-instagram"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_facebook"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_x"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_instagram"/></div></li>
                                                 </ul>
                                                 <ul class="list-unstyled pt-3">
-                                                    <li class=" d-flex gap-3"><i class="fa fa-phone"/>+1-202-555-0174</li>
-                                                    <li class=" d-flex gap-3"><i class="fa fa-envelope-o"/>christopher@gmail.com </li>
+                                                    <li class=" d-flex gap-3"><i class="oi" data-icon="phone"/>+1-202-555-0174</li>
+                                                    <li class=" d-flex gap-3"><i class="oi" data-icon="mail"/>christopher@gmail.com </li>
 
                                                 </ul>
                                             </div>
@@ -774,7 +774,7 @@
                                                     <h4 class="fs-3 fw-bolder">Soseph Sara</h4>
                                                     <span class="fs-4 text-primary">Web Teacher</span>
                                                     <div class="my-3">
-                                                        <i class="fa fa-map-marker"/>
+                                                        <i class="oi" data-icon="location_on"/>
                                                         <span class="fst-italic">CO Miego, AD,USA</span>
                                                     </div>
                                                 </div>
@@ -782,13 +782,13 @@
                                                  guiding students through various mathematical concepts
                                                 </p>
                                                  <ul class="d-flex gap-3 list-unstyled social-default">
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-facebook"/></div></li>
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-twitter"/></div></li>
-                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="fa fa-instagram"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_facebook"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_x"/></div></li>
+                                                    <li><div class="align-items-center bg-200 d-flex justify-content-center p-3 rounded-circle social-hover"><i class="oi" data-icon="oi_instagram"/></div></li>
                                                 </ul>
                                                 <ul class="list-unstyled pt-3">
-                                                    <li class=" d-flex gap-3"><i class="fa fa-phone"/>+1-202-555-0174</li>
-                                                    <li class=" d-flex gap-3"><i class="fa fa-envelope-o"/>soseph@gmail.com </li>
+                                                    <li class=" d-flex gap-3"><i class="oi" data-icon="phone"/>+1-202-555-0174</li>
+                                                    <li class=" d-flex gap-3"><i class="oi" data-icon="mail"/>soseph@gmail.com </li>
 
                                                 </ul>
                                             </div>
@@ -978,7 +978,7 @@
 
                                         <div class="s_newsletter_subscribe_form s_newsletter_list js_subscribe" data-vxml="001" data-list-id="1" data-name="Newsletter Form">
                                             <div class="js_subscribed_wrap d-none">
-                                                <p class="h4-fs text-white text-center"><i class="fa fa-check-circle-o" role="img"/> Thanks for registering!</p>
+                                                <p class="h4-fs text-white text-center"><i class="oi" data-icon="check_circle" role="img"/> Thanks for registering!</p>
                                             </div>
                                             <div class="d-flex js_subscribe_wrap justify-content-center">
                                                 <div class="input-group ">

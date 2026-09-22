@@ -94,11 +94,11 @@
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-baseline">
-                                            <i class="fa fa-fw me-1 fa-envelope text-primary" title="Email"/>
+                                            <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="mail" title="Email"/>
                                             <field name="email" class="w-100" widget="email" placeholder="Email"/>
                                         </div>
                                         <div class="d-flex align-items-baseline">
-                                            <i class="fa fa-fw me-1 fa-phone text-primary" title="Phone"/>
+                                            <i class="oi oi-fw me-1 text-primary oi-filled" data-icon="phone" title="Phone"/>
                                             <field name="phone" class="w-100" widget="phone" placeholder="Phone"/>
                                         </div>
 

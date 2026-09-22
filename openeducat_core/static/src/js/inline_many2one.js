@@ -3,12 +3,12 @@
 import { Many2OneField, many2OneField } from "@web/views/fields/many2one/many2one_field";
 import { registry } from "@web/core/registry";
 import { Many2XAutocomplete } from "@web/views/fields/relational_utils";
-import { onMounted, useRef } from "@odoo/owl";
+import { onMounted, signal } from "@odoo/owl";
 
 export class AutoMany2XAutocomplete extends Many2XAutocomplete{
     static template = 'openeducat_core.Many2XAutocomplete';
     setup() {
-        this.input = useRef('input');
+        this.input = signal.ref();
         super.setup();
         onMounted(() => {
             this._createSizer();
@@ -40,7 +40,7 @@ export class AutoMany2XAutocomplete extends Many2XAutocomplete{
     }
 
     _resizeInput(defaultValue = null) {
-        const input = this.autoCompleteContainer.el.querySelector('input');
+        const input = this.autocompleteContainerRef()?.querySelector('input');
         if (!input) return;
 
         const value = defaultValue || input.value || input.placeholder || "";
@@ -83,7 +83,7 @@ export class InlineMany2OneField extends Many2OneField {
     }
 
     _resizeInput() {
-        const input = this.input.el;
+        const input = this.input?.();
         if (!input) return;
 
         const value = input.value;

@@ -60,7 +60,7 @@
                                             <span t-out="s['date'] if s['date'] else ''" t-options="{'widget':'date'}"/>
                                         </td>
                                         <td class="text-center">
-                                            <span t-esc="s['time']"/>
+                                            <span t-out="s['time'] if s['time'] else ''"/>
                                         </td>
                                         <td class="text-center">
                                             <span t-out="s['sup_sign'] if s['sup_sign'] else ''"/>

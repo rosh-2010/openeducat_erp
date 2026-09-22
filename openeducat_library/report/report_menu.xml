@@ -6,7 +6,7 @@
             <field name="model">op.media</field>
             <field name="report_type">qweb-pdf</field>
             <field name="report_name">openeducat_library.report_media_barcode</field>
-            <field name="report_file">openeducat_library.report_media_barcode</field>
+            <!-- <field name="report_file">openeducat_library.report_media_barcode</field> -->
             <field name="binding_model_id" ref="openeducat_library.model_op_media"/>
             <field name="binding_type">report</field>
         </record>
@@ -16,7 +16,7 @@
             <field name="model">op.library.card</field>
             <field name="report_type">qweb-pdf</field>
             <field name="report_name">openeducat_library.report_library_card_barcode</field>
-            <field name="report_file">openeducat_library.report_library_card_barcode</field>
+            <!-- <field name="report_file">openeducat_library.report_library_card_barcode</field> -->
             <field name="binding_model_id" ref="openeducat_library.model_op_library_card"/>
             <field name="binding_type">report</field>
         </record>
@@ -26,7 +26,7 @@
             <field name="model">op.student</field>
             <field name="report_type">qweb-pdf</field>
             <field name="report_name">openeducat_library.report_student_library_card</field>
-            <field name="report_file">openeducat_library.report_student_library_card</field>
+            <!-- <field name="report_file">openeducat_library.report_student_library_card</field> -->
             <field name="print_report_name">'Library ID Card - %s' % (object.name)</field>
             <field name="binding_model_id" ref="openeducat_library.model_op_student"/>
             <field name="binding_type">report</field>

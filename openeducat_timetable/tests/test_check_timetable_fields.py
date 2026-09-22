@@ -28,10 +28,10 @@ class TestCheckTimetableFields(SessionFixtureCase):
         # Turn constraints ON for tests — DB defaults may leave them
         # off, hiding conflicts.
         icp = self.env['ir.config_parameter'].sudo()
-        icp.set_param('timetable.is_faculty_constraint', '1')
-        icp.set_param('timetable.is_classroom_constraint', '1')
-        icp.set_param('timetable.is_batch_and_subject_constraint', '1')
-        icp.set_param('timetable.is_batch_constraint', '1')
+        icp.set_bool('timetable.is_faculty_constraint', True)
+        icp.set_bool('timetable.is_classroom_constraint', True)
+        icp.set_bool('timetable.is_batch_and_subject_constraint', True)
+        icp.set_bool('timetable.is_batch_constraint', True)
 
     def test_batchless_pair_does_not_conflict(self):
         # Regression guard: `rec.batch_id.id == other.batch_id.id`

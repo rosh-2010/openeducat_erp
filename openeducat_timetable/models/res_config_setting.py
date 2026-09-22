@@ -14,15 +14,15 @@ class ResConfigSettings(models.TransientModel):
     def get_values(self):
         res = super(ResConfigSettings, self).get_values()
         res.update(
-            is_faculty_constraint=self.env['ir.config_parameter'].sudo().get_param(
+            is_faculty_constraint=self.env['ir.config_parameter'].sudo().get_bool(
                 'timetable.is_faculty_constraint'),
-            is_classroom_constraint=self.env['ir.config_parameter'].sudo().get_param(
+            is_classroom_constraint=self.env['ir.config_parameter'].sudo().get_bool(
                 'timetable.is_classroom_constraint'),
             is_batch_and_subject_constraint=self.env['ir.config_parameter']
-            .sudo().get_param(
+            .sudo().get_bool(
                 'timetable.is_batch_and_subject_constraint'),
             is_batch_constraint=self.env['ir.config_parameter']
-            .sudo().get_param(
+            .sudo().get_bool(
                 'timetable.is_batch_constraint')
         )
         return res
@@ -30,9 +30,9 @@ class ResConfigSettings(models.TransientModel):
     def set_values(self):
         super(ResConfigSettings, self).set_values()
         param = self.env['ir.config_parameter'].sudo()
-        param.set_param('timetable.is_faculty_constraint', self.is_faculty_constraint)
-        param.set_param('timetable.is_classroom_constraint',
+        param.set_bool('timetable.is_faculty_constraint', self.is_faculty_constraint)
+        param.set_bool('timetable.is_classroom_constraint',
                         self.is_classroom_constraint)
-        param.set_param('timetable.is_batch_and_subject_constraint',
+        param.set_bool('timetable.is_batch_and_subject_constraint',
                         self.is_batch_and_subject_constraint)
-        param.set_param('timetable.is_batch_constraint', self.is_batch_constraint)
+        param.set_bool('timetable.is_batch_constraint', self.is_batch_constraint)

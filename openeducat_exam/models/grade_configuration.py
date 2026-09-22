@@ -30,11 +30,12 @@ class OpGradeConfiguration(models.Model):
     max_per = fields.Integer('Maximum Percentage', required=True)
     result = fields.Char('Result to Display', required=True)
 
-    @api.constrains("max_per")
+    @api.constrains("max_per","min_per")
     def max_per_validation(self):
-        if self.max_per > 100:
-            raise ValidationError(_(
-                "Maximum percentage should not be greater than 100"))
-        if self.max_per < self.min_per:
-            raise ValidationError(_(
-                "Minimum percentage should be not greater than Maximum percentage"))
+        for record in self:
+            if record.max_per > 100:
+                raise ValidationError(_(
+                    "Maximum percentage should not be greater than 100"))
+            if record.max_per < record.min_per:
+                raise ValidationError(_(
+                    "Minimum percentage should be not greater than Maximum percentage"))

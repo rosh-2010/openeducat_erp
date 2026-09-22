@@ -1,0 +1,12 @@
+id,name,model_id,group_id/id,operation,domain
+access_grading_assignment_type_assignment_manager,grading_assignment_type_assignment_manager,grading.assignment.type,openeducat_assignment.group_op_assignment_manager,crud,
+access_grading_assignment_type_user,grading_assignment_type_user,grading.assignment.type,openeducat_assignment.group_op_assignment_user,cru,
+access_op_assignment_sub_line_student,op_assignment_sub_line_student,op.assignment.sub.line,openeducat_assignment.group_op_assignment_manager,crud,
+access_op_assignment_sub_line_user,op_assignment_sub_line_user,op.assignment.sub.line,openeducat_assignment.group_op_assignment_user,cru,"[('assignment_id.faculty_id.user_id', '=', user.id)]"
+access_op_assignment_sub_line_portal,access_op_assignment_sub_line_portal,op.assignment.sub.line,base.group_portal,cru,
+access_op_assignment_portal,op_assignment_portal,op.assignment,base.group_portal,cru,
+access_op_assignment_student,op_assignment_student,op.assignment,openeducat_assignment.group_op_assignment_manager,crud,
+access_op_assignment_user,op_assignment_user,op.assignment,openeducat_assignment.group_op_assignment_user,crud,"[('faculty_id.user_id', '=', user.id)]"
+access_grading_assignment_manager,grading_assignment_manager,grading.assignment,openeducat_assignment.group_op_assignment_manager,crud,
+access_grading_assignment_user,grading_assignment_user,grading.assignment,openeducat_assignment.group_op_assignment_user,cru,
+access_grading_assignment_portal,grading_assignment_portal,grading.assignment,base.group_portal,cru,

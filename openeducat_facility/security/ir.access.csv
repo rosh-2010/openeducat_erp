@@ -1,0 +1,5 @@
+id,name,model_id,group_id/id,operation,domain
+access_op_facility_user,name_op_facility_user,op.facility,openeducat_facility.group_op_facility_user,r,
+access_op_facility_manager,name_op_facility_manager,op.facility,openeducat_facility.group_op_facility_manager,crud,
+access_op_facility_line_user,name_op_facility_line_user,op.facility.line,openeducat_facility.group_op_facility_user,r,
+access_op_facility_line_manager,name_op_facility_line_manager,op.facility.line,openeducat_facility.group_op_facility_manager,crud,

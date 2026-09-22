@@ -11,8 +11,7 @@
                     <button class="btn oe_stat_button"
                             type="object"
                             name="count_sessions_details"
-                            style="border-right: 1px solid;"
-                            icon="fa-calendar"
+                            icon="calendar_today"
                             groups="openeducat_timetable.group_op_timetable_manager,openeducat_timetable.group_op_timetable_user">
                         <field string="Sessions" name="session_count" widget="statinfo"/>
                     </button>

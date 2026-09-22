@@ -2,29 +2,35 @@
 
 import { CharField, charField } from "@web/views/fields/char/char_field";
 import { registry } from "@web/core/registry";
-import { onMounted, useEffect } from "@odoo/owl";
+import { onMounted, onPatched, onWillDestroy } from "@odoo/owl";
+
+// Modern browsers size the input to its content with CSS (see the
+// openeducat_core.InlineCharField template); measure in JS only otherwise.
+const HAS_FIELD_SIZING = window.CSS?.supports?.("field-sizing", "content");
 
 export class InlineCharField extends CharField {
     static template = 'openeducat_core.InlineCharField';
 
     setup() {
         super.setup();
-        onMounted(() => {
-            this._createSizer();
-            this._resizeInput();
-        });
-    }
-
-    setup() {
-        super.setup();
-        useEffect(() => {
-            this._createSizer();
-            this._resizeInput();
+        if (HAS_FIELD_SIZING) {
+            return;
+        }
+        onMounted(() => this._resizeInput());
+        onPatched(() => this._resizeInput());
+        onWillDestroy(() => {
+            cancelAnimationFrame(this._resizeFrame);
+            if (this._sizer) {
+                this._sizer.remove();
+                this._sizer = null;
+            }
         });
     }
 
     onInputType() {
-        this._resizeInput();
+        if (!HAS_FIELD_SIZING) {
+            this._resizeInput();
+        }
     }
 
     _createSizer() {
@@ -34,33 +40,26 @@ export class InlineCharField extends CharField {
                 position: "absolute",
                 visibility: "hidden",
                 whiteSpace: "pre",
-                font: getComputedStyle(document.body).font,
             });
             document.body.appendChild(this._sizer);
         }
     }
 
     _resizeInput() {
-        const input = this.input.el;
-        if (!input) return;
-
-        const value = input.value;
-        if (value) {
-            input.style.width = "1px";
-            input.style.width = `${input.scrollWidth + 2}px`;
-        } else {
-            this._sizer.textContent = input.placeholder || "";
-            this._sizer.style.font = getComputedStyle(input).font;
-            input.style.width = `${this._sizer.offsetWidth + 10}px`;
+        // Odoo 20 (Owl 3): refs are signals, read by calling them
+        const input = this.input();
+        if (!input || !input.isConnected) {
+            // not in the document yet: measure on the next frame
+            cancelAnimationFrame(this._resizeFrame);
+            this._resizeFrame = requestAnimationFrame(() => this._resizeInput());
+            return;
         }
-    }
 
-    willUnmount() {
-        super.willUnmount?.();
-        if (this._sizer) {
-            this._sizer.remove();
-            this._sizer = null;
-        }
+        this._createSizer();
+        this._sizer.style.font = getComputedStyle(input).font;
+        this._sizer.textContent = input.value || input.placeholder || "";
+        // small padding for text, more room for the caret when showing the placeholder
+        input.style.width = `${this._sizer.offsetWidth + (input.value ? 4 : 10)}px`;
     }
 }
 

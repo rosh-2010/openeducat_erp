@@ -1,0 +1,12 @@
+id,name,model_id,group_id/id,operation,domain
+access_res_users_back_office_admin,name_res_users_back_office_admin,res.users,openeducat_parent.group_op_parent_manager,crud,
+access_op_parent_op_parent,name_op_parent_op_parent,op.parent,base.group_portal,r,"['|', ('user_id', '=', user.id), ('user_id', 'in', user.child_ids.ids)]"
+access_op_parent_op_parent_admin,name_op_parent_op_parent_admin,op.parent,openeducat_parent.group_op_parent_manager,crud,
+access_op_batch_parent,name_op_batch_parent,op.batch,base.group_portal,r,
+access_op_res_country_parent,name_op_res_country_parent,res.country,base.group_portal,r,
+access_op_course_parent,name_op_course_parent,op.course,base.group_portal,r,
+access_op_subject_parent,name_op_subject_parent,op.subject,base.group_portal,r,
+access_op_student_parent,op_student_parent,op.student,base.group_portal,r,"['|', ('user_id', '=', user.id), ('user_id', 'in', user.child_ids.ids)]"
+access_op_faculty_parent,op_faculty_parent,op.faculty,base.group_portal,r,
+access_op_student_course_parent,op_student_course_parent,op.student.course,base.group_portal,r,
+access_op_parent_relationship_back_office_admin,name_op_parent_relationship_back_office_admin,op.parent.relationship,openeducat_parent.group_op_parent_manager,crud,

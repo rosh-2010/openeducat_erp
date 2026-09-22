@@ -20,7 +20,7 @@
 
 {
     'name': 'OpenEduCat Library',
-    'version': '19.0.1.0',
+    'version': '20.0.1.0.0',
     'license': 'LGPL-3',
     'category': 'Education',
     "sequence": 3,
@@ -36,7 +36,7 @@
     ],
     'data': [
         'security/op_security.xml',
-        'security/ir.model.access.csv',
+        'security/ir.access.csv',
         'data/custom_paperformat.xml',
         'data/media_queue_sequence.xml',
         'data/action_rule_data.xml',

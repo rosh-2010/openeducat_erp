@@ -148,9 +148,9 @@ class TestTimetableConflicts(TestTimetableRobustCommon):
     def setUp(self):
         super(TestTimetableConflicts, self).setUp()
         # Enable constraints via config parameters
-        self.env['ir.config_parameter'].sudo().set_param('timetable.is_faculty_constraint', 'True')
-        self.env['ir.config_parameter'].sudo().set_param('timetable.is_classroom_constraint', 'True')
-        self.env['ir.config_parameter'].sudo().set_param('timetable.is_batch_constraint', 'True')
+        self.env['ir.config_parameter'].sudo().set_bool('timetable.is_faculty_constraint', True)
+        self.env['ir.config_parameter'].sudo().set_bool('timetable.is_classroom_constraint', True)
+        self.env['ir.config_parameter'].sudo().set_bool('timetable.is_batch_constraint', True)
 
     def test_01_faculty_conflict(self):
         """Verify same faculty cannot have two sessions at the same time"""
